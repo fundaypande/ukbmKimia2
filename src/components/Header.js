@@ -6,7 +6,7 @@ import {
   StatusBar
 } from 'react-native';
 
-const headerIcon = require('../../img/img_Header.png');
+const headerIcon = require('../Assets/img/img_Header.png');
 
 const Header = () => {
   const { textStyle, backFooter } = styles;
