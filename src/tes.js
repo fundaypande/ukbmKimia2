@@ -1,3 +1,7 @@
+//do :
+// jika filed A belum selesai validasi sampai disable, lalu di klik field lain 
+// harus i direset lagi
+
 import React, { Component } from 'react';
 import {
   Platform,
@@ -19,10 +23,14 @@ export default class Tes extends Component<Props> {
     super();
     this.state = {
       totalNilai: '',
+      input: {
+        field0: true,
+        field1: true
+      }
     };
   }
 
-  cekJawaban = (userInput, jawaban) => {
+  cekJawaban = (userInput, jawaban, field, repeat) => {
     //jika i tidak kurang dari 0
     if (i > 0) {
       //jalankan pengecekan
@@ -30,12 +38,27 @@ export default class Tes extends Component<Props> {
         const nilai = Number(this.state.totalNilai) + Number(i);
         this.setState({ totalNilai: nilai });
         Alert.alert('Hasil', 'Jawaban Benar! Nilai : ' + Number(i));
+
+        //set text input editable:false dengan perulangan
+        let input = [];
+        for (var j = 0; j < Number(repeat); j++) {
+          input[field + j] = false;
+          console.log('perulangan ke : ' + field + j);
+        }
+        this.setState({ input });
         i = 3;
+
       } else {
         i--;
         if (i === 0) {
           Alert.alert('GAGAL', 'Kesempatan Habis, Jawabannya Adalah : '+ jawaban);
           i = 3;
+          let input = [];
+          for (var k = 0; k < Number(repeat); k++) {
+            input[field + k] = false;
+            console.log('perulangan ke : ' + field + k);
+          }
+          this.setState({ input });
         } else {
           Alert.alert('Hasil', 'Jawaban SALAH! Sisa Kesempatan : ' + i);
           const nilai = Number(this.state.totalNilai) + 0;
@@ -45,12 +68,13 @@ export default class Tes extends Component<Props> {
     } else {
       Alert.alert('GAGAL', 'Kesempatan Habis, Jawabannya Adalah : '+ jawaban);
       i = 3;
+      this.setState({ input: { [field]: false } });
     }
-
   }
 
   showNilai = () => {
     Alert.alert('TOTAL', 'Total Nilai : ' + this.state.totalNilai);
+    console.log(this.state.input);
   }
 
   render() {
@@ -62,20 +86,25 @@ export default class Tes extends Component<Props> {
         <Text style={styles.textStyle}> Kelas :</Text>
         <TextInput
           style={styles.textInputStyle}
+          editable={this.state.input.field0}
           onSubmitEditing={
-            (event) => this.cekJawaban(event.nativeEvent.text, '25')
+            (event) => this.cekJawaban(event.nativeEvent.text, '25', 'field', 1)
           }
           keyboardType='numeric'
         />
         <Text style={styles.textStyle}> Tahun Ajaran :</Text>
         <TextInput
           style={styles.textInputStyle}
+          editable={this.state.input.field1}
           onSubmitEditing={
-            (event) => this.cekJawaban(event.nativeEvent.text, '30')
+            (event) => this.cekJawaban(event.nativeEvent.text, '30', 'field', 2)
           }
           keyboardType='numeric'
         />
-        <TouchableOpacity style={styles.ButtonStyle} onPress={this.showNilai}>
+        <TouchableOpacity
+          style={styles.ButtonStyle}
+          onPress={this.showNilai}
+        >
           <Text style={styles.textButton}> Masuk </Text>
         </TouchableOpacity>
       </View>
