@@ -14,7 +14,7 @@ import {
  import { Button } from 'native-base';
 
  import * as firebase from 'firebase';
- import config from '../Firebase';
+ import config from '../../Firebase';
 
 export default class Login extends Component {
 
@@ -27,7 +27,7 @@ export default class Login extends Component {
 
     firebase.auth().onAuthStateChanged(firebaseUser => {
       if (firebaseUser) {
-        this.props.navigation.navigate('Dashboard');
+        this.props.navigation.navigate('SelamatDatang');
       } else {
         Alert.alert('Your not Login');
       }
@@ -49,7 +49,7 @@ export default class Login extends Component {
       if (e) {
         Alert.alert(e.code, e.message);
       } else {
-        this.props.navigation.navigate('Dashboard');
+        this.props.navigation.navigate('SelamatDatang');
       }
     });
   }
@@ -62,13 +62,13 @@ export default class Login extends Component {
           translucent
         />
           <ImageBackground
-            source={require('../img/bg2.jpg')}
+            source={require('../../Assets/img/bg2.jpg')}
             style={styles.backgroundImage}
           >
           <View style={styles.viewSpace} />
           <View style={styles.viewHeader}>
             <Image
-              source={require('../img/logo.png')}
+              source={require('../../Assets/img/logo_layout_ukbm.png')}
               style={styles.logo}
             />
             <Text style={styles.headerText}>

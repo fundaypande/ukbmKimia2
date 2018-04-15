@@ -4,6 +4,8 @@ import Beranda from './view/Beranda';
 import SelamatDatang from './view/selamatDatang.js';
 import Sidebar from './Sidebar';
 import UnitKegiatanBelajar from './view/UnitKegiatanBelajar.js';
+import Login from './view/auth/Login.js';
+import SignUp from './view/auth/Signup.js';
 
 //list UKBM
 import UKBM1 from './view/UKBM1/UKBM1beranda.js';
@@ -15,6 +17,12 @@ import UKBM6 from './view/UKBM6/UKBM6beranda.js';
 import UKBM7 from './view/UKBM7/UKBM7beranda.js';
 
 const Screens = DrawerNavigator({
+  Login: {
+    screen: Login
+  },
+  SignUp: {
+    screen: SignUp
+  },
   SelamatDatang: {
     screen: SelamatDatang
   },

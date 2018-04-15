@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button, Image, TouchableOpacity } from 'react-native';
+import * as firebase from 'firebase';
+import { StyleSheet, Text, View, TextInput, Button, Image, TouchableOpacity, ScrollView } from 'react-native';
 import Sound from './../components/Sound';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -9,8 +10,37 @@ const UKBM = require('./../Assets/img/UKBM.png');
 const Uji_Kompetensi = require('./../Assets/img/Uji_Kompetensi.png');
 const Pengembang = require('./../Assets/img/Pengembang.png');
 
-
 export default class SelamatDatang extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      email: '',
+      nama: '',
+      nis: null,
+      kelas: '',
+      tahun: ''
+    };
+  }
+
+  createDbRef = () => {
+    console.log('create masuk');
+    const users = firebase.auth().currentUser;
+    const uid = users.uid;
+    const uemail = users.email;
+    const dbRef = firebase.database().ref('users');
+    dbRef.child(uid).set({
+      email: uemail,
+      nama: this.state.nama,
+      kelas: this.state.kelas,
+      tahun: this.state.tahun,
+    });
+  }
+
+  toBeranda = () => {
+    this.createDbRef();
+    this.props.navigation.navigate('Beranda');
+  }
 
   render() {
     return (
@@ -23,14 +53,33 @@ export default class SelamatDatang extends React.Component {
         </TouchableOpacity>
       </View>
         <View style={styles.box2}>
+          <ScrollView>
           <View style={styles.box3} />
                 <Text style={styles.textStyle}> Nama :</Text>
-                <TextInput style={styles.textInputStyle} />
+                <TextInput
+                  style={styles.textInputStyle}
+                  onChangeText={TextInputValue => this.setState({ nama: TextInputValue })}
+                />
                 <Text style={styles.textStyle}> NIS :</Text>
-                <TextInput style={styles.textInputStyle} />
-                 <TouchableOpacity style={styles.ButtonStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                <TextInput
+                  style={styles.textInputStyle}
+                  onChangeText={TextInputValue => this.setState({ nis: TextInputValue })}
+                />
+                <Text style={styles.textStyle}> Kelas :</Text>
+                <TextInput
+                  style={styles.textInputStyle}
+                  onChangeText={TextInputValue => this.setState({ kelas: TextInputValue })}
+                />
+                <Text style={styles.textStyle}> Tahun Ajaran :</Text>
+                <TextInput
+                  style={styles.textInputStyle}
+                  onChangeText={TextInputValue => this.setState({ tahun: TextInputValue })}
+                  keyboardType='numeric'
+                />
+                <TouchableOpacity style={styles.ButtonStyle} onPress={this.toBeranda}>
                   <Text style={styles.textButton}> Masuk </Text>
                 </TouchableOpacity>
+                </ScrollView>
         </View>
         <Footer />
         </View>
@@ -89,7 +138,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     alignSelf: 'center',
-    marginTop: 10
+    padding: 10
   },
   buttonKeluar: {
     backgroundColor: '#FFFF99',

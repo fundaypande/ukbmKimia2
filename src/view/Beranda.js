@@ -1,5 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Alert, Image, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Alert, Image, TouchableOpacity, AsyncStorage } from 'react-native';
+import * as firebase from 'firebase';
+
 import Sound from './../components/Sound';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -10,6 +12,24 @@ const Uji_Kompetensi = require('./../Assets/img/Uji_Kompetensi.png');
 const Pengembang = require('./../Assets/img/Pengembang.png');
 
 export default class Beranda extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      email: 'tes',
+      user: null,
+    };
+  }
+
+  componentWillMount() {
+    // get the current user from firebase
+    const users = firebase.auth().currentUser;
+    console.log('console', users.email);
+      this.setState({
+        user: users.email,
+        loading: false
+      });
+  }
 
   onUKBM = () => {
     this.props.navigation.navigate('UnitKegiatanBelajar');
@@ -23,7 +43,7 @@ export default class Beranda extends React.Component {
         <Sound />
 
         <TouchableOpacity style={styles.buttonKeluar}>
-        <Text> Keluar </Text>
+        <Text> { this.state.user } </Text>
         </TouchableOpacity>
       </View>
       <View style={styles.box2}>

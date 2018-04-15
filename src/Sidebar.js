@@ -1,13 +1,25 @@
 import React from 'react';
-import { AppRegistry, Image, StatusBar, ImageBackground, TouchableOpacity } from 'react-native';
+import { Image, ImageBackground, TouchableOpacity, Alert } from 'react-native';
 import { Container, Content, Text, List, ListItem } from 'native-base';
+import * as firebase from 'firebase';
 
-const routes = ['Profile', 'Logout'];
+const routes = ['Profile'];
 
 export default class Sidebar extends React.Component {
 
-  logOut = () => {
+  constructor() {
+    super();
+    this.state = {
+    };
+  }
 
+  componentWillMount() {
+    // get the current user from firebase
+  }
+
+  logOut = () => {
+    firebase.auth().signOut();
+    this.props.navigation.navigate('Login');
   }
 
   render() {
@@ -27,6 +39,7 @@ export default class Sidebar extends React.Component {
               style={{ height: 80, width: 70 }}
               source={require('../src/Assets/img/Home-icon.png')}
             />
+            <Text> lol </Text>
           </ImageBackground>
           <List
             dataArray={routes}
@@ -34,7 +47,7 @@ export default class Sidebar extends React.Component {
               return (
                 <ListItem
                   button
-                  onPress={() => this.props.navigation.navigate(data)}>
+                  onPress={() => this.props.navigation.navigate(data)} >
                   <Text>{data}</Text>
                 </ListItem>
               );
