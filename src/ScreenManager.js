@@ -7,6 +7,8 @@ import UnitKegiatanBelajar from './view/UnitKegiatanBelajar.js';
 import Login from './view/auth/Login.js';
 import SignUp from './view/auth/Signup.js';
 
+import Tes from './tes';
+
 //list UKBM
 import UKBM1 from './view/UKBM1/UKBM1beranda.js';
 import UKBM2 from './view/UKBM2/UKBM2beranda.js';
@@ -52,6 +54,9 @@ const Screens = DrawerNavigator({
   },
   UKBM7: {
     screen: UKBM7
+  },
+  Tes: {
+    screen: Tes
   },
 },
   {

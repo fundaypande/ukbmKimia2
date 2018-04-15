@@ -42,7 +42,10 @@ export default class Beranda extends React.Component {
       <View style={styles.box1}>
         <Sound />
 
-        <TouchableOpacity style={styles.buttonKeluar}>
+        <TouchableOpacity 
+          style={styles.buttonKeluar}
+          onPress={() => this.props.navigation.navigate('Tes')}
+        >
         <Text> { this.state.user } </Text>
         </TouchableOpacity>
       </View>
