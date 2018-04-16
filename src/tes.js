@@ -1,5 +1,5 @@
 //do :
-// jika filed A belum selesai validasi sampai disable, lalu di klik field lain 
+// jika filed A belum selesai validasi sampai disable, lalu di klik field lain
 // harus i direset lagi
 
 import React, { Component } from 'react';
