@@ -17,6 +17,9 @@ const ukbm1_02b = require('./../../Assets/UKBM1/ukbm1_02b.png');
 const ukbm1_02c = require('./../../Assets/UKBM1/ukbm1_02c.png');
 const ukbm1_02d = require('./../../Assets/UKBM1/ukbm1_02d.png');
 
+const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03.png');
+const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
+
 const funStyle = require('../style');
 const totalField = 13;
 let i = 3;
@@ -289,6 +292,7 @@ Bacalah buku teks pelajaran kalian atau sumber lain untuk mengetahui kekhasan at
           </Text>
 
 
+
           <View style={funStyle.funBigSpace} />
           <T style={{ alignSelf: 'center' }} t='Gambar 1' />
           <View style={funStyle.funSpace} />
@@ -320,6 +324,307 @@ Bacalah buku teks pelajaran kalian atau sumber lain untuk mengetahui kekhasan at
             <Image source={ukbm1_02d} />
           </View>
           <T t='Atom karbon Kuarterner Atom karbon yang berwarna merah dan dicetak tebal merupakan atom karbon kuarterner.' />
+
+
+
+
+          <View style={funStyle.funBigSpace} />
+          <T t='Dari uraian dan contoh diatas jawab pertanyaan berikut!' />
+          <View style={funStyle.funSpace} />
+          <View style={funStyle.funBox}>
+          <T t='1.	Dimana letak perbedaan masing-masing atom karbon primer, skunder, tersier, dan kuarterner dari contoh di atas?' />
+          <View style={funStyle.funSpace} />
+          <T t='Perbedaan masing-masing atom karbon ' />
+          <View style={funStyle.funFloat}>
+            <TI
+              editable={this.state.input.field13}
+              onSubmitEditing={
+                (event) => this.cekJawaban(14, event.nativeEvent.text.toLowerCase(), 'primer')
+              }
+            />
+            <T t=',' />
+            <TI
+              editable={this.state.input.field14}
+              onSubmitEditing={
+                (event) => this.cekJawaban(15, event.nativeEvent.text.toLowerCase(), 'sekunder')
+              }
+            />
+            <T t=',' />
+            <TI
+              editable={this.state.input.field15}
+              onSubmitEditing={
+                (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), 'tersier')
+              }
+            />
+            <T t='dan' />
+            <TI
+              editable={this.state.input.field16}
+              onSubmitEditing={
+                (event) => this.cekJawaban(17, event.nativeEvent.text.toLowerCase(), 'kuarterner')
+              }
+            />
+          </View>
+          <View style={funStyle.funFloat}>
+            <T t='terletak pada kemampuan' />
+            <TI
+              editable={this.state.input.field17}
+              onSubmitEditing={
+                (event) => this.cekJawaban(18, event.nativeEvent.text.toLowerCase(), 'atom karbon')
+              }
+            />
+          </View>
+          <View style={funStyle.funFloat}>
+            <T t='mengikat jumlah' />
+            <TI
+              editable={this.state.input.field18}
+              onSubmitEditing={
+                (event) => this.cekJawaban(19, event.nativeEvent.text.toLowerCase(), 'atom karbon')
+              }
+            />
+            <T t='yang lain' />
+          </View>
+          <View style={funStyle.funSpace} />
+          <View style={funStyle.funSparator} />
+          <View style={funStyle.funSpace} />
+          <T t='2.  Berapa jumlah atom karbon lain yang diikat oleh masing-masing atom karbon primer, skunder, tersier, dan kuarterner?' />
+          <View style={funStyle.funSpace} />
+          <View style={funStyle.funFloat}>
+            <T t='Atom karbon primer mengikat' />
+            <TI
+              editable={this.state.input.field19}
+              onSubmitEditing={
+                (event) => this.cekJawaban(20, event.nativeEvent.text.toLowerCase(), 'satu', '1')
+              }
+            />
+            <T t='atom karbon lain' />
+          </View>
+          <View style={funStyle.funFloat}>
+            <T t='Atom karbon sekunder mengikat' />
+            <TI
+              editable={this.state.input.field20}
+              onSubmitEditing={
+                (event) => this.cekJawaban(21, event.nativeEvent.text.toLowerCase(), 'dua', '2')
+              }
+            />
+            <T t='atom karbon lain' />
+          </View>
+          <View style={funStyle.funFloat}>
+            <T t='Atom karbon tersier mengikat' />
+            <TI
+              editable={this.state.input.field21}
+              onSubmitEditing={
+                (event) => this.cekJawaban(22, event.nativeEvent.text.toLowerCase(), 'tiga', '3')
+              }
+            />
+            <T t='atom karbon lain' />
+          </View>
+          <View style={funStyle.funFloat}>
+            <T t='Atom karbon kuarterner mengikat' />
+            <TI
+              editable={this.state.input.field22}
+              onSubmitEditing={
+                (event) => this.cekJawaban(23, event.nativeEvent.text.toLowerCase(), 'empat', '4')
+              }
+            />
+            <T t='atom karbon lain' />
+          </View>
+          <View style={funStyle.funSpace} />
+          <View style={funStyle.funSparator} />
+          <View style={funStyle.funSpace} />
+          <T t='3.	Jelaskan pengertian atom karbon primer, skunder, tersier, dan kuarterner menggunakan kata-kata anda sendiri!' />
+          <View style={funStyle.funSpace} />
+          <T t='Atom karbon primer adalah atom karbon yang ' />
+          <View style={funStyle.funFloat}>
+            <T t='terikat pada' />
+            <TI
+              editable={this.state.input.field23}
+              onSubmitEditing={
+                (event) => this.cekJawaban(24, event.nativeEvent.text.toLowerCase(), '1 atom karbon yang lain', 'satu atom karbon yang lain')
+              }
+            />
+          </View>
+          <T t='Atom karbon sekunder adalah atom karbon yang  ' />
+          <View style={funStyle.funFloat}>
+            <T t='terikat pada' />
+            <TI
+              editable={this.state.input.field24}
+              onSubmitEditing={
+                (event) => this.cekJawaban(25, event.nativeEvent.text.toLowerCase(), '2 atom karbon yang lain', 'dua atom karbon yang lain')
+              }
+            />
+          </View>
+          <T t='Atom karbon tersier adalah atom karbon yang  ' />
+          <View style={funStyle.funFloat}>
+            <T t='terikat pada' />
+            <TI
+              editable={this.state.input.field25}
+              onSubmitEditing={
+                (event) => this.cekJawaban(26, event.nativeEvent.text.toLowerCase(), 'tiga atom karbon yang lain', '3 atom karbon yang lain')
+              }
+            />
+          </View>
+          <T t='Atom karbon kuarterner adalah atom karbon yang ' />
+          <View style={funStyle.funFloat}>
+            <T t='terikat pada' />
+            <TI
+              editable={this.state.input.field26}
+              onSubmitEditing={
+                (event) => this.cekJawaban(27, event.nativeEvent.text.toLowerCase(), '4 atom karbon yang lain', 'empat atom karbon yang lain')
+              }
+            />
+          </View>
+          </View>
+
+
+
+          <View style={funStyle.funBigSpace} />
+          <View style={funStyle.funFloat}>
+            <Image style={{ width: 100, height: 200 }} source={ukbm1_03} />
+            <View style={funStyle.funNotif}>
+              <T style={{ color: '#fff' }} t='Setelah kalian memahami uraian singkat materi dan contoh di atas, kerjakan soal berikut dengan berpikir kritis!' />
+            </View>
+          </View>
+
+
+          <View style={funStyle.funBigSpace} />
+          <T t='Perhatikan gambar struktur hidrokarbon berikut' />
+          <View style={funStyle.funSpace} />
+          <View style={{ alignItems: 'center' }}>
+            <Image style={{ width: 300, height: 200 }} source={ukbm1_04} />
+          </View>
+          <View style={funStyle.funSpace} />
+          <T t='Dari struktur senyawa tersebut di atas, tunjukan yang mana merupakan atom karbon primer skunder, tersier, dan kuarterner dengan memeberi tanda 1 pada atom primer; 2 pada atom skunder, 3 pada atom tersier; dan 4 pada atom' />
+          <View style={funStyle.funSpace} />
+          <T t='Sesuaikan setiap huruf diatas dengan kolom jawaban dibawah ini' />
+          <View style={funStyle.funSpace} />
+          <View style={funStyle.funBox} >
+          <View style={{ flexDirection: 'column', flex: 1 }}>
+            <View style={funStyle.funFloat}>
+              <T t='A = ' />
+              <TI
+                editable={this.state.input.field27}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(28, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                }
+              />
+            </View>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='B = ' />
+              <TI
+                editable={this.state.input.field28}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(29, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                }
+              />
+            </View>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='C = ' />
+              <TI
+                editable={this.state.input.field29}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(30, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                }
+              />
+            </View>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='D = ' />
+              <TI
+                editable={this.state.input.field30}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(31, event.nativeEvent.text.toLowerCase(), '4', 'empat')
+                }
+              />
+            </View>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='E = ' />
+              <TI
+                editable={this.state.input.field31}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(32, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                }
+              />
+            </View>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='F = ' />
+              <TI
+                editable={this.state.input.field32}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(33, event.nativeEvent.text.toLowerCase(), '3', 'tiga')
+                }
+              />
+            </View>
+            </View>
+            <View style={{ flexDirection: 'column', flex: 1 }}>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='G = ' />
+              <TI
+                editable={this.state.input.field33}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(34, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                }
+              />
+            </View>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='H = ' />
+              <TI
+                editable={this.state.input.field34}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(35, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                }
+              />
+            </View>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='I = ' />
+              <TI
+                editable={this.state.input.field35}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(36, event.nativeEvent.text.toLowerCase(), '3', 'tiga')
+                }
+              />
+            </View>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='J = ' />
+              <TI
+                editable={this.state.input.field36}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(37, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                }
+              />
+            </View>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='K = ' />
+              <TI
+                editable={this.state.input.field37}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(38, event.nativeEvent.text.toLowerCase(), '3', 'tiga')
+                }
+              />
+            </View>
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <T t='L = ' />
+              <TI
+                editable={this.state.input.field38}
+                onSubmitEditing={
+                  (event) => this.cekJawaban(39, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                }
+              />
+            </View>
+            </View>
+          </View>
+
+
+
 
 
 

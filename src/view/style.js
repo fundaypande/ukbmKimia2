@@ -27,7 +27,8 @@ funSpace: {
 },
 funBigSpace: {
   marginTop: 20,
-  marginBottom: 20
+  marginBottom: 20,
+  flex: 1
 },
 funBox: {
   borderColor: '#9b9b9b',
@@ -37,7 +38,8 @@ funBox: {
   borderRightWidth: 1,
   padding: 5,
   marginTop: 10,
-  right: 0
+  right: 0,
+  flex: 1
 },
 funBoxHeader: {
   backgroundColor: '#4286f4',
@@ -50,6 +52,18 @@ funBoxHeader: {
   marginTop: 10,
   right: 0,
   marginBottom: -10,
+},
+funNotif: {
+  flex: 1,
+  backgroundColor: '#4286f4',
+  borderColor: 'transparent',
+  borderBottomWidth: 1,
+  borderTopWidth: 1,
+  borderLeftWidth: 1,
+  borderRightWidth: 1,
+  padding: 25,
+  marginTop: 10,
+  borderRadius: 50
 },
 funFloat: {
   flexDirection: 'row',
