@@ -30,17 +30,34 @@ funBigSpace: {
   marginBottom: 20
 },
 funBox: {
-  borderBottomColor: '#9b9b9b',
+  borderColor: '#9b9b9b',
   borderBottomWidth: 1,
   borderTopWidth: 1,
   borderLeftWidth: 1,
   borderRightWidth: 1,
   padding: 5,
+  marginTop: 10,
   right: 0
+},
+funBoxHeader: {
+  backgroundColor: '#4286f4',
+  borderColor: 'transparent',
+  borderBottomWidth: 1,
+  borderTopWidth: 1,
+  borderLeftWidth: 1,
+  borderRightWidth: 1,
+  padding: 5,
+  marginTop: 10,
+  right: 0,
+  marginBottom: -10,
 },
 funFloat: {
   flexDirection: 'row',
-  justifyContent: 'flex-start'
+  justifyContent: 'flex-start',
+  marginTop: 0,
+  marginBottom: -10,
+  paddingTop: 0,
+  paddingBottom: 0
 },
 funField: {
   height: 20,

@@ -25,9 +25,6 @@ const Screens = DrawerNavigator({
   Login: {
     screen: Login
   },
-  UKBM1_KB1: {
-    screen: UKBM1_KB1
-  },
   SignUp: {
     screen: SignUp
   },
@@ -43,6 +40,10 @@ const Screens = DrawerNavigator({
   UKBM1: {
     screen: UKBM1
   },
+  UKBM1_KB1: {
+    screen: UKBM1_KB1
+  },
+
   UKBM2: {
     screen: UKBM2
   },

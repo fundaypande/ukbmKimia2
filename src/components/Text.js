@@ -5,19 +5,7 @@ import {
 } from 'react-native';
 
 const T = props => (
-      <View style={styles.styleView}>
-        <Text style={styles.styleText}>{props.t}</Text>
-      </View>
+        <Text style={props.style}>{props.t}</Text>
 );
-const styles = {
-    backFooter: {
-      backgroundColor: '#3F51B5',
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: 10,
-      paddingBottom: 10,
-      position: 'relative',
-    },
-};
 
 export default T;

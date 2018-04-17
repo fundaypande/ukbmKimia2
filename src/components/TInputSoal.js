@@ -1,27 +1,20 @@
 import React, { Component } from 'react';
 import {
   View,
+  TouchableOpacity,
   TextInput
 } from 'react-native';
 
 const funStyle = require('../view/style');
 
-const FunInput = props => (
+const TI = props => (
         <TextInput
           placeholder=". . ."
           underlineColorAndroid="transparent"
           style={funStyle.funField}
+          editable={props.editable}
+          onSubmitEditing={props.onSubmitEditing}
         />
 );
-const styles = {
-    backFooter: {
-      backgroundColor: '#3F51B5',
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: 10,
-      paddingBottom: 10,
-      position: 'relative',
-    },
-};
 
-export default FunInput;
+export default TI;

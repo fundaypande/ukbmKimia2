@@ -49,7 +49,7 @@ export default class UKBM1beranda extends React.Component {
               <TouchableOpacity style={styles.ButtonTengahStyle}>
                   <Text style={styles.textButtonUKBM}> Peta Konsep </Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.ButtonTengahStyle}>
+              <TouchableOpacity onPress={() => this.props.navigation.navigate('UKBM1_KB1')} style={styles.ButtonTengahStyle}>
                   <Text style={styles.textButtonUKBM}> Kegiatan Pembelajaran </Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.ButtonTengahStyle}>
