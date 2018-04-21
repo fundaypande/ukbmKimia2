@@ -13,8 +13,13 @@ funJudulKB: {
     borderRadius: 20,
     backgroundColor: '#f4b042',
     color: '#000000',
-    width: 200
+    width: 200,
+    fontSize: 16
   },
+funTitle: {
+  fontSize: 16,
+  color: '#1E1EF0'
+},
 funSparator: {
   borderBottomColor: '#9b9b9b',
   borderBottomWidth: 1,
@@ -42,6 +47,7 @@ funBox: {
   flex: 1
 },
 funBoxHeader: {
+  alignItems: 'center',
   backgroundColor: '#4286f4',
   borderColor: 'transparent',
   borderBottomWidth: 1,

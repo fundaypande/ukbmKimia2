@@ -17,11 +17,11 @@ const ukbm1_02b = require('./../../Assets/UKBM1/ukbm1_02b.png');
 const ukbm1_02c = require('./../../Assets/UKBM1/ukbm1_02c.png');
 const ukbm1_02d = require('./../../Assets/UKBM1/ukbm1_02d.png');
 
-const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03.png');
+const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
 const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
 
 const funStyle = require('../style');
-const totalField = 13;
+const totalField = 39;
 let i = 3;
 
 export default class UKBM1KB1 extends React.Component {
@@ -61,7 +61,6 @@ export default class UKBM1KB1 extends React.Component {
         let input = [];
         for (var j = 0; j < Number(repeat); j++) {
           input[field + j] = false;
-          console.log('perulangan ke : ' + field + j);
         }
         this.setState({ input });
         i = 3;
@@ -73,7 +72,6 @@ export default class UKBM1KB1 extends React.Component {
           let input = [];
           for (var k = 0; k < Number(repeat); k++) {
             input[field + k] = false;
-            console.log('perulangan ke : ' + field + k);
           }
           this.setState({ input });
         } else {
@@ -622,6 +620,21 @@ Bacalah buku teks pelajaran kalian atau sumber lain untuk mengetahui kekhasan at
             </View>
             </View>
           </View>
+
+          <View style={funStyle.funBigSpace} />
+          <TouchableOpacity>
+            <Text
+              style={funStyle.funJudulKB}
+              onPress={() => {
+            /* 1. Navigate to the Details route with params */
+                this.props.navigation.navigate('UKBM1_KB2', {
+                  totalNilai: this.state.totalNilai,
+                });
+              }}
+            >
+              Kegiatan Belajar 2 >>
+            </Text>
+          </TouchableOpacity>
 
 
 
