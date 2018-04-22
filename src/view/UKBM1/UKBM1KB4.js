@@ -9,13 +9,14 @@ import TI from '../../components/TInputSoal.js';
 
 const BackButton = require('./../../Assets/img/backButton.png');
 const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
-const ukbm1_24 = require('./../../Assets/UKBM1/ukbm1_24.png');
+const ukbm1_25 = require('./../../Assets/UKBM1/ukbm1_25orang.png');
+const ukbm1_26 = require('./../../Assets/UKBM1/ukbm1_26.png');
 
 const funStyle = require('../style');
-const totalField = 3;
+const totalField = 4;
 let i = 3;
 
-export default class UKBM1KB3 extends React.Component {
+export default class UKBM1KB4 extends React.Component {
 
   constructor() {
     super();
@@ -48,7 +49,7 @@ export default class UKBM1KB3 extends React.Component {
 
   nextPart = () => {
   /* 1. Navigate to the Details route with params */
-      this.props.navigation.navigate('UKBM1_KB4', {
+      this.props.navigation.navigate('UKBM1_C', {
         totalNilai: this.state.totalNilai,
         });
         console.log('hasil nya akhir pencet : ' + this.state.totalNilai);
@@ -115,29 +116,35 @@ export default class UKBM1KB3 extends React.Component {
         <View style={{ flex: 1 }}>
           <ScrollView style={{ paddingLeft: 10, paddingRight: 10 }}>
             <Text style={funStyle.funJudulKB}>
-              Kegiatan Belajar 3
+              Kegiatan Belajar 4
             </Text>
             <View style={funStyle.funSpace} />
 
-            <T style={funStyle.funTitle} t='A. Isomer' />
+            <T style={funStyle.funTitle} t='Reaksi Senyawa Hidrokarbon' />
             <View style={funStyle.funSpace} />
             <View style={funStyle.funFloat}>
-              <Image style={{ width: 100, height: 200 }} source={ukbm1_03} />
+              <Image style={{ width: 100, height: 200 }} source={ukbm1_25} />
               <View style={funStyle.funNotif}>
                 <T style={{ color: '#fff' }} t='Bacalah uraian singkat di bawah ini dengan cermat!' />
               </View>
             </View>
             <View style={funStyle.funSpace} />
             <View style={funStyle.funBox} >
-              <T t='Sadarkah kalian bahwa pada soal ayo berlatih pada kegiatan belajar 2 terdapat senyawa dengan rumus kimia sama? Soal 3, 4, dan 7 memiliki rumus yang sama yaitu C8H16. Hal ini lah yang disebut dengan isomer.' />
+              <T t='Pernahkah kalian melihat air yang menetes dari sistem pembuangan (knalpot) kendaraan? Mengapa ada air yang menetes dari system pembuangan kendaraan? Air yang menetes merupakan hasil dari pembakaran bahan bakar kendaraan tersebut. ' />
                 <View style={funStyle.funSpace} />
-              <T t='Beberapa senyawa hidrokarbon yang memiliki rumus sama dapat memiliki struktur senyawa yang berbeda. Sifat kimia yang dimiliki senyawa dengan struktur berbeda juga akan berbeda.' />
+              <T t='Senyawa hidrokarbon seperti bahan bakar kendaraan jika dibakar akan menghasilkan karbon diosida dan air.' />
+              <View style={funStyle.funSpace} />
+              <T t='Peristiwa tersebut merupakan salah satu contoh reaksi yang dapat terjadi pada senyawa hidrokarbon. Pada dasarnya senyawa hidrokarbon dapat mengalami reaksi-reaksi kimia. ' />
+              <View style={funStyle.funSpace} />
+              <T t='Beberapa jenis reaksi yang dapat dialami senyawa hidrokarbon yaitu reaksi pembakaran (oksidasi); reaksi substitusi; reaksi adisi; dan reaksi eliminasi. ' />
+              <View style={funStyle.funSpace} />
+              <T t='Bagaimana reaksi-reaksi kimia pada senyawa hidrokarbon terjadi?' />
             </View>
-            <View style={funStyle.funSpace} />
-            <T t='Dari ulasan di atas, buatlah dan jelaskan pengelompokkan isomer-isomer senyawa hidrokarbon pada buku tugasmu!' />
-            <View style={funStyle.funSpace} />
 
 
+
+            <View style={funStyle.funSpace} />
+            <T t='Berdasarkan uraian diatas, lengkapi tabel tentang reaksi kimia senyawa hidrokarbon berikut!' />
 
             <Text style={funStyle.funJudulKB}>
               Ayo Berlatih!
@@ -146,7 +153,7 @@ export default class UKBM1KB3 extends React.Component {
             <T t='1. Berilah nama masing-masing isomer yang memiliki rumus molkul C5H12 sesuai IUPAC!' />
             <View style={funStyle.funSpace} />
             <View style={{ alignItems: 'center' }}>
-              <Image style={{ height: 290, width: 330 }} source={ukbm1_24} />
+              <Image style={{ width: 330, height: 200 }} source={ukbm1_26} />
             </View>
             <View style={funStyle.funSpace} />
             <View style={funStyle.funBox} >
@@ -181,6 +188,16 @@ export default class UKBM1KB3 extends React.Component {
                 />
               </View>
               <View style={funStyle.funSpace} />
+              <View style={funStyle.funFloat}>
+                <T t='D = ' />
+                <TI
+                  editable={this.state.input.field3}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(4, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                  }
+                />
+              </View>
+              <View style={funStyle.funSpace} />
               </View>
               </View>
 
@@ -193,7 +210,7 @@ export default class UKBM1KB3 extends React.Component {
             onPress={this.nextPart}
             >
               <Text style={funStyle.funJudulKB}>
-                Kegitana Belajar 4 >>
+                Penutup >>
               </Text>
             </TouchableOpacity>
 
