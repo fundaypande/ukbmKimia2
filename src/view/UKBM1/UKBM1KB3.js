@@ -156,7 +156,7 @@ export default class UKBM1KB3 extends React.Component {
                 <TI
                   editable={this.state.input.field0}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                    (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'n-pentana')
                   }
                 />
               </View>
@@ -166,7 +166,7 @@ export default class UKBM1KB3 extends React.Component {
                 <TI
                   editable={this.state.input.field1}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(2, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                    (event) => this.cekJawaban(2, event.nativeEvent.text.toLowerCase(), '2-metilbutana')
                   }
                 />
               </View>
@@ -176,7 +176,7 @@ export default class UKBM1KB3 extends React.Component {
                 <TI
                   editable={this.state.input.field2}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(3, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                    (event) => this.cekJawaban(3, event.nativeEvent.text.toLowerCase(), '2,2-dimetilpropana')
                   }
                 />
               </View>

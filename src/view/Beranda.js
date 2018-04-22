@@ -31,6 +31,16 @@ export default class Beranda extends React.Component {
       });
   }
 
+  showUser = () => {
+
+    const users = firebase.auth().currentUser;
+    const uid = users.uid;
+    const dbRef = firebase.database().ref('users/' + uid + '/ukbm/ukbm1');
+    dbRef.on('value', snap => console.log(snap.val()));
+
+    //this.props.navigation.navigate('Tes');
+  }
+
   onUKBM = () => {
     this.props.navigation.navigate('UnitKegiatanBelajar');
   }
@@ -42,9 +52,9 @@ export default class Beranda extends React.Component {
       <View style={styles.box1}>
         <Sound />
 
-        <TouchableOpacity 
+        <TouchableOpacity
           style={styles.buttonKeluar}
-          onPress={() => this.props.navigation.navigate('Tes')}
+          onPress={this.showUser}
         >
         <Text> { this.state.user } </Text>
         </TouchableOpacity>

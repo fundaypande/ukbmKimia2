@@ -171,7 +171,7 @@ export default class UKBM1KB2 extends React.Component {
               <TI
                 editable={this.state.input.field0}
                 onSubmitEditing={
-                  (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                  (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), '2', 'dua')
                 }
               />
             </View>
@@ -181,7 +181,7 @@ export default class UKBM1KB2 extends React.Component {
               <TI
                 editable={this.state.input.field1}
                 onSubmitEditing={
-                  (event) => this.cekJawaban(2, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                  (event) => this.cekJawaban(2, event.nativeEvent.text.toLowerCase(), '6', 'enam')
                 }
               />
             </View>
@@ -191,7 +191,7 @@ export default class UKBM1KB2 extends React.Component {
               <TI
                 editable={this.state.input.field2}
                 onSubmitEditing={
-                  (event) => this.cekJawaban(3, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                  (event) => this.cekJawaban(3, event.nativeEvent.text.toLowerCase(), '2', 'dua')
                 }
               />
             </View>
@@ -221,7 +221,7 @@ export default class UKBM1KB2 extends React.Component {
               <TI
                 editable={this.state.input.field5}
                 onSubmitEditing={
-                  (event) => this.cekJawaban(6, event.nativeEvent.text.toLowerCase(), '3', 'tiga')
+                  (event) => this.cekJawaban(6, event.nativeEvent.text.toLowerCase(), '2', 'dua')
                 }
               />
             </View>
@@ -248,14 +248,14 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field6}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(7, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(7, event.nativeEvent.text.toLowerCase(), 'lurus')
                   }
                 />
                 <T t='dan bisa juga' />
                 <TI
                   editable={this.state.input.field7}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(8, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(8, event.nativeEvent.text.toLowerCase(), 'bercabang')
                   }
                 />
               </View>
@@ -264,14 +264,14 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field8}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(9, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(9, event.nativeEvent.text.toLowerCase(), 'terbuka jenuh')
                   }
                 />
                 <T t='(ikatan tunggal) maupun' />
                 <TI
                   editable={this.state.input.field9}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'tidak jenuh')
                   }
                 />
               </View>
@@ -286,7 +286,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field10}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'alifatik rantai lurus')
                   }
                 />
               </View>
@@ -300,7 +300,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field11}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(12, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(12, event.nativeEvent.text.toLowerCase(), 'alifatik rantai bercabang')
                   }
                 />
               </View>
@@ -316,7 +316,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field12}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(13, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(13, event.nativeEvent.text.toLowerCase(), 'tertutup')
                   }
                 />
               </View>
@@ -325,7 +325,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field13}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(14, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(14, event.nativeEvent.text.toLowerCase(), 'karbosiklik')
                   }
                 />
               </View>
@@ -334,7 +334,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field14}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(15, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(15, event.nativeEvent.text.toLowerCase(), 'heterosiklik')
                   }
                 />
               </View>
@@ -348,7 +348,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field15}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), 'alisiklik')
                   }
                 />
               </View>
@@ -361,7 +361,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field16}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(17, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(17, event.nativeEvent.text.toLowerCase(), 'aromatik')
                   }
                 />
               </View>
@@ -425,7 +425,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field17}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(18, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(18, event.nativeEvent.text.toLowerCase(), '3-etilheksana')
                   }
                 />
               </View>
@@ -439,7 +439,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field18}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(19, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(19, event.nativeEvent.text.toLowerCase(), '3,4-dimetilheksana')
                   }
                 />
               </View>
@@ -453,7 +453,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field19}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(20, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(20, event.nativeEvent.text.toLowerCase(), '4,4-dimetil-2-heksena')
                   }
                 />
               </View>
@@ -467,7 +467,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field20}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(21, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(21, event.nativeEvent.text.toLowerCase(), '2,4-dimetil-2-heksena')
                   }
                 />
               </View>
@@ -481,7 +481,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field21}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(22, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(22, event.nativeEvent.text.toLowerCase(), '6-etil-3-metilokta-2,5-diena')
                   }
                 />
               </View>
@@ -495,7 +495,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field22}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(23, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(23, event.nativeEvent.text.toLowerCase(), '2-metil-3-heptuna')
                   }
                 />
               </View>
@@ -509,7 +509,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field23}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(24, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(24, event.nativeEvent.text.toLowerCase(), '1,1-dimetilsikloheksana	')
                   }
                 />
               </View>
@@ -523,7 +523,7 @@ export default class UKBM1KB2 extends React.Component {
                 <TI
                   editable={this.state.input.field24}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(25, event.nativeEvent.text.toLowerCase(), '4')
+                    (event) => this.cekJawaban(25, event.nativeEvent.text.toLowerCase(), '3-metil-4-propilheptana')
                   }
                 />
               </View>

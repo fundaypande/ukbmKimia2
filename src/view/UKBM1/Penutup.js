@@ -62,7 +62,10 @@ export default class UKBM1KB4 extends React.Component {
     console.log('nilai akhir : ' + nilaiAkhir);
     this.setState({ nilai: nilaiAkhir });
 
+    
+
     //upload to DB
+    //status bool agar push hanya sekali
     if (status) {
       const users = firebase.auth().currentUser;
       const uid = users.uid;
