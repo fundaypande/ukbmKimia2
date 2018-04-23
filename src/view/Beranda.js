@@ -72,7 +72,7 @@ export default class Beranda extends React.Component {
 
                 <TouchableOpacity style={styles.ButtonTengahStyle} onPress={this.onUKBM}>
                 <Image source={UKBM} style={styles.icon} />
-                  <Text style={styles.textButton}> Unit Kegiatan Belajar Mandiri 2 </Text>
+                  <Text style={styles.textButton}> Unit Kegiatan Belajar Mandiri </Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.ButtonTengahStyle}>

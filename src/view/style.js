@@ -71,6 +71,20 @@ funNotif: {
   marginTop: 10,
   borderRadius: 50
 },
+funWarning: {
+  flex: 1,
+  borderColor: '#FFAD00',
+  borderBottomWidth: 1,
+  borderTopWidth: 1,
+  borderLeftWidth: 1,
+  borderRightWidth: 1,
+  padding: 25,
+  marginTop: 10,
+  borderRadius: 50,
+  alignItems: 'flex-end',
+  justifyContent: 'flex-end',
+  alignSelf: 'center'
+},
 funFloat: {
   flexDirection: 'row',
   justifyContent: 'flex-start',
@@ -78,6 +92,13 @@ funFloat: {
   marginBottom: -10,
   paddingTop: 0,
   paddingBottom: 0
+},
+funNumber: {
+  flexDirection: 'row',
+  justifyContent: 'flex-start',
+  flex: 1
+},
+endFunNumber: {
 },
 funField: {
   height: 20,
