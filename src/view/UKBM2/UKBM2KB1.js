@@ -941,7 +941,7 @@ export default class UKBM1KB4 extends React.Component {
           <T t='d. ' />
         </View>
         <View style={{ flex: 1 }} >
-        <T t='4.	Fraksi yang mengandung senyawa-senyawa dengan titik didih tinggi akan terkondensasi di bagian bawah ' />
+        <T t='Fraksi yang mengandung senyawa-senyawa dengan titik didih tinggi akan terkondensasi di bagian bawah ' />
           <View style={funStyle.funFloat}>
             <TI
               editable={this.state.input.field0}
@@ -963,6 +963,7 @@ export default class UKBM1KB4 extends React.Component {
         </View>
       </View>
       <View style={funStyle.endFunNumber} />
+      <T t='Sebagian fraksi dari menara distilasi selanjutnya dialirkan ke bagian kilang minyak lainnya untuk proses konversi.' />
       <View style={funStyle.funSpace} />
 
 
@@ -983,9 +984,17 @@ export default class UKBM1KB4 extends React.Component {
             <TouchableOpacity
             onPress={this.nextPart}
             >
-              <Text style={funStyle.funJudulKB}>
-                Penutup >>
-              </Text>
+            <Text
+              style={funStyle.funJudulKB}
+              onPress={() => {
+            /* 1. Navigate to the Details route with params */
+                this.props.navigation.navigate('UKBM2_KB2', {
+                  totalNilai: this.state.totalNilai,
+                });
+              }}
+            >
+              Kegiatan Belajar 2 >>
+            </Text>
             </TouchableOpacity>
 
 
