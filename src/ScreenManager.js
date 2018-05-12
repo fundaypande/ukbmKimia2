@@ -19,6 +19,7 @@ import UKBM1_C from './view/UKBM1/Penutup';
 //UKBM 2 data
 import UKBM2_KB1 from './view/UKBM2/UKBM2KB1';
 import UKBM2_KB2 from './view/UKBM2/UKBM2KB2';
+import UKBM2_C from './view/UKBM2/Penutup';
 
 //list UKBM
 import UKBM1 from './view/UKBM1/UKBM1beranda.js';
@@ -72,6 +73,9 @@ const Screens = DrawerNavigator({
   },
   UKBM2_KB2: {
     screen: UKBM2_KB2
+  },
+  UKBM2_C: {
+    screen: UKBM2_C
   },
 
   UKBM3: {

@@ -12,9 +12,10 @@ const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
 const ukbm2_02 = require('./../../Assets/UKBM2/ukbm2_02.png');
 const ukbm2_03 = require('./../../Assets/UKBM2/ukbm2_03.png');
 const human01 = require('./../../Assets/Human/human02.png');
+const hand = require('./../../Assets/Human/hand.png');
 
 const funStyle = require('../style');
-const totalField = 4;
+const totalField = 50;
 let i = 3;
 
 export default class UKBM1KB4 extends React.Component {
@@ -50,7 +51,7 @@ export default class UKBM1KB4 extends React.Component {
 
   nextPart = () => {
   /* 1. Navigate to the Details route with params */
-      this.props.navigation.navigate('UKBM1_C', {
+      this.props.navigation.navigate('UKBM2_C', {
         totalNilai: this.state.totalNilai,
         });
         console.log('hasil nya akhir pencet : ' + this.state.totalNilai);
@@ -224,7 +225,216 @@ export default class UKBM1KB4 extends React.Component {
             <T t='Carilah informasi tentang knocking pada buku atau sumber lain!' />
             <View style={funStyle.funSparator} />
             <View style={funStyle.funSpace} />
-            <T t='Ketukan (knocking) adalah suatu perilaku bahan bakar yang menyebabkan mesin menggelitik, mengurangi efesiensi bahan bakar dan merusak mesin.' />
+
+
+            <View style={funStyle.funFloat}>
+              <Image style={{ width: 30, height: 30, paddingRight: 10 }} source={hand} />
+              <View>
+              <T t='Ketukan (knocking) adalah suatu perilaku bahan bakar yang menyebabkan mesin menggelitik, mengurangi efesiensi bahan bakar dan merusak mesin.' />
+                <View style={funStyle.funFloat}>
+                <T t='Knocking dinyatakan dengan ' />
+                <TI
+                  editable={this.state.input.field5}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(6, event.nativeEvent.text.toLowerCase(), 'nilai oktan', 'oktan')
+                  }
+                />
+                </View>
+                <View style={funStyle.funSpace} />
+                <T t='Bilangan oktan (octane number) merupakan ukuran dari kemampuan bahan bakar untuk mengatasi ketukan sewaktu terbakar dalam mesin. Semakin tinggi nilai oktan, berarti semakin sedikit ketukannya, dan semakin baik juga mutunya. ' />
+                <View style={funStyle.funSpace} />
+                <T t='Proses knocking atau ketukan pada mesin disebabkan oleh adanya' />
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field6}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(7, event.nativeEvent.text.toLowerCase(), 'pembakaran spontan')
+                    }
+                  />
+                  <T t='(spontaneous ignition) pada bahan bakar' />
+                </View>
+                <View style={funStyle.funFloat}>
+                  <T t='akibat tekanan di dalam ' />
+                  <TI
+                    editable={this.state.input.field7}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(8, event.nativeEvent.text.toLowerCase(), 'mesin')
+                    }
+                  />
+                </View>
+                <View style={funStyle.funSpace} />
+                <View style={funStyle.funFloat}>
+                  <T t='Bahan bakar yang memiliki angka' />
+                  <TI
+                    editable={this.state.input.field8}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(9, event.nativeEvent.text.toLowerCase(), 'oktan')
+                    }
+                  />
+                </View>
+                <T t='yang rendah akan lebih mudah terbakar saat terkena tekanan, bila dibandingkan bahan bakar dengan ' />
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field9}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'angka oktan')
+                    }
+                  />
+                  <T t='Tinggi.' />
+                </View>
+                <View style={funStyle.funSpace} />
+                <T t='Misalnya bahan bakar Pertamax dengan angka oktan 92 akan lebih sulit terbakar sendiri dan menimbulkan ketukan pada mesin akibat tekanan, bila dibandingkan dengan bahan bakar Pertalite yang memiliki ' />
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field10}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'angka oktan')
+                    }
+                  />
+                  <T t='90 atau Premium yang memiliki ' />
+                </View>
+                <T t='angka oktan 88. Untuk mengatasi knocking dapat digunakan bahan bakar dengan angka oktan tinggi. Atau bisa dengan menambahkan' />
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field11}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(12, event.nativeEvent.text.toLowerCase(), 'zat aditif')
+                    }
+                  />
+                  <T t='untuk meningkatkan nilai oktan bahan bakar tersebut.' />
+                </View>
+              </View>
+            </View>
+
+
+
+            <View style={funStyle.funBigSpace} />
+            <T t='Setelah kalian mengetahui apa itu knocking, coba jelaskan mengapa isooktana dan heptana memiliki kemampuan pembakaran yang berbeda di dalam mensin? Dan mana yang lebih baik diantara keduanya?' />
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <Image style={{ width: 30, height: 30, paddingRight: 10 }} source={hand} />
+              <View>
+                <T t='Nama oktan berasal dari oktana (C8), karena dari seluruh molekul penyusun bensin, oktana dapat dikompres sampai volume kecil tanpa mengalami pembakaran spontan. Tidak seperti yang terjadi pada heptana, yang dapat terbakar spontan meskipun baru ditekan sedikit. ' />
+                <View style={funStyle.funSpace} />
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field12}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(13, event.nativeEvent.text.toLowerCase(), 'isooktana')
+                    }
+                  />
+                  <T t='menghasilkan ' />
+                  <TI
+                    editable={this.state.input.field13}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(14, event.nativeEvent.text.toLowerCase(), 'ketukan', 'knocking')
+                    }
+                  />
+                  <T t='paling sedikit' />
+                </View>
+                <View style={funStyle.funFloat}>
+                  <T t='dan diberi nilai ' />
+                  <TI
+                    editable={this.state.input.field14}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(15, event.nativeEvent.text.toLowerCase(), 'oktan 100')
+                    }
+                  />
+                </View>
+                <T t='Sedangkan n-heptana menyebabkan ketukan (knocking) paling' />
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field15}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), 'banyak')
+                    }
+                  />
+                  <T t='dan diberi nilai ' />
+                  <TI
+                    editable={this.state.input.field16}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(17, event.nativeEvent.text.toLowerCase(), 'oktan 0')
+                    }
+                  />
+                </View>
+                <View style={funStyle.funSpace} />
+                <T t='Artinya semakin sedikit ketukan maka kualitas mesin semakin bagus, demikian sebaliknya. ' />
+                <View style={funStyle.funSpace} />
+                <T t='Merujuk pada fakta tersebut dapat disimpulkan bahwa ' />
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field17}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(18, event.nativeEvent.text.toLowerCase(), 'isooktana')
+                    }
+                  />
+                  <T t='lebih baik daripada ' />
+                  <TI
+                    editable={this.state.input.field18}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(19, event.nativeEvent.text.toLowerCase(), 'n-heptana')
+                    }
+                  />
+                </View>
+                <T t='Semakin tinggi nilai isooktana maka semakin sedikit ketukan terhadap mesin.' />
+              </View>
+            </View>
+
+
+            <View style={funStyle.funBigSpace} />
+            <T t='Apa arti dari bahan bakar yang memiliki bilangan oktan 94? Bagaimana kualitas bahan bakar yang memiliki bilangan oktan lebih besar dan lebih kecil dari 94?' />
+            <View style={funStyle.funSpace} />
+            <View style={funStyle.funFloat}>
+              <Image style={{ width: 30, height: 30, paddingRight: 10 }} source={hand} />
+              <View>
+                <T t='Bahan bakar yang memiliki bilangan oktan 94, artinya bahan bakar tersebut mengandung campuran 6% ' />
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field19}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(20, event.nativeEvent.text.toLowerCase(), 'n-heptana')
+                    }
+                  />
+                  <T t='dan 94% ' />
+                  <TI
+                    editable={this.state.input.field20}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(21, event.nativeEvent.text.toLowerCase(), 'isooktana')
+                    }
+                  />
+                </View>
+                <T t='Kualitas bahan bakar yang memiliki bilangan oktan lebih besar dari 94 adalah lebih bagus karena ketukan semakin' />
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field21}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(22, event.nativeEvent.text.toLowerCase(), 'kecil')
+                    }
+                  />
+                  <T t='dari pada bahan bakar yang memiliki bilangan' />
+                </View>
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field22}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(23, event.nativeEvent.text.toLowerCase(), 'oktan 94')
+                    }
+                  />
+                  <T t='Sedangkan,  kualitas bahan bakar yang memiliki' />
+                </View>
+                <T t='bilangan oktan lebih kecil dari 94 adalah lebih buruk, karena ketukan semakin ' />
+                <View style={funStyle.funFloat}>
+                  <TI
+                    editable={this.state.input.field23}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(24, event.nativeEvent.text.toLowerCase(), 'besar')
+                    }
+                  />
+                  <T t='daripada bahan bakar yang memiliki ' />
+                </View>
+                <T t='bilangan oktan 94.' />
+              </View>
+            </View>
 
 
 
