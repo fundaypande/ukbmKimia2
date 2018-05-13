@@ -20,6 +20,10 @@ funTitle: {
   fontSize: 16,
   color: '#1E1EF0'
 },
+funRed: {
+  fontSize: 16,
+  color: '#FF0000',
+},
 funSparator: {
   borderBottomColor: '#9b9b9b',
   borderBottomWidth: 1,
