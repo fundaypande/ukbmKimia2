@@ -97,7 +97,7 @@ export default class UKBM1KB3 extends React.Component {
 
   render() {
     return (
-      <View style={styles.containerMain}>
+      <View style={funStyle.funContainer}>
         <Header />
         <View style={styles.box1}>
           <View style={styles.SoundHome}>

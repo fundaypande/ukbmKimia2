@@ -201,7 +201,7 @@ export default class UKBM1KB4 extends React.Component {
                 <TI
                   editable={this.state.input.field2}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(3, event.nativeEvent.text.toLowerCase(), '3 CO2', '3CO2')
+                    (event) => this.cekJawaban(3, event.nativeEvent.text.toLowerCase(), '3 co2', '3co2')
                   }
                 />
               </View>
@@ -211,7 +211,7 @@ export default class UKBM1KB4 extends React.Component {
                 <TI
                   editable={this.state.input.field3}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(4, event.nativeEvent.text.toLowerCase(), '4 H2O', '4H2O')
+                    (event) => this.cekJawaban(4, event.nativeEvent.text.toLowerCase(), '4 h2o', '4h2o')
                   }
                 />
               </View>
@@ -221,7 +221,7 @@ export default class UKBM1KB4 extends React.Component {
                 <TI
                   editable={this.state.input.field4}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(5, event.nativeEvent.text.toLowerCase(), '6 CO', '6CO')
+                    (event) => this.cekJawaban(5, event.nativeEvent.text.toLowerCase(), '6 co', '6co')
                   }
                 />
               </View>
@@ -231,7 +231,7 @@ export default class UKBM1KB4 extends React.Component {
                 <TI
                   editable={this.state.input.field5}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(6, event.nativeEvent.text.toLowerCase(), '8 H2O', '8H2O')
+                    (event) => this.cekJawaban(6, event.nativeEvent.text.toLowerCase(), '8 h2o', '8h2o')
                   }
                 />
               </View>
@@ -292,7 +292,7 @@ export default class UKBM1KB4 extends React.Component {
                 <TI
                   editable={this.state.input.field9}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '4H2O ', '4H2O')
+                    (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '4H2O', '4H2O')
                   }
                 />
               </View>
@@ -331,7 +331,7 @@ export default class UKBM1KB4 extends React.Component {
               style={funStyle.funJudulKB}
               onPress={() => {
             /* 1. Navigate to the Details route with params */
-                this.props.navigation.navigate('UKBM2_KB2', {
+                this.props.navigation.navigate('UKBM3_KB2', {
                   totalNilai: this.state.totalNilai,
                 });
               }}

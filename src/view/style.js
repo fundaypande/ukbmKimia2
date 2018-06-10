@@ -7,6 +7,17 @@ const {
 } = React;
 
 module.exports = StyleSheet.create({
+  funContainer: {
+    backgroundColor: '#FFFFFF',
+    flex: 1,
+    flexDirection: 'column'
+  },
+  t: {
+  color: '#000000',
+  },
+  b: {
+    fontWeight: 'bold'
+  },
 funJudulKB: {
     marginTop: 10,
     padding: 10,

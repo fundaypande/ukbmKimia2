@@ -103,7 +103,7 @@ export default class UKBM1KB2 extends React.Component {
 
   render() {
     return (
-      <View style={styles.containerMain}>
+      <View style={funStyle.funContainer}>
         <Header />
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
@@ -124,7 +124,7 @@ export default class UKBM1KB2 extends React.Component {
               Kegiatan Belajar 2
             </Text>
             <View style={funStyle.funSpace} />
-            <Text>
+            <Text style={funStyle.t}>
               Setelah kalian belajar tentang kekhasan atom karbon dan jenis atom
               karbon pada hidrokarbon, pada contoh Kegiatan Belajar 1, sekarang
               perhatikan uraian materi tentang pengelompokan senyawa hidrokarbon berikut.
@@ -132,13 +132,13 @@ export default class UKBM1KB2 extends React.Component {
             <View style={funStyle.funSpace} />
             <T style={funStyle.funTitle} t='Alkana, Alkena, Alkuna' />
             <View style={funStyle.funSpace} />
-            <Text>
+            <Text style={funStyle.t}>
               Pengelompokan senyawa hidrokarbon dapat didasarkan dari ikatan antar atom
               karbonnya. Terdapat dua jenis kelompok hidrokarbon berdasarkan
               ikatannya yaitu, senyawa hidrokarbon tidak jenuh dan senyawa hidrokarbon jenuh
             </Text>
             <View style={funStyle.funSpace} />
-            <Text>
+            <Text style={funStyle.t}>
               Senyawa hidrokarbon tidak jenuh memiliki ikatan kovalen tunggal antar atom karbonnya.
               Sedangkan senyawa hidrokarbon jenuh memiliki ikatan kovalen rangkap antar atom karbonnya.
             </Text>
@@ -152,13 +152,13 @@ export default class UKBM1KB2 extends React.Component {
             <View style={funStyle.funSpace} />
             <T style={funStyle.funTitle} t='TUGAS!' />
             <View style={funStyle.funSpace} />
-            <Text>
+            <Text style={funStyle.t}>
               1.	Isilah titik-titik berikut dengan membandingkan jumlah atom karbon dan atom
               hidrogen alkana, alkena, alkuna pada tabel di atas dan buatlah rumus umum untuk alkana,
               alkena, dan alkuna berdasarkan perbandingan jumlah atom karbon dan hidrogen di atas!
             </Text>
             <View style={funStyle.funSpace} />
-            <Text>
+            <Text style={funStyle.t}>
               Sesuaikan huruf berwarna merah dibawah ini dengan jawaban kalian
             </Text>
             <View style={funStyle.funSpace} />
@@ -230,7 +230,7 @@ export default class UKBM1KB2 extends React.Component {
 
 
             <View style={funStyle.funSpace} />
-            <Text>
+            <Text style={funStyle.t}>
               2.	Isilah titik-titik berikut berdasarkan pengelompokkan senyawa hidrokarbon
               berdasarkan bentuk rantai strukturnya beserta contoh senyawanya!
             </Text>

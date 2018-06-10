@@ -15,7 +15,7 @@ const human01 = require('./../../Assets/Human/human02.png');
 const hand = require('./../../Assets/Human/hand.png');
 
 const funStyle = require('../style');
-const totalField = 50;
+const totalField = 100;
 let i = 3;
 
 export default class UKBM1KB4 extends React.Component {
@@ -100,7 +100,7 @@ export default class UKBM1KB4 extends React.Component {
 
   render() {
     return (
-      <View style={styles.containerMain}>
+      <View style={funStyle.funContainer}>
         <Header />
         <View style={styles.box1}>
           <View style={styles.SoundHome}>

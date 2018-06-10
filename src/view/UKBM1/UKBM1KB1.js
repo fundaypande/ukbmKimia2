@@ -90,7 +90,7 @@ export default class UKBM1KB1 extends React.Component {
 
   render() {
     return (
-    <View style={styles.containerMain}>
+    <View style={funStyle.funContainer}>
       <Header />
       <View style={styles.box1}>
         <View style={styles.SoundHome}>
@@ -111,13 +111,13 @@ export default class UKBM1KB1 extends React.Component {
             Bacalah uraian singkat materi dan contoh berikut dengan penuh konsentrasi!
           </Text>
           <View style={funStyle.funSparator} />
-          <Text>
+          <Text style={funStyle.t}>
             a.	Kekhasan Atom Karbon
           </Text>
           <View style={{ alignItems: 'center' }}>
             <Image source={ukbm1_01} />
           </View>
-          <Text style={{ textAlign: 'justify' }}>
+          <Text style={funStyle.t}>
           Karbon unsur dengan nomer atom 6, terletak pada golongan IVA dalam tabel periodik. Apa saja kekhasan atom karbon?
 Bacalah buku teks pelajaran kalian atau sumber lain untuk mengetahui kekhasan atom karbon beserta penjelasannya, dan tulis pada tabel berikut!
           </Text>

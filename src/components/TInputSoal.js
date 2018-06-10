@@ -14,6 +14,7 @@ const TI = props => (
           style={funStyle.funField}
           editable={props.editable}
           onSubmitEditing={props.onSubmitEditing}
+          value={props.value}
         />
 );
 

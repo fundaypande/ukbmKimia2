@@ -13,7 +13,7 @@ const human01 = require('./../../Assets/Human/human01.png');
 const ukbm2_02 = require('./../../Assets/UKBM2/ukbm2_02.jpg');
 
 const funStyle = require('../style');
-const totalField = 4;
+const totalField = 100;
 let i = 3;
 
 export default class UKBM1KB4 extends React.Component {
@@ -98,7 +98,7 @@ export default class UKBM1KB4 extends React.Component {
 
   render() {
     return (
-      <View style={styles.containerMain}>
+      <View style={funStyle.funContainer}>
         <Header />
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
@@ -165,14 +165,14 @@ export default class UKBM1KB4 extends React.Component {
                     <TI
                       editable={this.state.input.field0}
                       onSubmitEditing={
-                        (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), '1')
+                        (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'fotosintesis')
                       }
                     />
                     <T t='dengan bantuan' />
                     <TI
                       editable={this.state.input.field1}
                       onSubmitEditing={
-                        (event) => this.cekJawaban(2, event.nativeEvent.text.toLowerCase(), '1')
+                        (event) => this.cekJawaban(2, event.nativeEvent.text.toLowerCase(), 'sinar matahari')
                       }
                     />
                   </View>
@@ -321,10 +321,11 @@ export default class UKBM1KB4 extends React.Component {
                 <View style={funStyle.funFloat}>
                   <T style={funStyle.funTitle} t='1. Fraksi : ' />
                   <TI
-                    editable={this.state.input.field10}
+                    editable={false}
                     onSubmitEditing={
                       (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
                     }
+                    value='Gas Bumi'
                   />
               </View>
               <View style={funStyle.funSpace} />
@@ -332,9 +333,9 @@ export default class UKBM1KB4 extends React.Component {
               <T t='Campuran senyawa hidrokarbon dengan atom ' />
               <View style={funStyle.funFloat}>
                 <TI
-                  editable={this.state.input.field9}
+                  editable={this.state.input.field11}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
+                    (event) => this.cekJawaban(12, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
                   }
                 />
                 <T t='yang dihasilkan dari proses ' />
@@ -342,36 +343,38 @@ export default class UKBM1KB4 extends React.Component {
             <T t='pemanasan minyak bumi dengan suhu di bawah ' />
             <View style={funStyle.funFloat}>
               <TI
-                editable={this.state.input.field9}
+                editable={this.state.input.field12}
                 onSubmitEditing={
-                  (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+                  (event) => this.cekJawaban(13, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius', '20')
                 }
+
               />
+              <T t='derajat celcius' />
             </View>
           <View style={funStyle.funSpace} />
           <T style={funStyle.funTitle} t='Kegunaan : ' />
           <View style={funStyle.funFloat}>
             <T t='bahan bakar' />
             <TI
-              editable={this.state.input.field9}
+              editable={this.state.input.field13}
               onSubmitEditing={
-                (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+                (event) => this.cekJawaban(14, event.nativeEvent.text.toLowerCase(), 'LNG')
               }
             />
             <T t='dan' />
             <TI
-              editable={this.state.input.field9}
+              editable={this.state.input.field14}
               onSubmitEditing={
-                (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+                (event) => this.cekJawaban(15, event.nativeEvent.text.toLowerCase(), 'LPG')
               }
             />
           </View>
           <T t='sumber hidrogen dan bahan baku sintetis ' />
           <View style={funStyle.funFloat}>
             <TI
-              editable={this.state.input.field9}
+              editable={this.state.input.field15}
               onSubmitEditing={
-                (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+                (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), 'senyawa organik')
               }
             />
           </View>
@@ -381,10 +384,12 @@ export default class UKBM1KB4 extends React.Component {
               <View style={funStyle.funFloat}>
                 <T style={funStyle.funTitle} t='2. Fraksi : ' />
                 <TI
-                  editable={this.state.input.field10}
+                  editable={false}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
+                    (event) => this.cekJawaban(17, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
                   }
+                  value='Bensin '
+
                 />
             </View>
             <View style={funStyle.funSpace} />
@@ -392,9 +397,9 @@ export default class UKBM1KB4 extends React.Component {
             <T t='Campuran senyawa hidrokarbon dengan atom ' />
             <View style={funStyle.funFloat}>
               <TI
-                editable={this.state.input.field9}
+                editable={this.state.input.field17}
                 onSubmitEditing={
-                  (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
+                  (event) => this.cekJawaban(18, event.nativeEvent.text.toLowerCase(), 'c5–c10', 'c5 sampai c10', 'c5 – c10')
                 }
               />
               <T t='yang dihasilkan dari proses ' />
@@ -402,27 +407,28 @@ export default class UKBM1KB4 extends React.Component {
           <T t='pemanasan minyak bumi diantara suhu ' />
           <View style={funStyle.funFloat}>
             <TI
-              editable={this.state.input.field9}
+              editable={this.state.input.field18}
               onSubmitEditing={
-                (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+                (event) => this.cekJawaban(19, event.nativeEvent.text.toLowerCase(), '40-180', '40 sampai 180', '40 - 180')
               }
             />
+            <T t='derajat celcius' />
           </View>
         <View style={funStyle.funSpace} />
         <T style={funStyle.funTitle} t='Kegunaan : ' />
         <View style={funStyle.funFloat}>
           <T t='bahan bakar' />
           <TI
-            editable={this.state.input.field9}
+            editable={this.state.input.field19}
             onSubmitEditing={
-              (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+              (event) => this.cekJawaban(20, event.nativeEvent.text.toLowerCase(), 'motor')
             }
           />
           <T t=',' />
           <TI
-            editable={this.state.input.field9}
+            editable={this.state.input.field20}
             onSubmitEditing={
-              (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+              (event) => this.cekJawaban(21, event.nativeEvent.text.toLowerCase(), 'mobil')
             }
           />
         </View>
@@ -433,10 +439,12 @@ export default class UKBM1KB4 extends React.Component {
             <View style={funStyle.funFloat}>
               <T style={funStyle.funTitle} t='3. Fraksi : ' />
               <TI
-                editable={this.state.input.field10}
+                editable={false}
                 onSubmitEditing={
-                  (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
+                  (event) => this.cekJawaban(22, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
                 }
+                value='Naftan '
+
               />
           </View>
           <View style={funStyle.funSpace} />
@@ -444,9 +452,9 @@ export default class UKBM1KB4 extends React.Component {
           <T t='Campuran senyawa hidrokarbon dengan atom ' />
           <View style={funStyle.funFloat}>
             <TI
-              editable={this.state.input.field9}
+              editable={this.state.input.field22}
               onSubmitEditing={
-                (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
+                (event) => this.cekJawaban(23, event.nativeEvent.text.toLowerCase(), 'c6–c10', 'c6 sampai c10', 'c6 - c10')
               }
             />
             <T t='yang dihasilkan dari proses ' />
@@ -454,20 +462,21 @@ export default class UKBM1KB4 extends React.Component {
         <T t='pemanasan minyak bumi diantara suhu ' />
         <View style={funStyle.funFloat}>
           <TI
-            editable={this.state.input.field9}
+            editable={this.state.input.field23}
             onSubmitEditing={
-              (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+              (event) => this.cekJawaban(24, event.nativeEvent.text.toLowerCase(), '70 - 180', '70-180')
             }
           />
+          <T t='drajat celcius' />
         </View>
       <View style={funStyle.funSpace} />
       <T style={funStyle.funTitle} t='Kegunaan : ' />
       <View style={funStyle.funFloat}>
       <T t='sintetis' />
         <TI
-          editable={this.state.input.field9}
+          editable={this.state.input.field24}
           onSubmitEditing={
-            (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+            (event) => this.cekJawaban(25, event.nativeEvent.text.toLowerCase(), 'sennyawa organik')
           }
         />
       </View>
@@ -479,10 +488,11 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T style={funStyle.funTitle} t='4. Fraksi : ' />
             <TI
-              editable={this.state.input.field10}
+              editable={false}
               onSubmitEditing={
-                (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
+                (event) => this.cekJawaban(26, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
               }
+              value='Kerosin '
             />
         </View>
         <View style={funStyle.funSpace} />
@@ -490,9 +500,9 @@ export default class UKBM1KB4 extends React.Component {
         <T t='Campuran senyawa hidrokarbon dengan atom ' />
         <View style={funStyle.funFloat}>
           <TI
-            editable={this.state.input.field9}
+            editable={this.state.input.field26}
             onSubmitEditing={
-              (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
+              (event) => this.cekJawaban(27, event.nativeEvent.text.toLowerCase(), 'c11–c14', 'c11 sampai c14', 'c11 - c14')
             }
           />
           <T t='yang dihasilkan dari proses ' />
@@ -500,27 +510,28 @@ export default class UKBM1KB4 extends React.Component {
       <T t='pemanasan minyak bumi diantara suhu ' />
       <View style={funStyle.funFloat}>
         <TI
-          editable={this.state.input.field9}
+          editable={this.state.input.field27}
           onSubmitEditing={
-            (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+            (event) => this.cekJawaban(28, event.nativeEvent.text.toLowerCase(), '250-300', '250 - 300')
           }
         />
+        <T t='drajat celcius' />
       </View>
     <View style={funStyle.funSpace} />
     <T style={funStyle.funTitle} t='Kegunaan : ' />
     <View style={funStyle.funFloat}>
     <T t='bahan bakar' />
       <TI
-        editable={this.state.input.field9}
+        editable={this.state.input.field28}
         onSubmitEditing={
-          (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+          (event) => this.cekJawaban(29, event.nativeEvent.text.toLowerCase(), 'pesawat')
         }
       />
       <T t=',' />
       <TI
-        editable={this.state.input.field9}
+        editable={this.state.input.field29}
         onSubmitEditing={
-          (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+          (event) => this.cekJawaban(30, event.nativeEvent.text.toLowerCase(), 'kompor')
         }
       />
       <T t=', dan insektisida' />
@@ -531,10 +542,11 @@ export default class UKBM1KB4 extends React.Component {
         <View style={funStyle.funFloat}>
           <T style={funStyle.funTitle} t='5. Fraksi : ' />
           <TI
-            editable={this.state.input.field10}
+            editable={false}
             onSubmitEditing={
-              (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
+              (event) => this.cekJawaban(31, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
             }
+            value='Minyak Solah dan Diesel '
           />
       </View>
       <View style={funStyle.funSpace} />
@@ -542,9 +554,9 @@ export default class UKBM1KB4 extends React.Component {
       <T t='Campuran senyawa hidrokarbon dengan atom ' />
       <View style={funStyle.funFloat}>
         <TI
-          editable={this.state.input.field9}
+          editable={this.state.input.field31}
           onSubmitEditing={
-            (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
+            (event) => this.cekJawaban(32, event.nativeEvent.text.toLowerCase(), 'c15–c17', 'c51 sampai c17', 'c15 - c17')
           }
         />
         <T t='yang dihasilkan dari proses ' />
@@ -552,20 +564,21 @@ export default class UKBM1KB4 extends React.Component {
     <T t='pemanasan minyak bumi diantara suhu ' />
     <View style={funStyle.funFloat}>
       <TI
-        editable={this.state.input.field9}
+        editable={this.state.input.field32}
         onSubmitEditing={
-          (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+          (event) => this.cekJawaban(33, event.nativeEvent.text.toLowerCase(), '250 - 300', '250-300')
         }
       />
+      <T t='drajat celcius' />
     </View>
   <View style={funStyle.funSpace} />
   <T style={funStyle.funTitle} t='Kegunaan : ' />
   <View style={funStyle.funFloat}>
   <T t='bahan bakar industri dan ' />
     <TI
-      editable={this.state.input.field9}
+      editable={this.state.input.field33}
       onSubmitEditing={
-        (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+        (event) => this.cekJawaban(34, event.nativeEvent.text.toLowerCase(), 'mesin diesel')
       }
     />
   </View>
@@ -575,10 +588,11 @@ export default class UKBM1KB4 extends React.Component {
       <View style={funStyle.funFloat}>
         <T style={funStyle.funTitle} t='6. Fraksi : ' />
         <TI
-          editable={this.state.input.field10}
+          editable={false}
           onSubmitEditing={
-            (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
+            (event) => this.cekJawaban(35, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
           }
+          value='Minyak Pelumas '
         />
     </View>
     <View style={funStyle.funSpace} />
@@ -586,9 +600,9 @@ export default class UKBM1KB4 extends React.Component {
     <T t='Campuran senyawa hidrokarbon dengan atom ' />
     <View style={funStyle.funFloat}>
       <TI
-        editable={this.state.input.field9}
+        editable={this.state.input.field35}
         onSubmitEditing={
-          (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
+          (event) => this.cekJawaban(36, event.nativeEvent.text.toLowerCase(), 'c18–c20', 'c18 sampai c20', 'c18 - c20')
         }
       />
       <T t='yang dihasilkan dari proses ' />
@@ -596,29 +610,30 @@ export default class UKBM1KB4 extends React.Component {
   <T t='pemanasan minyak bumi diantara suhu ' />
   <View style={funStyle.funFloat}>
     <TI
-      editable={this.state.input.field9}
+      editable={this.state.input.field36}
       onSubmitEditing={
-        (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+        (event) => this.cekJawaban(37, event.nativeEvent.text.toLowerCase(), '300-350', '300 - 350')
       }
     />
+    <T t='drajat celcius' />
   </View>
 <View style={funStyle.funSpace} />
 <T style={funStyle.funTitle} t='Kegunaan : ' />
 <View style={funStyle.funFloat}>
 <T t='bahan' />
   <TI
-    editable={this.state.input.field9}
+    editable={this.state.input.field37}
     onSubmitEditing={
-      (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'pelumas')
+      (event) => this.cekJawaban(38, event.nativeEvent.text.toLowerCase(), 'pelumas')
     }
   />
   </View>
   <T t='pada mesin untuk melindungi komponen logam dari gesekan, seperti ' />
   <View style={funStyle.funFloat}>
   <TI
-    editable={this.state.input.field9}
+    editable={this.state.input.field38}
     onSubmitEditing={
-      (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'oli')
+      (event) => this.cekJawaban(39, event.nativeEvent.text.toLowerCase(), 'oli')
     }
   />
   </View>
@@ -628,20 +643,21 @@ export default class UKBM1KB4 extends React.Component {
       <View style={funStyle.funFloat}>
         <T style={funStyle.funTitle} t='7. Fraksi : ' />
         <TI
-          editable={this.state.input.field10}
+          editable={false}
           onSubmitEditing={
-            (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
+            (event) => this.cekJawaban(40, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
           }
+          value='Lilin '
         />
     </View>
     <View style={funStyle.funSpace} />
     <T style={funStyle.funTitle} t='Senyawa Hidrokarbon yang Terkandung : ' />
-    <T t='Campuran senyawa hidrokarbon dengan atom ' />
+    <T t='Campuran senyawa hidrokarbon dengan atom C berjumlah diatas' />
     <View style={funStyle.funFloat}>
       <TI
-        editable={this.state.input.field9}
+        editable={this.state.input.field40}
         onSubmitEditing={
-          (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
+          (event) => this.cekJawaban(41, event.nativeEvent.text.toLowerCase(), '20')
         }
       />
       <T t='yang dihasilkan dari proses ' />
@@ -649,26 +665,27 @@ export default class UKBM1KB4 extends React.Component {
   <T t='pemanasan minyak bumi diatas suhu ' />
   <View style={funStyle.funFloat}>
     <TI
-      editable={this.state.input.field9}
+      editable={this.state.input.field41}
       onSubmitEditing={
-        (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+        (event) => this.cekJawaban(42, event.nativeEvent.text.toLowerCase(), '350')
       }
     />
+    <T t='drajat celcius' />
   </View>
 <View style={funStyle.funSpace} />
 <T style={funStyle.funTitle} t='Kegunaan : ' />
 <View style={funStyle.funFloat}>
   <TI
-    editable={this.state.input.field9}
+    editable={this.state.input.field42}
     onSubmitEditing={
-      (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'korek api')
+      (event) => this.cekJawaban(43, event.nativeEvent.text.toLowerCase(), 'korek api')
     }
   />
   <T t=',' />
   <TI
-    editable={this.state.input.field9}
+    editable={this.state.input.field43}
     onSubmitEditing={
-      (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'lilin')
+      (event) => this.cekJawaban(44, event.nativeEvent.text.toLowerCase(), 'lilin')
     }
   />
   </View>
@@ -679,20 +696,21 @@ export default class UKBM1KB4 extends React.Component {
       <View style={funStyle.funFloat}>
         <T style={funStyle.funTitle} t='8. Fraksi : ' />
         <TI
-          editable={this.state.input.field10}
+          editable={false}
           onSubmitEditing={
-            (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
+            (event) => this.cekJawaban(45, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
           }
+          value='Minyak Bakar '
         />
     </View>
     <View style={funStyle.funSpace} />
     <T style={funStyle.funTitle} t='Senyawa Hidrokarbon yang Terkandung : ' />
-    <T t='Campuran senyawa hidrokarbon dengan atom ' />
+    <T t='Campuran senyawa hidrokarbon dengan jumlah atom C diatas' />
     <View style={funStyle.funFloat}>
       <TI
-        editable={this.state.input.field9}
+        editable={this.state.input.field45}
         onSubmitEditing={
-          (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
+          (event) => this.cekJawaban(46, event.nativeEvent.text.toLowerCase(), '20')
         }
       />
       <T t='yang dihasilkan dari proses ' />
@@ -700,20 +718,21 @@ export default class UKBM1KB4 extends React.Component {
   <T t='pemanasan minyak bumi diatas suhu ' />
   <View style={funStyle.funFloat}>
     <TI
-      editable={this.state.input.field9}
+      editable={this.state.input.field46}
       onSubmitEditing={
-        (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+        (event) => this.cekJawaban(47, event.nativeEvent.text.toLowerCase(), '350')
       }
     />
+    <T t='drajat celcius' />
   </View>
 <View style={funStyle.funSpace} />
 <T style={funStyle.funTitle} t='Kegunaan : ' />
 <T t='bahan bakar kapal, industri pemanas, dan ' />
 <View style={funStyle.funFloat}>
   <TI
-    editable={this.state.input.field9}
+    editable={this.state.input.field47}
     onSubmitEditing={
-      (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'lilin')
+      (event) => this.cekJawaban(48, event.nativeEvent.text.toLowerCase(), 'pembangkit listrik')
     }
   />
   </View>
@@ -723,20 +742,21 @@ export default class UKBM1KB4 extends React.Component {
       <View style={funStyle.funFloat}>
         <T style={funStyle.funTitle} t='9. Fraksi : ' />
         <TI
-          editable={this.state.input.field10}
+          editable={false}
           onSubmitEditing={
-            (event) => this.cekJawaban(11, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
+            (event) => this.cekJawaban(49, event.nativeEvent.text.toLowerCase(), 'Gas Bumi')
           }
+          value='Bitumen '
         />
     </View>
     <View style={funStyle.funSpace} />
     <T style={funStyle.funTitle} t='Senyawa Hidrokarbon yang Terkandung : ' />
-    <T t='Campuran senyawa hidrokarbon dengan atom ' />
+    <T t='Campuran senyawa hidrokarbon dengan jumlah atom diatas' />
     <View style={funStyle.funFloat}>
       <TI
-        editable={this.state.input.field9}
+        editable={this.state.input.field49}
         onSubmitEditing={
-          (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
+          (event) => this.cekJawaban(50, event.nativeEvent.text.toLowerCase(), '40')
         }
       />
       <T t='yang dihasilkan dari proses ' />
@@ -744,27 +764,28 @@ export default class UKBM1KB4 extends React.Component {
   <T t='pemanasan minyak bumi diatas suhu ' />
   <View style={funStyle.funFloat}>
     <TI
-      editable={this.state.input.field9}
+      editable={this.state.input.field50}
       onSubmitEditing={
-        (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), '20 derajat celcius', '20 drajat celcius')
+        (event) => this.cekJawaban(51, event.nativeEvent.text.toLowerCase(), '350')
       }
     />
+    <T t='drajat celcius' />
   </View>
 <View style={funStyle.funSpace} />
 <T style={funStyle.funTitle} t='Kegunaan : ' />
 <View style={funStyle.funFloat}>
 <T t='pembuatan' />
   <TI
-    editable={this.state.input.field9}
+    editable={this.state.input.field51}
     onSubmitEditing={
-      (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'aspal')
+      (event) => this.cekJawaban(52, event.nativeEvent.text.toLowerCase(), 'aspal')
     }
   />
   <T t=',' />
   <TI
-    editable={this.state.input.field9}
+    editable={this.state.input.field52}
     onSubmitEditing={
-      (event) => this.cekJawaban(10, event.nativeEvent.text.toLowerCase(), 'isolasi listrik')
+      (event) => this.cekJawaban(53, event.nativeEvent.text.toLowerCase(), 'isolasi listrik')
     }
   />
   </View>
@@ -793,9 +814,9 @@ export default class UKBM1KB4 extends React.Component {
       <T t='Jadi, prinsip dasar penyulingan (destilasi) bertingkat adalah' />
       <View style={funStyle.funFloat}>
         <TI
-          editable={this.state.input.field0}
+          editable={this.state.input.field53}
           onSubmitEditing={
-            (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'perbedaan titik didih')
+            (event) => this.cekJawaban(54, event.nativeEvent.text.toLowerCase(), 'perbedaan titik didih')
           }
         />
         <T t='di antara fraksi-fraksi minyak mentah.' />
@@ -803,9 +824,9 @@ export default class UKBM1KB4 extends React.Component {
       <View style={funStyle.funFloat}>
       <T t='Jika selisih ' />
         <TI
-          editable={this.state.input.field0}
+          editable={this.state.input.field54}
           onSubmitEditing={
-            (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'titik didih')
+            (event) => this.cekJawaban(55, event.nativeEvent.text.toLowerCase(), 'titik didih')
           }
         />
         <T t='tidak berbeda jauh' />
@@ -829,9 +850,9 @@ export default class UKBM1KB4 extends React.Component {
       <View style={funStyle.funFloat}>
       <T t='Dalam proses distilasi bertingkat,' />
         <TI
-          editable={this.state.input.field0}
+          editable={this.state.input.field55}
           onSubmitEditing={
-            (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'minyak mentah')
+            (event) => this.cekJawaban(56, event.nativeEvent.text.toLowerCase(), 'minyak mentah')
           }
         />
       </View>
@@ -839,9 +860,9 @@ export default class UKBM1KB4 extends React.Component {
       <View style={funStyle.funFloat}>
       <T t='Proses' />
         <TI
-          editable={this.state.input.field0}
+          editable={this.state.input.field56}
           onSubmitEditing={
-            (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'distilasi bertingkat ')
+            (event) => this.cekJawaban(57, event.nativeEvent.text.toLowerCase(), 'distilasi bertingkat ')
           }
         />
         <T t='ini dapat dijelaskan sebagai berikut.' />
@@ -857,9 +878,9 @@ export default class UKBM1KB4 extends React.Component {
           <T t='Minyak mentah dipanaskan dalam boiler menggunakan uap air bertekanan tinggi sampai suhu mencapai' />
           <View style={funStyle.funFloat}>
             <TI
-              editable={this.state.input.field0}
+              editable={this.state.input.field57}
               onSubmitEditing={
-                (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'perbedaan titik didih')
+                (event) => this.cekJawaban(58, event.nativeEvent.text.toLowerCase(), 'perbedaan titik didih')
               }
             />
             <T t='di antara fraksi-fraksi minyak mentah.' />
@@ -880,9 +901,9 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
           <T t='Dalam menara distilasi, uap ' />
             <TI
-              editable={this.state.input.field0}
+              editable={this.state.input.field58}
               onSubmitEditing={
-                (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'perbedaan titik didih')
+                (event) => this.cekJawaban(59, event.nativeEvent.text.toLowerCase(), 'perbedaan titik didih')
               }
             />
           </View>
@@ -903,9 +924,9 @@ export default class UKBM1KB4 extends React.Component {
         <T t='Dalam pergerakannya, uap minyak mentah akan menjadi ' />
           <View style={funStyle.funFloat}>
             <TI
-              editable={this.state.input.field0}
+              editable={this.state.input.field59}
               onSubmitEditing={
-                (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'perbedaan titik didih')
+                (event) => this.cekJawaban(60, event.nativeEvent.text.toLowerCase(), 'perbedaan titik didih')
               }
             />
             <T t='Sebagian uap akan mencapai ' />
@@ -913,9 +934,9 @@ export default class UKBM1KB4 extends React.Component {
           <T t='ketinggian di mana uap tersebut akan terkondensasi membentuk' />
           <View style={funStyle.funFloat}>
             <TI
-              editable={this.state.input.field0}
+              editable={this.state.input.field60}
               onSubmitEditing={
-                (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'zat cair')
+                (event) => this.cekJawaban(61, event.nativeEvent.text.toLowerCase(), 'zat cair')
               }
             />
             <T t='Zat cair yang diperoleh dalam ' />
@@ -923,9 +944,9 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
           <T t='suatu kisaran suhu tertentu ini disebut ' />
             <TI
-              editable={this.state.input.field0}
+              editable={this.state.input.field61}
               onSubmitEditing={
-                (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'zat cair')
+                (event) => this.cekJawaban(62, event.nativeEvent.text.toLowerCase(), 'zat cair')
               }
             />
           </View>
@@ -944,18 +965,18 @@ export default class UKBM1KB4 extends React.Component {
         <T t='Fraksi yang mengandung senyawa-senyawa dengan titik didih tinggi akan terkondensasi di bagian bawah ' />
           <View style={funStyle.funFloat}>
             <TI
-              editable={this.state.input.field0}
+              editable={this.state.input.field62}
               onSubmitEditing={
-                (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'menara distilasi')
+                (event) => this.cekJawaban(63, event.nativeEvent.text.toLowerCase(), 'menara distilasi')
               }
             />
             <T t='. Sedangkan fraksi senyawa-senyawa dengan' />
           </View>
           <View style={funStyle.funFloat}>
             <TI
-              editable={this.state.input.field0}
+              editable={this.state.input.field63}
               onSubmitEditing={
-                (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'titik didih rendah', 'titik didih kecil')
+                (event) => this.cekJawaban(64, event.nativeEvent.text.toLowerCase(), 'titik didih rendah', 'titik didih kecil')
               }
             />
             <T t='akan terkondensasi di bagian atas menara.' />

@@ -17,7 +17,7 @@ const ukbm1_26 = require('./../../Assets/UKBM1/ukbm1_26.png');
 const funStyle = require('../style');
 const totalField = 4;
 let i = 3;
-const fieldAll = 79 * 3;  //213
+const fieldAll = 41 * 3;  //213
 let status = true;
 
 export default class UKBM1KB4 extends React.Component {
@@ -69,7 +69,7 @@ export default class UKBM1KB4 extends React.Component {
     if (status) {
       const users = firebase.auth().currentUser;
       const uid = users.uid;
-      const dbRef = firebase.database().ref('users/' + uid + '/ukbm/ukbm2');
+      const dbRef = firebase.database().ref('users/' + uid + '/ukbm/ukbm3');
 
       dbRef.push(nilaiAkhir);
       status = false;
@@ -85,7 +85,7 @@ export default class UKBM1KB4 extends React.Component {
             <Sound />
             <TombolBeranda />
           </View>
-          <Text style={{ color: '#fff' }}> UKBM 2 Minyak Bumi </Text>
+          <Text style={{ color: '#fff' }}> UKBM 1 Senyawa Hidro Karbon </Text>
           <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
             <Image source={BackButton} style={styles.iconBack} />
           </TouchableOpacity>
