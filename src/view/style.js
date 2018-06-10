@@ -27,9 +27,25 @@ funJudulKB: {
     width: 200,
     fontSize: 16
   },
+  funTable: {
+    borderColor: '#282C34',
+    borderWidth: 0.5,
+    justifyContent: 'center'
+  },
+  funTableH: {
+    borderColor: '#282C34',
+    borderWidth: 0.5,
+    justifyContent: 'center',
+    backgroundColor: '#FDEADA'
+  },
 funTitle: {
   fontSize: 16,
   color: '#1E1EF0'
+},
+funInfo: {
+  backgroundColor: '#b3e5fc',
+  borderRadius: 20,
+  padding: 10
 },
 funRed: {
   fontSize: 16,

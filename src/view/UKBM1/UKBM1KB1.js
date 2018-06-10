@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Button, Image, TouchableOpacity, ScrollView, Alert} from 'react-native';
+import { Col, Row, Grid } from 'react-native-easy-grid';
+
 import Sound from './../../components/Sound';
 import TombolBeranda from './../../components/TombolBeranda';
 import Header from '../../components/Header';
@@ -496,7 +498,9 @@ Bacalah buku teks pelajaran kalian atau sumber lain untuk mengetahui kekhasan at
           <T t='Sesuaikan setiap huruf diatas dengan kolom jawaban dibawah ini' />
           <View style={funStyle.funSpace} />
           <View style={funStyle.funBox} >
-          <View style={{ flexDirection: 'column', flex: 1 }}>
+
+            <Grid style={{ height: 200 }}>
+            <Col>
             <View style={funStyle.funFloat}>
               <T t='A = ' />
               <TI
@@ -556,8 +560,8 @@ Bacalah buku teks pelajaran kalian atau sumber lain untuk mengetahui kekhasan at
                 }
               />
             </View>
-            </View>
-            <View style={{ flexDirection: 'column', flex: 1 }}>
+            </Col>
+            <Col>
             <View style={funStyle.funSpace} />
             <View style={funStyle.funFloat}>
               <T t='G = ' />
@@ -618,8 +622,12 @@ Bacalah buku teks pelajaran kalian atau sumber lain untuk mengetahui kekhasan at
                 }
               />
             </View>
-            </View>
+            </Col>
+          </Grid>
           </View>
+
+
+
 
           <View style={funStyle.funBigSpace} />
           <TouchableOpacity>
