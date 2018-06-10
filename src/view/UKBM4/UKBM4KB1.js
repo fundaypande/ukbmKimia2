@@ -17,7 +17,7 @@ const ukbm1_26 = require('./../../Assets/UKBM1/ukbm1_26.png');
 const hand = require('./../../Assets/Human/hand.png');
 
 const funStyle = require('../style');
-const totalField = 50;
+const totalField = 49;
 let i = 3;
 
 export default class UKBM4KB1 extends React.Component {

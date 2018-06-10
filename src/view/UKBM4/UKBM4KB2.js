@@ -9,12 +9,19 @@ import TI from '../../components/TInputSoal.js';
 
 const BackButton = require('./../../Assets/img/backButton.png');
 const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
-const ukbm1_25 = require('./../../Assets/UKBM1/ukbm1_25orang.png');
-const ukbm1_26 = require('./../../Assets/UKBM1/ukbm1_26.png');
 const hand = require('./../../Assets/Human/hand.png');
 
+const ukbm4_01 = require('./../../Assets/UKBM4/ukbm_01.png');
+const ukbm4_02 = require('./../../Assets/UKBM4/ukbm_02.png');
+const ukbm4_03 = require('./../../Assets/UKBM4/ukbm_03.png');
+const ukbm4_04 = require('./../../Assets/UKBM4/ukbm_04.png');
+const ukbm4_05 = require('./../../Assets/UKBM4/ukbm_05.png');
+const ukbm4_06 = require('./../../Assets/UKBM4/ukbm_06.png');
+const ukbm4_07 = require('./../../Assets/UKBM4/ukbm_07.png');
+const ukbm4_07a = require('./../../Assets/UKBM4/ukbm_07a.png');
+
 const funStyle = require('../style');
-const totalField = 4;
+const totalField = 35;
 let i = 3;
 
 export default class UKBM1KB4 extends React.Component {
@@ -50,7 +57,7 @@ export default class UKBM1KB4 extends React.Component {
 
   nextPart = () => {
   /* 1. Navigate to the Details route with params */
-      this.props.navigation.navigate('UKBM1_C', {
+      this.props.navigation.navigate('UKBM4_KB3', {
         totalNilai: this.state.totalNilai,
         });
         console.log('hasil nya akhir pencet : ' + this.state.totalNilai);
@@ -307,13 +314,391 @@ export default class UKBM1KB4 extends React.Component {
                       />
                       <T t='(l).' />
                     </View>
+                    <Image style={{ width: 156, height: 30}} source={ukbm4_01} />
                   </View>
                 </View>
-                
+
+                <View style={funStyle.funFloat}>
+                  <T t='4) ' />
+                  <View style={{ marginRight: 40 }}>
+                    <T t='Bereaksi dengan gas oksigen (O2) (reaksi pembakaran)' />
+                    <Image style={{ width: 234, height: 25}} source={ukbm4_02} />
+                  </View>
+                </View>
+                <View style={funStyle.funSpace} />
+
+
+                <View style={funStyle.funFloat}>
+                  <T t='5) ' />
+                  <View style={{ marginRight: 40 }}>
+                    <T t='Harga ∆H negatif (∆H = - ) karena entalpi ' />
+                    <View style={funStyle.funFloat}>
+                      <TI
+                        editable={this.state.input.field15}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), 'sistem')
+                        }
+                      />
+                      <T t='berkurang, suhu sistem' />
+                      <TI
+                        editable={this.state.input.field16}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(17, event.nativeEvent.text.toLowerCase(), 'naik')
+                        }
+                      />
+                    </View>
+                    <Image style={{ width: 297, height: 20}} source={ukbm4_03} />
+                  </View>
+                </View>
+                <View style={funStyle.funSpace} />
+
+                <View style={funStyle.funFloat}>
+                  <T t='6) ' />
+                  <View style={{ marginRight: 40 }}>
+                    <T t='Penulisan “energi” di bagian kanan tanda panah' />
+                    <View style={funStyle.funFloat}>
+                      <T t='(' />
+                      <TI
+                        editable={this.state.input.field17}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(18, event.nativeEvent.text.toLowerCase(), 'pelepasan')
+                        }
+                      />
+                      <T t='panas/kalor/energi)' />
+                    </View>
+                    <Image style={{ width: 300, height: 21}} source={ukbm4_04} />
+                  </View>
+                </View>
+                <View style={funStyle.funSpace} />
+                <View style={funStyle.funSpace} />
+                <View style={funStyle.funSpace} />
+
+
+                <T t='Beberapa ciri-ciri cara penulisan reaksi endoterm:' />
+                <View style={funStyle.funFloat}>
+                  <T t='1) ' />
+                  <View style={{ marginRight: 40 }}>
+                    <View style={funStyle.funFloat}>
+                      <T t='reaksi kimia yang ' />
+                      <TI
+                        editable={this.state.input.field18}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(19, event.nativeEvent.text.toLowerCase(), 'menyerap')
+                        }
+                      />
+                      <T t='panas/kalor/energi)' />
+                    </View>
+                  </View>
+                </View>
+                <View style={funStyle.funSpace} />
+                <View style={funStyle.funFloat}>
+                  <T t='2) ' />
+                  <View style={{ marginRight: 40 }}>
+                    <View style={funStyle.funFloat}>
+                      <TI
+                        editable={this.state.input.field19}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(20, event.nativeEvent.text.toLowerCase(), 'panas', 'kalor', 'energi')
+                        }
+                      />
+                      <T t='berpindah dari ' />
+                      <TI
+                        editable={this.state.input.field20}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(21, event.nativeEvent.text.toLowerCase(), 'lingkungan')
+                        }
+                      />
+                      <T t='Ke' />
+                      <TI
+                        editable={this.state.input.field21}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(22, event.nativeEvent.text.toLowerCase(), 'sistem')
+                        }
+                      />
+                    </View>
+                  </View>
+                </View>
+                <View style={funStyle.funSpace} />
+
+                <View style={funStyle.funFloat}>
+                  <T t='3) ' />
+                  <View style={{ marginRight: 40 }}>
+                    <T t='Perubahan fase (wujud) zat dari padat (s) ke cair (l), atau dari cair (l) ke gas (g).' />
+                    <Image style={{ width: 169, height: 25}} source={ukbm4_05} />
+                  </View>
+                </View>
+                <View style={funStyle.funSpace} />
+
+                <View style={funStyle.funFloat}>
+                  <T t='4) ' />
+                  <View style={{ marginRight: 40 }}>
+                    <T t='Reaksi pelepasan gas oksigen (O2) (reaksi ' />
+                    <View style={funStyle.funFloat}>
+                      <TI
+                        editable={this.state.input.field22}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(23, event.nativeEvent.text.toLowerCase(), 'dekomposisi', 'penguraian')
+                        }
+                      />
+                    </View>
+                    <Image style={{ width: 218, height: 25}} source={ukbm4_06} />
+                  </View>
+                </View>
+                <View style={funStyle.funSpace} />
+
+                <View style={funStyle.funFloat}>
+                  <T t='5) ' />
+                  <View style={{ marginRight: 40 }}>
+                    <T t='Harga ∆H positif (∆H = +) karena entalpi' />
+                    <View style={funStyle.funFloat}>
+                      <T t='sistem ' />
+                      <TI
+                        editable={this.state.input.field23}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(24, event.nativeEvent.text.toLowerCase(), 'bertambah')
+                        }
+                      />
+                      <T t=', suhu sistem ' />
+                      <TI
+                        editable={this.state.input.field24}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(25, event.nativeEvent.text.toLowerCase(), 'turun')
+                        }
+                      />
+                    </View>
+                    <T t='contoh:' />
+                    <Image style={{ width: 300, height: 20}} source={ukbm4_07a} />
+                  </View>
+                </View>
+                <View style={funStyle.funSpace} />
+
+                <View style={funStyle.funFloat}>
+                  <T t='6) ' />
+                  <View style={{ marginRight: 40 }}>
+                    <T t='Penulisan “energi” di bagian kiri tanda panah ' />
+                    <View style={funStyle.funFloat}>
+                      <T t='(' />
+                      <TI
+                        editable={this.state.input.field25}
+                        onSubmitEditing={
+                          (event) => this.cekJawaban(26, event.nativeEvent.text.toLowerCase(), 'menyerap')
+                        }
+                      />
+                      <T t='panas/kalor/energi) ' />
+                    </View>
+                    <Image style={{ width: 300, height: 20}} source={ukbm4_07} />
+                  </View>
+                </View>
+                <View style={funStyle.funSpace} />
                 <View style={funStyle.funBigSpace} />
               </View>
 
+
+
             <View style={funStyle.funSpace} />
+            <View style={funStyle.funBox}>
+              <View style={funStyle.funFloat}>
+                <Image style={{ width: 30, height: 30, paddingRight: 10 }} source={hand} />
+                <T style={{ marginRight: 40 }} t='3.	Sebutkan contoh-contoh reaksi eksoterm dan reaksi endoterm dalam kehidupan sehari-hari?' />
+              </View>
+              <View style={funStyle.funSpace} />
+              <T style={funStyle.b} t='Jawab' />
+              <View style={funStyle.funSpace} />
+              <T t='Contoh reaksi eksoterm dalam kehidupan sehari-hari:' />
+
+              <View style={funStyle.funFloat}>
+                <T t='a. ' />
+                <View style={{ marginRight: 100 }}>
+                  <T t='Pembakaran' />
+                  <View style={funStyle.funSpace} />
+                  <T t='Bila Anda melihat lampu pertandingan, atau api, senyawa yang terbakar, panas dilepas di sekitarnya,' />
+                  <View style={funStyle.funFloat}>
+                    <T t='menyebabkan peningkatan ' />
+                    <TI
+                      editable={this.state.input.field26}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(27, event.nativeEvent.text.toLowerCase(), 'suhu')
+                      }
+                    />
+                    <T t='. Ini adalah  ' />
+                  </View>
+                  <T t='gambaran paling dasar dari reaksi eksotermik. Pembakaran bahan bakar adalah contoh lain dari reaksi eksotermik.' />
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='b. ' />
+                <View style={{ marginRight: 100 }}>
+                  <T t='Netralisasi/Penetralan' />
+                  <View style={funStyle.funSpace} />
+                  <T t='Banyak (tetapi tidak semua) reaksi netralisasi, bersifat eksotermik. Reaksi netralisasi adalah salah satu yang terjadi ' />
+                  <View style={funStyle.funFloat}>
+                    <T t='antara ' />
+                    <TI
+                      editable={this.state.input.field27}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(28, event.nativeEvent.text.toLowerCase(), 'asam')
+                      }
+                    />
+                    <T t='dan' />
+                    <TI
+                      editable={this.state.input.field28}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(29, event.nativeEvent.text.toLowerCase(), 'basa')
+                      }
+                    />
+                  </View>
+                  <T t='menghasilkan garam dan air. Sebagai contoh pencampuran natrium hidroksida (basa) dengan asam klorida (asam) akan membentuk ' />
+                  <View style={funStyle.funFloat}>
+                    <T t='larutan  ' />
+                    <TI
+                      editable={this.state.input.field29}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(30, event.nativeEvent.text.toLowerCase(), 'natrium klorida')
+                      }
+                    />
+                    <T t='dan air, disertai dengan' />
+                  </View>
+                  <View style={funStyle.funFloat}>
+                    <TI
+                      editable={this.state.input.field30}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(31, event.nativeEvent.text.toLowerCase(), 'peningkatan', 'kenaikan')
+                      }
+                    />
+                    <T t='suhu' />
+                  </View>
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='c. ' />
+                <View style={{ marginRight: 40 }}>
+                  <T t='Berkarat' />
+                  <T t='Pada pengaratan besi adalah contoh reaksi eksotermik secara spontan.' />
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='d. ' />
+                <View style={{ marginRight: 40 }}>
+                  <T t='Ketika kita memegang tempe, tangan akan terasa hangat' />
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='e. ' />
+                <View style={{ marginRight: 40 }}>
+                  <T t='Ketika kita menyalakan api unggun, panasnya akan terasa walaupun tidak bersentuhan' />
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='f. ' />
+                <View style={{ marginRight: 40 }}>
+                  <T t='Membakar minyak tanah menggunakan kompor minyak' />
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='g. ' />
+                <View style={{ marginRight: 40 }}>
+                  <T t='Respirasi, karena respirasi menghasilkan panas.' />
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+              <View style={funStyle.funSpace} />
+              <View style={funStyle.funSpace} />
+              <T t='Contoh reaksi endoterm dalam kehidupan sehari-hari:' />
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='a. ' />
+                <View style={{ marginRight: 40 }}>
+                  <T t='Fotosintesis' />
+                  <T t='Fotosintesis merupakan salah satu gambaran terbaik dari reaksi endotermik, terjadi di alam. Ini adalah proses di mana tumbuhan menggunakan klorofil, dengan bantuan sinar matahari untuk mengubah karbon dioksida dan ' />
+                  <View style={funStyle.funFloat}>
+                    <T t='air menjadi ' />
+                    <TI
+                      editable={this.state.input.field31}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(32, event.nativeEvent.text.toLowerCase(), 'glukosa')
+                      }
+                    />
+                    <T t='dan' />
+                    <TI
+                      editable={this.state.input.field32}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(33, event.nativeEvent.text.toLowerCase(), 'oksigen')
+                      }
+                    />
+                  </View>
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='b. ' />
+                <View style={{ marginRight: 40 }}>
+                  <T t='Pencairan Es' />
+                  <View style={funStyle.funFloat}>
+                    <T t='Ketika es mencair, ia menarik ' />
+                    <TI
+                      editable={this.state.input.field33}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(34, event.nativeEvent.text.toLowerCase(), 'panas', 'kalor')
+                      }
+                    />
+                    <T t='dari sekitarnya' />
+                  </View>
+                  <T t='mengubah bentuk padat tidak stabil.' />
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='d. ' />
+                <View style={{ marginRight: 40 }}>
+                  <T t='Elektrolisis' />
+                  <T t='Melibatkan pemisahan atau penguraian senyawa asli yang terjadi sebagai akibat penggunaan arus listrik. Ini adalah contoh lain dari reaksi endotermik.' />
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='e. ' />
+                <View style={{ marginRight: 40 }}>
+                  <T t='Pelarutan gula' />
+                  <T t='Jika gula dilarutkan, dapat dirasakan ada sedikit rasa dingin ketika gelas dipegang.' />
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <T t='f. ' />
+                <View style={{ marginRight: 40 }}>
+                <View style={funStyle.funFloat}>
+                  <T t='Tangan terasa ' />
+                  <TI
+                    editable={this.state.input.field34}
+                    onSubmitEditing={
+                      (event) => this.cekJawaban(35, event.nativeEvent.text.toLowerCase(), 'dingin')
+                    }
+                  />
+                  <T t='ketika bersentuhan ' />
+                </View>
+                <T t='dengan alkohol' />
+                </View>
+              </View>
+              <View style={funStyle.funSpace} />
+
+            </View>
 
 
 
@@ -324,7 +709,7 @@ export default class UKBM1KB4 extends React.Component {
             onPress={this.nextPart}
             >
               <Text style={funStyle.funJudulKB}>
-                Penutup >>
+                Kegiatan Belajar 3 >>
               </Text>
             </TouchableOpacity>
 
