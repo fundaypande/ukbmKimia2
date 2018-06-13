@@ -18,6 +18,11 @@ module.exports = StyleSheet.create({
   b: {
     fontWeight: 'bold'
   },
+funUkTitle: {
+  fontSize: 18,
+  fontWeight: 'bold',
+  color: '#000000',
+},
 funJudulKB: {
     marginTop: 10,
     padding: 10,
@@ -36,7 +41,8 @@ funJudulKB: {
     borderColor: '#282C34',
     borderWidth: 0.5,
     justifyContent: 'center',
-    backgroundColor: '#FDEADA'
+    backgroundColor: '#FDEADA',
+    height: 50
   },
 funTitle: {
   fontSize: 16,
@@ -74,6 +80,8 @@ funBox: {
   borderRightWidth: 1,
   padding: 5,
   marginTop: 10,
+  marginBottom: 10,
+  paddingBottom: 20,
   right: 0,
   flex: 1
 },
@@ -122,7 +130,8 @@ funFloat: {
   marginTop: 0,
   marginBottom: -10,
   paddingTop: 0,
-  paddingBottom: 0
+  paddingBottom: 0,
+  flex: 1
 },
 funNumber: {
   flexDirection: 'row',
