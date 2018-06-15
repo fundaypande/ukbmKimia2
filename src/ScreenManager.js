@@ -54,6 +54,9 @@ import UKBM7 from './view/UKBM7/UKBM7beranda.js';
 //list UJI KOMPETENSI
 import UK1 from './view/Kompetensi/UK1.js';
 import UK2 from './view/Kompetensi/UK2.js';
+import UK3 from './view/Kompetensi/UK3.js';
+import UK4 from './view/Kompetensi/UK4.js';
+import UK5 from './view/Kompetensi/UK5.js';
 
 
 const Screens = DrawerNavigator({
@@ -167,6 +170,15 @@ const Screens = DrawerNavigator({
   UK2: {
     screen: UK2
   },
+  UK3: {
+    screen: UK3
+  },
+  UK4: {
+    screen: UK4
+  },
+  UK5: {
+    screen: UK5
+  },
   Tes: {
     screen: Tes
   },
@@ -175,7 +187,7 @@ const Screens = DrawerNavigator({
   },
 },
   {
-    initialRouteName: 'UKBM5_KB1',
+    initialRouteName: 'UK5',
   },
   {
     contentComponent: props => <Sidebar {...props} />
