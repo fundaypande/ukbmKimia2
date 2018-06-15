@@ -17,15 +17,7 @@ let i = 3;
 let arrayNilai = [];
 
 
-const uk1_01 = require('./../../Assets/UK/uk1_01.png');
-const uk1_02 = require('./../../Assets/UK/uk1_02.png');
-const uk1_03 = require('./../../Assets/UK/uk1_03.png');
-const uk1_04 = require('./../../Assets/UK/uk1_04.png');
-const uk1_05 = require('./../../Assets/UK/uk1_05.png');
-const uk1_06 = require('./../../Assets/UK/uk1_06.png');
-const uk1_07 = require('./../../Assets/UK/uk1_07.png');
-const uk1_08 = require('./../../Assets/UK/uk1_08.png');
-const uk1_09 = require('./../../Assets/UK/uk1_09.png');
+const uk2_01 = require('./../../Assets/UK/uk2_01.png');
 
 export default class UKBM1KB4 extends React.Component {
 
@@ -90,7 +82,7 @@ export default class UKBM1KB4 extends React.Component {
             <Sound />
             <TombolBeranda />
           </View>
-          <Text style={{ color: '#fff' }}> UJI KOMPETENSI UKBM 1 </Text>
+          <Text style={{ color: '#fff' }}> UJI KOMPETENSI UKBM 2 </Text>
           <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
             <Image source={BackButton} style={styles.iconBack} />
           </TouchableOpacity>
@@ -101,38 +93,31 @@ export default class UKBM1KB4 extends React.Component {
 
 
           <View>
-          <T style={funStyle.funUkTitle} t='UJI KOMPETENSI UKBM 1 - HIDROKARBON' />
+          <T style={funStyle.funUkTitle} t='UJI KOMPETENSI UKBM 2 - MINYAK BUMI' />
           <View style={funStyle.funSpace} />
           <View style={funStyle.funSpace} />
 
           <View style={funStyle.funFloat}>
             <T t='1.  ' />
             <View>
-              <T t='Pembakaran senyawa karbon akan menghasilkan gas karbondioksida dan uap air.  Di bawah ini tercantum beberapa pereaksi (reagen):' />
-              <T t='1)  air kapur' />
-              <T t='2)  asam karbonat' />
-              <T t='3)  kertas kobalt' />
-              <T t='4)  tembaga oksida' />
-              <T t='5)  kalsium karbonat' />
-              <T t='Pengujian terbentuknya gas karbon dioksida dan uap air masing-masing dapat diuji secara berturut-turut dengan pereaksi ….' />
-
+              <T t='Peristiwa berikut yang terjadi pada saat pembentukan minyak bumi dan gas alam adalah ....' />
                 <RadioGroup
                     onSelect = {(index, value) => this.onSelect(index, value, 'c', 1)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	1 dan 2 ' />
+                    <T t='A.	pemecahan batuan-batuan' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	2 dan 3 ' />
+                    <T t='B.	pelapukan batu kapur anorganik' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	1 dan 3' />
+                    <T t='C.	pelapukan senyawa organik' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	2 dan 4' />
+                    <T t='D.	sisa penguapan air laut' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	4 saja' />
+                    <T t='E.	pelapukan senyawa' />
                   </RadioButton>
                 </RadioGroup>
 
@@ -146,28 +131,30 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='2.  ' />
             <View>
-              <T t='Kekhasan Atom C dibandingkan dengan atom Si adalah ….' />
-
+              <T t='Minyak bumi tergolong sumber energi tidak terbarukan sebab ….' />
+              <View style={{ marginRight: 30 }}>
+              <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'e', 2)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'a', 2)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	memiliki elekton valensi 4 ' />
+                    <T t='A.	proses pembentukan memerlukan waktu ribuan tahun' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	dapat berikatan kovalen dengan atom lain' />
+                    <T t='B.	alam tidak dapat menciptakan lagi minyak bumi' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	dapat berikatan dengan atom sesama' />
+                    <T t='C.	dapat didaur ulang dari hasil pembakaran' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	berada di golongan IVA' />
+                    <T t='D.	tidak dapat dibuat oleh manusia dengan teknologi apapun' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	dapat membentuk ikatan rantai panjang' />
+                    <T t='E.	minyak bumi bukan sumber energi baru' />
                   </RadioButton>
                 </RadioGroup>
-
+              </ScrollView>
+              </View>
             </View>
           </View>
 
@@ -177,29 +164,26 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='3.  ' />
             <View>
-              <T t='Diketahui senyawa hidrokarbon dengan rumus bangun sebagai berikut.   ' />
-              <Image style={{ width: 211, height: 25 }} source={uk1_01} />
-              <T t='Pernyataan yang benar tentang hidrokarbon di atas adalah ….'/>
-
+              <T t='Untuk menentukan secara akurat keberadaan minyak mentah di dalam bumi dipakai teknik ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
                     onSelect = {(index, value) => this.onSelect(index, value, 'b', 3)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	memiliki rantai terbuka, ikatan tunggal, lurus' />
+                    <T t='A.	peledakan' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	memiliki rantai terbuka, ikatan tunggal dan rangkap dua, lurus' />
+                    <T t='B.	gelombang seismik' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	memiliki rantai terbuka, ikatan tunggal dan rangkap tiga, lurus' />
+                    <T t='C.	pantauan udara' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	memiliki rantai tertutup, ikatan rangkap dua, lurus' />
+                    <T t='D.	gelombang kejut' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	memiliki rantai tertutup, ikatan rangkap tiga, lurus' />
+                    <T t='E.	mikroskop' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -214,9 +198,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='4.  ' />
             <View>
-              <T t='Perhatikan rumus struktur senyawa berikut. ' />
-              <Image style={{ width: 208, height: 66 }} source={uk1_02} />
-              <T t='Nama senyawa di atas berdasarkan sistem IUPAC (International Union of Pure Aplied and Chemistry) adalah ....'/>
+              <T t='Minyak bumi tergolong sumber energi tidak terbarukan sebab ….' />
 
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
@@ -224,19 +206,19 @@ export default class UKBM1KB4 extends React.Component {
                     onSelect = {(index, value) => this.onSelect(index, value, 'a', 4)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	3,3-dimetil pentana' />
+                    <T t='A.	proses pembentukan memerlukan waktu ribuan tahun' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	2,2-dimetil heksana' />
+                    <T t='B.	alam tidak dapat menciptakan lagi minyak bumi' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	2,3-dimetil pentana' />
+                    <T t='C.	dapat didaur ulang dari hasil pembakaran' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	2-etil-2-metil butana' />
+                    <T t='D.	tidak dapat dibuat oleh manusia dengan teknologi apapun' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	2-metil-2-etil heksana' />
+                    <T t='E.	minyak bumi bukan sumber energi baru' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -250,28 +232,26 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='5.  ' />
             <View>
-              <T t='Perhatikan rumus struktur senyawa berikut.  ' />
-              <Image style={{ width: 200, height: 43 }} source={uk1_03} />
-              <T t='Nama senyawa di atas berdasarkan sistem IUPAC adalah ....' />
+              <T t='Proses pembentukan minyak bumi memerlukan kondisi yang ideal yaitu ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'b', 5)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'd', 5)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	4,5-dimetil-2-pentena' />
+                    <T t='A.	suhu yang rendah dan di bawah batuan mampat' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	4-metil-2-heksena' />
+                    <T t='B.	suhu yang tidak terlalu tinggi dan di bawah batuan mampat' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	3-metil-4-heksena' />
+                    <T t='C.	suhu yang rendah dan di bawah batuan banyak berpori' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	1,2-dimetil-3-pentena' />
+                    <T t='D.  suhu yang tinggi dan di bawah batuan berpori' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	4,5-dimetil-3-pentena' />
+                    <T t='E.	suhu yang tinggi dan di bawah batuan mampat ' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -285,28 +265,26 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='6.  ' />
             <View>
-              <T t='Perhatikan rumus struktur senyawa berikut.' />
-              <Image style={{ width: 150, height: 110 }} source={uk1_04} />
-              <T t='Nama senyawa di atas berdasarkan sistem IUPAC adalah ….' />
+              <T t='Komponen utama penyusun minyak bumi adalah ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
                     onSelect = {(index, value) => this.onSelect(index, value, 'c', 6)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	2,3-dimetil-2-heksuna                        ' />
+                    <T t='A.	golongan hidrokarbon aromatik                 ' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	2,3-dimetil-3-heksuna                        ' />
+                    <T t='B.	golongan sikloalkana          ' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	4,5-dimetil-2-heksuna' />
+                    <T t='C.	golongan alkana ' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	4-isopropil-2-pentuna' />
+                    <T t='D.	hidrokarbon tak jenuh' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	2-isopropil-2-pentuna' />
+                    <T t='E.	belerang' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -321,28 +299,26 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='7.  ' />
             <View>
-              <T t='Perhatikan gambar struktur berikut!' />
-              <Image style={{ width: 142, height: 117 }} source={uk1_05} />
-              <T t='Jumlah atom C tersier pada stuktur tersebut adalah …' />
+              <T t='Prinsip dasar pemisahan komponen-komponen minyak bumi didasarkan pada ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'b', 7)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'e', 7)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	1' />
+                    <T t='A.	persamaan ukuran molekul                         ' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	2' />
+                    <T t='B.	perbedaan ukuran molekul ' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	3' />
+                    <T t='C.	persamaan kelarutan                 ' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	4' />
+                    <T t='D.	perbedaan kelarutan' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	Tidak Ada' />
+                    <T t='E.	perbedaan titik didih' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -357,29 +333,27 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='8.  ' />
             <View>
-              <T t='Pada saat pembelajaran kimia hidrokarbon, Adelia diminta oleh guru menyusun bangun senyawa hidrokarbon dengan alat bantu molimood. Adapun bangun senyawa hidrokarbon tersebut ditunjukkan seperti pada gambar berikut.' />
-              <Image style={{ width: 249, height: 116 }} source={uk1_06} />
-              <T t='Berdasarkan bangun senyawa yang dibuat Adelia, maka atom C primer, sekunder, tertier, dan kuartener berturut-turut adalah nomor ….' />
+              <T t='Minyak bumi yang baru dihasilkan dari pengeboran masih berupa minyak mentah. Proses pemisahan minyak mentah menjadi bahan bakar yang diinginkan dapat dilakukan dengan cara ….' />
 
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'd', 8)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'a', 8)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	1, 2, 3, dan 4      ' />
+                    <T t='A.	destilasi fraksionasi' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	2, 3, 4, dan 1     ' />
+                    <T t='B.	destiilasi biasa                                            ' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	1, 2, 4, dan 3' />
+                    <T t='C.	kromatografi' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	1, 3, 2, dan 4' />
+                    <T t='D.	sublimasi' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	3, 4, 2, dan 1' />
+                    <T t='E.	penyaringan bertingkat' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -394,28 +368,26 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='9.  ' />
             <View>
-              <T t='Berdasarkan bangun senyawa hidrokarbon yang dibuat oleh Juniari seperti gambar berikut.' />
-              <Image style={{ width: 323, height: 123 }} source={uk1_07} />
-              <T t='Guru menyuruh Juniari untuk menentukan jumlah atom C masing-masing pada atom C primer, sekunder, tertier, dan kuartener. Maka jawaban yang benar dari Juniari adalah ….' />
+              <T t='Fraksi minyak bumi terbanyak adalah ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'a', 9)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'e', 9)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	7, 7, 1, dan 2            ' />
+                    <T t='A.	aldehida dan aromatik' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	4, 3, 2, dan 2            ' />
+                    <T t='B.	sikloalkana dan aromatik' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	6, 6, 3 dan 2' />
+                    <T t='C.	LPG, LNG, dan aspal' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	5, 4, 3, dan 3' />
+                    <T t='D.	bensin premium dan solar' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	4, 6, 2, dan 1' />
+                    <T t='E.	alkana dan sikloalkana' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -431,27 +403,27 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='10.  ' />
             <View>
-              <T t='Jumlah atom C primer, sekunder, tertier dan kuartener pada senyawa 2,4,4-trimetil heksana berturut-turut adalah....' />
+              <T t='Senyawa berikut yang tidak tergolong fraksi minyak bumi adalah ….' />
 
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'd', 10)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'c', 10)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	4, 3, 2, 1                             ' />
+                    <T t='A.	alkana, sikloalkana' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	4, 3, 1, 1                             ' />
+                    <T t='B.	alkena, aromatik' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	5, 3, 1, 1' />
+                    <T t='C.	asam lemak jenuh dan tidak jenuh' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	5, 2, 1, 1' />
+                    <T t='D.	butana, heksana, propana' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	5, 2, 2, 1' />
+                    <T t='E.	kerosin, solar, aspal' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -467,31 +439,27 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='11.  ' />
             <View>
-              <T t='Perhatikan senyawa-senyawa dengan rumus molekul berikut.' />
-              <T t='1)	C3H6  ' />
-              <T t='2)	C4H10  ' />
-              <T t='3)	C5H8' />
-              <T t='Urutan senyawa-senyawa di atas yang memiliki ikatan tunggal, rangkap dua dan rangkap tiga adalah ….'/>
+              <T t='Fraksi minyak mentah yang tersisa dalam kolom fraksionasi dapat digunakan sebagai ….' />
 
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'a', 11)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'd', 11)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	2, 1, 3' />
+                    <T t='A.	pelarut senyawa karbon' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	1, 2, 3                                    ' />
+                    <T t='B.	pelumas mesin ' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	1, 3, 2                                    ' />
+                    <T t='C.	bahan bakar untuk memasak  ' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	3, 2, 1' />
+                    <T t='D.	aspal untuk mengeraskan jalan' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	2, 3, 1' />
+                    <T t='E.	bahan bakar untuk kendaraan' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -506,31 +474,27 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='12.  ' />
             <View>
-              <T t='Senyawa dengan rumus molekul di bawah ini' />
-              <T t='1)	C5H12' />
-              <T t='2)	C4H8' />
-              <T t='3)	C4H6' />
-              <T t='4)  C6H12' />
-              <T t='5)  C6H14' />
+              <T t='Ketika suhu dalam kolom fraksionasi mencapai 110° C, fraksi minyak bumi yang menguap adalah yang mengandung jumlah atom karbon (C) ....' />
+
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'e', 12)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'b', 12)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	1, 2, dan 3                                     ' />
+                    <T t='A.	1 - 4      ' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	2, 3, dan 4' />
+                    <T t='B.	5 – 12' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	3, 4, dan 5' />
+                    <T t='C.	12 - 18' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	1 dan 4' />
+                    <T t='D.	18 - 22' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	1 dan 5' />
+                    <T t='E.	25 ke atas' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -546,29 +510,31 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='13.  ' />
             <View>
-              <T t='Senyawa dengan rumus struktur' />
-              <Image style={{ width: 177, height: 55 }} source={uk1_08} />
-              <T t='Bila direaksikan dengan HCl akan menghasilkan senyawa dengan nama … .' />
+              <T t='Data berikut ini diperoleh dari distilasi bertingkat minyak mentah.' />
+              <T t='1)	Pemanasan suhu 140-180oC menghasilkan nafta' />
+              <T t='2)	Pemanasan suhu 180-250oC menghasilkan kerosin' />
+              <T t='3)	Pemanasan suhu 250-350oC menghasilkan solar' />
+              <T t='Urutan fraksi minyak bumi hasil penyulingan minyak mentah dari ringan ke berat adalah ….  '/>
 
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'c', 13)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'b', 13)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	2-kloro-3-metil pentena' />
+                    <T t='A.	nafta-solar-kerosin ' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	2-kloro-2-metil pentana               ' />
+                    <T t='B.	nafta-kerosin-solar  ' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	2-kloro-3-metil pentana' />
+                    <T t='C.	kerosin-nafta-solar               ' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	1-kloro-3-metil pentana  ' />
+                    <T t='D.	kerosin-solar-nafta ' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	3-kloro-2-metil pentana' />
+                    <T t='E.	solar-kerosin-nafta' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -584,27 +550,28 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='14.  ' />
             <View>
-              <T t='Isomer posisi dari 2-pentena adalah ... ' />
-
+              <T t='Dari hasil penyulingan minyak bumi:' />
+              <Image style={{ width: 255, height: 119 }} source={uk2_01} />
+              <T t='Fraksi nomor urut 3 digunakan untuk ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'b', 14)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'e', 14)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	2-metil-2-butena                       ' />
+                    <T t='A.	bahan bakar pesawat dan diesel' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	1-pentena' />
+                    <T t='B.	bensin premium' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	2-pentuna' />
+                    <T t='C.	pembuatan LPG' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	siklopentana' />
+                    <T t='D.	bahan baku plastik' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	3-metil-2-pentena' />
+                    <T t='E.	pembuatan parafin' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -620,27 +587,28 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='15.  ' />
             <View>
-              <T t='Senyawa dengan rumus struktur H3C-CH=CH-CH2-CH3 dapat berisomer posisi dan berisomer rantai. Isomer yang dimaksud berturut-turut adalah ....' />
-
+              <T t='Salah satu cara untuk menghasilkan bensin adalah melalui reaksi berikut yang berlangsung pada suhu 425 °C dan  tekanan 25 atm:' />
+              <T t='C12H26  -> C6H14 + C6H12' />
+              <T t='Cara di atas dikenal dengan  istilah ....' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'a', 15)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'c', 15)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	1-pentena dan 2-metil-1-butena' />
+                    <T t='A.	pirolisis ' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	1-pentena dan 3-metil-2-pentena' />
+                    <T t='B.	distilasi ' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	2-butena dan 3-metil-2-butena' />
+                    <T t='C.	cracking' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	2-butena dan 2-etil-1-propena' />
+                    <T t='D.	knocking' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	3-pentena dan 3-metil-2-propena' />
+                    <T t='E.	disosiasi' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -656,29 +624,32 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='16.  ' />
             <View>
-              <T t='Perhatikan tabel berikut! ' />
-              <Image style={{ width: 320, height: 98 }} source={uk1_09} />
-              <T t='Kesimpulan yang tepat berdasarkan data pada tabel di atas adalah ….' />
+              <T t='Dari penyataan berikut.' />
+              <T t='-	Alkana bercabang dan sikloalkana terbakar lebih merata daripada alkana rantai lurus.' />
+              <T t='-	Alkana rantai pendek (C4) terbakar lebih merata daripada alkana rantai panjang ( C7).' />
+              <T t='-	Alkena terbakar lebih merata dari alkana.' />
+              <T t='Pembakaran paling merata adalah campuran dari ….' />
+
 
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'a', 16)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'e', 16)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	titik didih n-alkana rantai lurus lebih tinggi daripada titik didih n-alkana rantai bercabang, sedangkan titik lelehnya berubah secara tidak teratur' />
+                    <T t='A.	alkana bercabang dan alkena' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	titik leleh dan titik didih n-alkana rantai lurus sama-sama lebih tinggi daripada n-alkana rantai bercabang' />
+                    <T t='B.	alkana rantai pendek dan alkena' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	semakin panjang rantai utama atom C, maka titik didih bertambah tetapi titik lelehnya menurun secara teratur' />
+                    <T t='C.	alkana rantai panjang dan alkena' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	titik didih dan titik leleh dari 2-metil butana lebih rendah daripada n-pentana ' />
+                    <T t='D.	sikloalkana dan alkana rantai pendek' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	titik didih n-alkana rantai bercabang lebih rendah daripada titik leleh rantai lurus, sedangkan titik lelehnya berubah secara tidak teratur.' />
+                    <T t='E.	alkana bercabang rantai pendek dan alkena' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -694,27 +665,27 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='17.  ' />
             <View>
-              <T t='Pembentukan klorometana dari metana termasuk reaksi ....' />
+              <T t='Yang merupakan penentu kualitas bensin adalah ... .' />
 
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'd', 17)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'a', 17)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	eleminasi ' />
+                    <T t='A.	isooktana' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	oksidasi' />
+                    <T t='B.	isobutana' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	halogenasi' />
+                    <T t='C.	heksana' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	substitusi     ' />
+                    <T t='D.	isopentana' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	adisi' />
+                    <T t='E.	propana' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -730,7 +701,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='18.  ' />
             <View>
-              <T t='Adisi alkena dengan  air membutuhkan katalisator asam. Hasil reaksi mengikuti aturan Markonikov. Hasil reaksi: 1-propena  +  H2O adalah ....' />
+              <T t='Perbandingan isooktana dan n-heptana pada bensin yang paling tinggi kualitasnya terdapat pada campuran ….' />
 
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
@@ -738,19 +709,19 @@ export default class UKBM1KB4 extends React.Component {
                     onSelect = {(index, value) => this.onSelect(index, value, 'b', 18)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	propanol' />
+                    <T t='A.	80 % n-heptana dan 20% isooktana' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	2-propanol' />
+                    <T t='B.	18% n-heptana dan 82% isooktana' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	propana' />
+                    <T t='C.	88% n-heptana dan 18% isooktana' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	propena' />
+                    <T t='D.	78% n-heptana dan 22% isooktana' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	etanol' />
+                    <T t='E.	20% n-heptana dan 80% isooktana' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -766,27 +737,27 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='19.  ' />
             <View>
-              <T t='Alkana yang tidak dapat dihasilkan dari adisi alkena adalah....' />
+              <T t='Komposisi pertamax terdiri dari campuran 96% isooktana dan 4% n-heptana, memiliki bilangan oktan sebanyak ….' />
 
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'a', 19)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'c', 19)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	metana' />
+                    <T t='A.	4' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	butana' />
+                    <T t='B.	92' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	etana' />
+                    <T t='C.	96' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	pentana' />
+                    <T t='D.	100' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	propana' />
+                    <T t='E.	110' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>
@@ -801,27 +772,27 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funFloat}>
             <T t='20.  ' />
             <View>
-              <T t='Reaksi oksidasi sempurna gas LPG (campuran gas metana, etana, dan propana) akan menghasilkan ….' />
+              <T t='Zat aditif pada bensin yang penggunaanya dilarang adalah ….' />
 
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup
-                    onSelect = {(index, value) => this.onSelect(index, value, 'c', 20)}
+                    onSelect = {(index, value) => this.onSelect(index, value, 'd', 20)}
                 >
                   <RadioButton value={'a'} >
-                    <T t='A.	CO dan gas asetilen' />
+                    <T t='A.	MTBE' />
                   </RadioButton>
                   <RadioButton value={'b'}>
-                    <T t='B.	CO2 dan amoniak' />
+                    <T t='B.	alkohol' />
                   </RadioButton>
                   <RadioButton value={'c'}>
-                    <T t='C.	CO2 dan uap air                             ' />
+                    <T t='C.	eter' />
                   </RadioButton>
                   <RadioButton value={'d'}>
-                    <T t='D.	CO2 dan CO                                   ' />
+                    <T t='D.	tetra etil lead (TEL) ' />
                   </RadioButton>
                   <RadioButton value={'e'}>
-                    <T t='E.	CO dan uap air' />
+                    <T t='E.	ester' />
                   </RadioButton>
                 </RadioGroup>
                 </ScrollView>

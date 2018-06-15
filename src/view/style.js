@@ -23,6 +23,9 @@ funUkTitle: {
   fontWeight: 'bold',
   color: '#000000',
 },
+funRowTable: {
+  flexDirection: 'column',
+},
 funJudulKB: {
     marginTop: 10,
     padding: 10,
@@ -46,7 +49,8 @@ funJudulKB: {
   },
 funTitle: {
   fontSize: 16,
-  color: '#1E1EF0'
+  color: '#1E1EF0',
+  fontWeight: 'bold',
 },
 funInfo: {
   backgroundColor: '#b3e5fc',
@@ -84,6 +88,12 @@ funBox: {
   paddingBottom: 20,
   right: 0,
   flex: 1
+},
+funBoxColor: {
+  backgroundColor: '#e1f5fe',
+  padding: 10,
+  marginTop: 15,
+  marginBottom: 15
 },
 funBoxHeader: {
   alignItems: 'center',

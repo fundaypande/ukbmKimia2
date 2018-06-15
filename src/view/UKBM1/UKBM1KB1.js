@@ -278,15 +278,15 @@ Bacalah buku teks pelajaran kalian atau sumber lain untuk mengetahui kekhasan at
           <View style={funStyle.funBigSpace} />
           <T t='b.	Atom Karbon Primer, Skunder, Tersier, dan Kuarterner' />
           <View style={funStyle.funSpace} />
-          <Text>
+          <Text style={funStyle.t}>
             Berdasarkan posisinya dalam senyawa hidrokarbon, atom karbon dapat dibedakan menjadi atom karbon primer, skunder, tersier, dan kuarterner.
           </Text>
           <View style={funStyle.funSpace} />
-          <Text>
+          <Text style={funStyle.t}>
             Posisi atom karbon dalam senyawa hidrokarbon dapat menentukan kesetabilan atau sifat kimia dari senyawa hidrokarbon.
           </Text>
           <View style={funStyle.funSpace} />
-          <Text>
+          <Text style={funStyle.t}>
             Sebelum kalian mempelajari senyawa hidrokarbon lebih lanjut, kalian harus mengetahui perbeadaan posisi-posisi atom karbon yang ada pada sebuah senyawa hidrokarbon.
             Perhatikan contoh atom karbon primer, skunder, tersier, dan kuarterner berikut!
           </Text>

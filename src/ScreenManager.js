@@ -36,6 +36,10 @@ import UKBM4_C from './view/UKBM4/Penutup';
 
 //UKBM 5 data
 import UKBM5_KB1 from './view/UKBM5/UKBM5KB1';
+import UKBM5_KB2 from './view/UKBM5/UKBM5KB2';
+import UKBM5_KB3 from './view/UKBM5/UKBM5KB3';
+import UKBM5_KB4 from './view/UKBM5/UKBM5KB4';
+import UKBM5_C from './view/UKBM5/Penutup';
 
 
 //list UKBM
@@ -49,6 +53,7 @@ import UKBM7 from './view/UKBM7/UKBM7beranda.js';
 
 //list UJI KOMPETENSI
 import UK1 from './view/Kompetensi/UK1.js';
+import UK2 from './view/Kompetensi/UK2.js';
 
 
 const Screens = DrawerNavigator({
@@ -137,6 +142,18 @@ const Screens = DrawerNavigator({
   UKBM5_KB1: {
     screen: UKBM5_KB1
   },
+  UKBM5_KB2: {
+    screen: UKBM5_KB2
+  },
+  UKBM5_KB3: {
+    screen: UKBM5_KB3
+  },
+  UKBM5_KB4: {
+    screen: UKBM5_KB4
+  },
+  UKBM5_C: {
+    screen: UKBM5_C
+  },
 
   UKBM6: {
     screen: UKBM6
@@ -147,6 +164,9 @@ const Screens = DrawerNavigator({
   UK1: {
     screen: UK1
   },
+  UK2: {
+    screen: UK2
+  },
   Tes: {
     screen: Tes
   },
@@ -155,7 +175,7 @@ const Screens = DrawerNavigator({
   },
 },
   {
-    initialRouteName: 'UK1',
+    initialRouteName: 'UKBM5_KB1',
   },
   {
     contentComponent: props => <Sidebar {...props} />

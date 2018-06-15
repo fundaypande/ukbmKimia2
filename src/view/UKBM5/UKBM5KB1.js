@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, Alert} from 'react-native';
+import { Col, Row, Grid } from 'react-native-easy-grid';
+
 import Sound from './../../components/Sound';
 import TombolBeranda from './../../components/TombolBeranda';
 import Header from '../../components/Header';
@@ -51,7 +53,7 @@ export default class UKBM1KB4 extends React.Component {
 
   nextPart = () => {
   /* 1. Navigate to the Details route with params */
-      this.props.navigation.navigate('UKBM1_C', {
+      this.props.navigation.navigate('UKBM5_KB2', {
         totalNilai: this.state.totalNilai,
         });
         console.log('hasil nya akhir pencet : ' + this.state.totalNilai);
@@ -96,6 +98,346 @@ export default class UKBM1KB4 extends React.Component {
       this.setState({ input: { [field]: false } });
     }
     console.log('Total Nilai Sementara : ' + this.state.totalNilai);
+  }
+
+  tabel2() {
+    return (
+      <View>
+      <View style={funStyle.funBox} >
+        <T style={funStyle.b} t='Perubahan Entalpi : ∆H0C' />
+        <View style={funStyle.funSpace} />
+        <View style={funStyle.funSpace} />
+        <T style={funStyle.b} t='Pengertian : ' />
+        <View style={funStyle.funSpace} />
+        <T t='Perubahan entalpi pembakaran standar (∆H0C) menyatakan ' />
+
+        <View style={funStyle.funFloat}>
+          <ScrollView horizontal={true}>
+          <T t='jumlah ' />
+          <TI
+            editable={this.state.input.field67}
+            onSubmitEditing={
+              (event) => this.cekJawaban(68, event.nativeEvent.text.toLowerCase(), 'kalor')
+            }
+          />
+          <T t='yang dibebaskan untuk pembakaran     ' />
+          </ScrollView>
+        </View>
+
+        <View style={funStyle.funFloat}>
+          <ScrollView horizontal={true}>
+          <TI
+            editable={this.state.input.field68}
+            onSubmitEditing={
+              (event) => this.cekJawaban(69, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+            }
+          />
+          <T t='mol zat (unsur, senyawa) pada keadaan    ' />
+          </ScrollView>
+        </View>
+
+        <View style={funStyle.funFloat}>
+          <ScrollView horizontal={true}>
+          <TI
+            editable={this.state.input.field69}
+            onSubmitEditing={
+              (event) => this.cekJawaban(70, event.nativeEvent.text.toLowerCase(), 'standar')
+            }
+          />
+          <T t='(273 K, 1 atm)' />
+          </ScrollView>
+        </View>
+
+        <View style={funStyle.funSpace} />
+        <View style={funStyle.funSpace} />
+        <T style={funStyle.b} t='Contoh Reaksi : ' />
+        <View style={funStyle.funSpace} />
+
+        <View style={funStyle.funFloat}>
+          <ScrollView horizontal={true}>
+          <T t='CH4(g) + O2(g)    ->' />
+          <TI
+            editable={this.state.input.field70}
+            onSubmitEditing={
+              (event) => this.cekJawaban(71, event.nativeEvent.text.toLowerCase(), 'co2')
+            }
+          />
+          <T t='(g)    +' />
+          <TI
+            editable={this.state.input.field71}
+            onSubmitEditing={
+              (event) => this.cekJawaban(72, event.nativeEvent.text.toLowerCase(), '2h2o')
+            }
+          />
+          <T t='(l)      ' />
+          </ScrollView>
+        </View>
+        <T t='ΔHc° = -889,5 kJ' />
+      </View>
+
+
+
+
+      <View style={funStyle.funBox} >
+        <T style={funStyle.b} t='Perubahan Entalpi : ∆H°f' />
+        <View style={funStyle.funSpace} />
+        <View style={funStyle.funSpace} />
+        <T style={funStyle.b} t='Pengertian : ' />
+        <View style={funStyle.funSpace} />
+        <T t='Perubahan entalpi pembentukan standar (∆H°f) ' />
+
+        <View style={funStyle.funFloat}>
+          <ScrollView horizontal={true}>
+          <T t='menyatakan jumlah ' />
+          <TI
+            editable={this.state.input.field72}
+            onSubmitEditing={
+              (event) => this.cekJawaban(73, event.nativeEvent.text.toLowerCase(), 'kalor')
+            }
+          />
+          <T t='yang terlibat untuk' />
+          </ScrollView>
+        </View>
+
+        <View style={funStyle.funFloat}>
+          <ScrollView horizontal={true}>
+          <T t='proses ' />
+          <TI
+            editable={this.state.input.field73}
+            onSubmitEditing={
+              (event) => this.cekJawaban(74, event.nativeEvent.text.toLowerCase(), 'pembentukan')
+            }
+          />
+          <T t='satu ' />
+          <TI
+            editable={this.state.input.field74}
+            onSubmitEditing={
+              (event) => this.cekJawaban(75, event.nativeEvent.text.toLowerCase(), 'mol')
+            }
+          />
+          <T t='senyawa  ' />
+          </ScrollView>
+        </View>
+        <T t='dari unsur-unsurnya yang paling stabil di' />
+
+        <View style={funStyle.funFloat}>
+          <ScrollView horizontal={true}>
+          <T t='alam pada keadaan ' />
+          <TI
+            editable={this.state.input.field75}
+            onSubmitEditing={
+              (event) => this.cekJawaban(76, event.nativeEvent.text.toLowerCase(), 'standar')
+            }
+          />
+          <T t='(0 oC, 1 atm)' />
+          </ScrollView>
+        </View>
+
+        <View style={funStyle.funSpace} />
+        <View style={funStyle.funSpace} />
+        <T style={funStyle.b} t='Contoh Reaksi : ' />
+        <View style={funStyle.funSpace} />
+
+        <View style={funStyle.funFloat}>
+          <ScrollView horizontal={true}>
+          <T t='½ H2(g) + ½ Cl2(g    ->' />
+          <TI
+            editable={this.state.input.field76}
+            onSubmitEditing={
+              (event) => this.cekJawaban(77, event.nativeEvent.text.toLowerCase(), 'hcl')
+            }
+          />
+          <T t='(g)  ' />
+          </ScrollView>
+        </View>
+        <T t='ΔHfo = - 92,31 kJ/mol.' />
+        </View>
+
+
+
+
+        <View style={funStyle.funBox} >
+          <T style={funStyle.b} t='Perubahan Entalpi : ∆H°d' />
+          <View style={funStyle.funSpace} />
+          <View style={funStyle.funSpace} />
+          <T style={funStyle.b} t='Pengertian : ' />
+          <View style={funStyle.funSpace} />
+          <T t='Perubahan entalpi penguraian standar (∆H°d) menyatakan jumlah kalor yang diperlukan atau dibebaskan untuk proses ' />
+
+          <View style={funStyle.funFloat}>
+            <ScrollView horizontal={true}>
+            <TI
+              editable={this.state.input.field77}
+              onSubmitEditing={
+                (event) => this.cekJawaban(78, event.nativeEvent.text.toLowerCase(), 'penguraian')
+              }
+            />
+            <T t='satu mol ' />
+            <TI
+              editable={this.state.input.field78}
+              onSubmitEditing={
+                (event) => this.cekJawaban(79, event.nativeEvent.text.toLowerCase(), 'senyawa')
+              }
+            />
+            <T t='menjadi' />
+            </ScrollView>
+          </View>
+          <T t='unsur-unsurnya pada keadaan standar di mana suhu 0 °C (273 K) dan tekanan 1 atm.' />
+
+          <View style={funStyle.funSpace} />
+          <View style={funStyle.funSpace} />
+          <T style={funStyle.b} t='Contoh Reaksi : ' />
+          <View style={funStyle.funSpace} />
+
+          <View style={funStyle.funFloat}>
+            <ScrollView horizontal={true}>
+            <TI
+              editable={this.state.input.field79}
+              onSubmitEditing={
+                (event) => this.cekJawaban(80, event.nativeEvent.text.toLowerCase(), 'nh3')
+              }
+            />
+            <T t='(g)    -> ' />
+            <TI
+              editable={this.state.input.field80}
+              onSubmitEditing={
+                (event) => this.cekJawaban(81, event.nativeEvent.text.toLowerCase(), '1/2', '0,5', '½')
+              }
+            />
+            <T t='N2(g)     +' />
+            <TI
+              editable={this.state.input.field81}
+              onSubmitEditing={
+                (event) => this.cekJawaban(82, event.nativeEvent.text.toLowerCase(), '3/2')
+              }
+            />
+            <T t='H2(g)      ' />
+            </ScrollView>
+          </View>
+          <T t='∆H°d = +92 kJ' />
+      </View>
+
+
+
+      <View style={funStyle.funBox} >
+        <T style={funStyle.b} t='Perubahan Entalpi : ∆H°n' />
+        <View style={funStyle.funSpace} />
+        <View style={funStyle.funSpace} />
+        <T style={funStyle.b} t='Pengertian : ' />
+        <View style={funStyle.funSpace} />
+        <T t='Perubahan entalpi netralisasi standar (∆H°n) adalah' />
+
+        <View style={funStyle.funFloat}>
+          <ScrollView horizontal={true}>
+          <T t='perubahan ' />
+          <TI
+            editable={this.state.input.field82}
+            onSubmitEditing={
+              (event) => this.cekJawaban(83, event.nativeEvent.text.toLowerCase(), 'entalpi')
+            }
+          />
+          <T t='yang terjadi pada ' />
+          <TI
+            editable={this.state.input.field83}
+            onSubmitEditing={
+              (event) => this.cekJawaban(84, event.nativeEvent.text.toLowerCase(), 'penetralan')
+            }
+          />
+          </ScrollView>
+        </View>
+        <T t='satu mol asam oleh basa atau satu mol basa oleh asam pada keadaan standar.' />
+
+        <View style={funStyle.funSpace} />
+        <View style={funStyle.funSpace} />
+        <T style={funStyle.b} t='Contoh Reaksi : ' />
+        <View style={funStyle.funSpace} />
+
+        <View style={funStyle.funFloat}>
+          <ScrollView horizontal={true}>
+          <TI
+            editable={this.state.input.field84}
+            onSubmitEditing={
+              (event) => this.cekJawaban(85, event.nativeEvent.text.toLowerCase(), 'naoh')
+            }
+          />
+          <T t='(s)    +' />
+          <TI
+            editable={this.state.input.field85}
+            onSubmitEditing={
+              (event) => this.cekJawaban(86, event.nativeEvent.text.toLowerCase(), 'hcl')
+            }
+          />
+          <T t='(l)   ->   NaCl(s)    +' />
+          <TI
+            editable={this.state.input.field86}
+            onSubmitEditing={
+              (event) => this.cekJawaban(87, event.nativeEvent.text.toLowerCase(), 'h2o')
+            }
+          />
+          <T t='(l)      ' />
+          </ScrollView>
+        </View>
+        <T t='∆H°n = -890 kJ' />
+    </View>
+    <View style={funStyle.funSpace} />
+    <View style={funStyle.funSpace} />
+
+
+    <T t='Apa perbedaan antara perubahan entalpi biasa dengan perubaha entalpi standar untuk masing-masing jenis perubahan entalpi tersebut?' />
+    <T style={funStyle.b} t='Jawab : ' />
+    <View style={funStyle.funSpace} />
+    <T t='Perubahan entalpi adalah perubahan ' />
+
+    <View style={funStyle.funFloat}>
+      <ScrollView horizontal={true}>
+      <TI
+        editable={this.state.input.field87}
+        onSubmitEditing={
+          (event) => this.cekJawaban(88, event.nativeEvent.text.toLowerCase(), 'entalpi')
+        }
+      />
+      <T t='yang diukur pada suhu dan' />
+      </ScrollView>
+    </View>
+    <T t='tekanan tertentu, biasanya disimbolkan dengan ΔH. Sedangkan perubahan entalpi standar adalah ' />
+
+    <View style={funStyle.funFloat}>
+      <ScrollView horizontal={true}>
+      <T t='perubahan' />
+      <TI
+        editable={this.state.input.field88}
+        onSubmitEditing={
+          (event) => this.cekJawaban(89, event.nativeEvent.text.toLowerCase(), 'entalpi')
+        }
+      />
+      <T t='yang diukur pada' />
+      </ScrollView>
+    </View>
+
+    <T t='suhu standar 298K dan tekanan 1 atmosfer, biasanya disimbolkan dengan ΔH0. Harga perubahan entalpi standar dipengaruhi oleh jumlah ' />
+
+    <View style={funStyle.funFloat}>
+      <ScrollView horizontal={true}>
+      <TI
+        editable={this.state.input.field89}
+        onSubmitEditing={
+          (event) => this.cekJawaban(90, event.nativeEvent.text.toLowerCase(), 'mol')
+        }
+      />
+      <T t='zat, dan juga wujud ' />
+      <TI
+        editable={this.state.input.field90}
+        onSubmitEditing={
+          (event) => this.cekJawaban(91, event.nativeEvent.text.toLowerCase(), 'zat')
+        }
+      />
+      </ScrollView>
+    </View>
+
+
+
+      </View>
+    );
   }
 
   render() {
@@ -970,6 +1312,15 @@ export default class UKBM1KB4 extends React.Component {
               </View>
             </View>
 
+            <T style={funStyle.funTitle} t='Jenis Perubahan Entalpi' />
+            <View style={funStyle.funSpace} />
+            <T t='Jenis-jenis reaksi perubahan entalpi dapat dibadakan menjadi empat yaitu perubahan entalpi pembakaran (∆HC), pembentukan (∆Hf), penguraian (∆Hd), dan penetralan (∆Hn). Terdapat juga perubahan entalpi standar pembakaran (∆H0C), perubahan entalpi standar pembentukan (∆H0f), perubahan entalpi standar penguraian (∆H0d), dan perubahan entalpi standar penetralan (∆H0n). ' />
+            <View style={funStyle.funSpace} />
+            <T t='Carilah pengertian masing-masing perubahan entalpi standar tersebut beserta contohnya, isi pada tabel berikut! ' />
+            <View style={funStyle.funSpace} />
+            {
+              this.tabel2()
+            }
 
 
 
@@ -981,7 +1332,7 @@ export default class UKBM1KB4 extends React.Component {
             onPress={this.nextPart}
             >
               <Text style={funStyle.funJudulKB}>
-                Penutup >>
+                Kegiatan Belajar 2 >>
               </Text>
             </TouchableOpacity>
 
