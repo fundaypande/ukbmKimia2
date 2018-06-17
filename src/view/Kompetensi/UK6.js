@@ -47,7 +47,11 @@ export default class UKBM1KB4 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('UK');
+  }
+
+  beranda = () => {
+    this.props.navigation.navigate('Beranda');
   }
 
   nextPart = () => {
@@ -82,7 +86,9 @@ export default class UKBM1KB4 extends React.Component {
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
             <Sound />
-            <TombolBeranda />
+            <TouchableOpacity onPress={this.beranda}>
+              <TombolBeranda />
+            </TouchableOpacity>
           </View>
           <Text style={{ color: '#fff' }}> UJI KOMPETENSI UKBM 6 </Text>
           <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>

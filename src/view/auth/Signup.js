@@ -78,12 +78,12 @@ export default class Login extends Component {
           <View style={styles.separator} />
           <View style={styles.viewBody}>
             <Text style={styles.BodyText}>
-              Sign Up With Username and Password
+              Sign Up With Email and Password
             </Text>
             <TextInput
               underlineColorAndroid="transparent"
               style={myButton('rgba(255,255,255,0.5)')}
-              placeholder="Username"
+              placeholder="Email"
               onChangeText={TextInputValue => this.setState({ username: TextInputValue })}
             />
             <TextInput

@@ -4,6 +4,7 @@ import Beranda from './view/Beranda';
 import SelamatDatang from './view/selamatDatang.js';
 import Sidebar from './Sidebar';
 import UnitKegiatanBelajar from './view/UnitKegiatanBelajar.js';
+import UjiKompetensi from './view/UjiKopetensi.js';
 import Login from './view/auth/Login.js';
 import SignUp from './view/auth/Signup.js';
 
@@ -166,6 +167,10 @@ const Screens = DrawerNavigator({
   UKBM7: {
     screen: UKBM7
   },
+
+  UK: {
+    screen: UjiKompetensi
+  },
   UK1: {
     screen: UK1
   },
@@ -194,9 +199,9 @@ const Screens = DrawerNavigator({
     screen: Penutup
   },
 },
-  {
-    initialRouteName: 'UK7',
-  },
+  // {
+  //   initialRouteName: 'UK7',
+  // },
   {
     contentComponent: props => <Sidebar {...props} />
   }

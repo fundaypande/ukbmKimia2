@@ -27,19 +27,18 @@ export default class Sidebar extends React.Component {
       <Container>
         <Content>
           <ImageBackground
-            source={require('../src/Assets/img/Home-icon.png')}
+            source={require('./Assets/img/bg2.jpg')}
             style={{
-              height: 120,
+              height: 180,
               alignSelf: 'stretch',
               justifyContent: 'center',
               alignItems: 'center'
             }} >
             <Image
               square
-              style={{ height: 80, width: 70 }}
-              source={require('../src/Assets/img/Home-icon.png')}
+              style={{ height: 80, width: 80 }}
+              source={require('./Assets/img/logo_layout_ukbm.png')}
             />
-            <Text> lol </Text>
           </ImageBackground>
           <List
             dataArray={routes}

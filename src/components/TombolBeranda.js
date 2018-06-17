@@ -10,9 +10,7 @@ const Home_icon = require('./../Assets/img/Home-icon.png');
 
 const TombolBeranda = (props) => {
   return (
-    <TouchableOpacity>
-            <Image source={Home_icon} style={styles.icon} />
-    </TouchableOpacity>
+        <Image source={Home_icon} style={styles.icon} />
   );
 };
 const styles = {

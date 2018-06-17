@@ -75,18 +75,18 @@ export default class Login extends Component {
               style={styles.logo}
             />
             <Text style={styles.headerText}>
-              Your Assignment
+              UKBM Kimia
             </Text>
           </View>
           <View style={styles.separator} />
           <View style={styles.viewBody}>
             <Text style={styles.BodyText}>
-              Please Sign In With Username and Password
+              Please Sign In With Email and Password
             </Text>
             <TextInput
               underlineColorAndroid="transparent"
               style={myButton('rgba(255,255,255,0.5)')}
-              placeholder="Username"
+              placeholder="Email"
               onChangeText={TextInputValue => this.setState({ username: TextInputValue })}
             />
             <TextInput

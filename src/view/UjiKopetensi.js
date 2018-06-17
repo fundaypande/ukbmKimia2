@@ -21,33 +21,25 @@ const Hukum_Laju = require('./../Assets/img/logo_Setiap_Ukbm/Hukum_Laju.png');
 export default class UnitKegiatanBelajar extends React.Component {
 
   ukbm1 = () => {
-    this.props.navigation.navigate('UKBM1');
+    this.props.navigation.navigate('UK1');
   }
   ukbm2 = () => {
-    this.props.navigation.navigate('UKBM2');
+    this.props.navigation.navigate('UK2');
   }
   ukbm3 = () => {
-    this.props.navigation.navigate('UKBM3');
+    this.props.navigation.navigate('UK3');
   }
   ukbm4 = () => {
-    this.props.navigation.navigate('UKBM4');
+    this.props.navigation.navigate('UK4');
   }
   ukbm5 = () => {
-    this.props.navigation.navigate('UKBM5');
+    this.props.navigation.navigate('UK5');
   }
   ukbm6 = () => {
-    this.props.navigation.navigate('UKBM6');
+    this.props.navigation.navigate('UK6');
   }
   ukbm7 = () => {
-    this.props.navigation.navigate('UKBM7');
-  }
-
-  backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
-  }
-
-  beranda = () => {
-    this.props.navigation.navigate('Beranda');
+    this.props.navigation.navigate('UK7');
   }
 
   render() {
@@ -56,20 +48,16 @@ export default class UnitKegiatanBelajar extends React.Component {
       <Header />
       <View style={styles.box1}>
         <View style={styles.SoundHome}>
-          <TouchableOpacity onPress={this.backTo}>
-            <Sound />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={this.beranda}>
-            <TombolBeranda />
-          </TouchableOpacity>
+          <Sound />
+          <TombolBeranda />
         </View>
-        <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+        <TouchableOpacity style={styles.buttonBack}>
           <Image source={BackButton} style={styles.iconHeaderUKBM} />
         </TouchableOpacity>
       </View>
       <View style={styles.box2}>
         <Image source={logo_layout_ukbm} style={styles.iconHeaderUKBM} />
-          <Text style={styles.textBox2}>  UNIT KEGIATAN BELAJAR</Text>
+          <Text style={styles.textBox2}>  UJI KOMPETENSI</Text>
         </View>
           <View style={styles.box3}>
 
@@ -77,7 +65,7 @@ export default class UnitKegiatanBelajar extends React.Component {
                  <TouchableOpacity style={styles.ButtonTengahStyle} onPress={this.ukbm1}>
                  <Image source={Senyawa_Hidrokarbon} style={styles.icon} />
                  <View>
-                  <Text style={styles.textButtonUKBM}> UKBM 1 </Text>
+                  <Text style={styles.textButtonUKBM}> UJI KOMPETENSI 1 </Text>
                   <Text style={styles.textButtonKET}> Senyawa Hidrokarbon </Text>
                   </View>
                 </TouchableOpacity>
@@ -85,7 +73,7 @@ export default class UnitKegiatanBelajar extends React.Component {
                 <TouchableOpacity style={styles.ButtonTengahStyle} onPress={this.ukbm2}>
                  <Image source={Minyak_Bumi} style={styles.icon} />
                  <View>
-                  <Text style={styles.textButtonUKBM}> UKBM 2 </Text>
+                  <Text style={styles.textButtonUKBM}> UJI KOMPETENSI 2 </Text>
                   <Text style={styles.textButtonKET}>  Minyak Bumi </Text>
                   </View>
                 </TouchableOpacity>
@@ -93,7 +81,7 @@ export default class UnitKegiatanBelajar extends React.Component {
                 <TouchableOpacity style={styles.ButtonTengahStyle} onPress={this.ukbm3}>
                  <Image source={Pembakaran_Hidrokarbon} style={styles.icon} />
                  <View>
-                  <Text style={styles.textButtonUKBM}> UKBM 3 </Text>
+                  <Text style={styles.textButtonUKBM}> UJI KOMPETENSI 3 </Text>
                   <Text style={styles.textButtonKET}>  Pembakaran Hidrokarbon </Text>
                   </View>
                 </TouchableOpacity>
@@ -101,7 +89,7 @@ export default class UnitKegiatanBelajar extends React.Component {
                 <TouchableOpacity style={styles.ButtonTengahStyle} onPress={this.ukbm4}>
                  <Image source={Termokimia} style={styles.icon} />
                  <View>
-                  <Text style={styles.textButtonUKBM}> UKBM 4 </Text>
+                  <Text style={styles.textButtonUKBM}> UJI KOMPETENSI 4 </Text>
                   <Text style={styles.textButtonKET}> Termokimia </Text>
                   </View>
                 </TouchableOpacity>
@@ -109,7 +97,7 @@ export default class UnitKegiatanBelajar extends React.Component {
                 <TouchableOpacity style={styles.ButtonTengahStyle} onPress={this.ukbm5}>
                  <Image source={Perubahan_Entalpi} style={styles.icon} />
                  <View>
-                  <Text style={styles.textButtonUKBM}> UKBM 5 </Text>
+                  <Text style={styles.textButtonUKBM}> UJI KOMPETENSI 5 </Text>
                   <Text style={styles.textButtonKET}> Perubahan Entalpi </Text>
                   </View>
                 </TouchableOpacity>
@@ -117,7 +105,7 @@ export default class UnitKegiatanBelajar extends React.Component {
                 <TouchableOpacity style={styles.ButtonTengahStyle} onPress={this.ukbm6}>
                  <Image source={Laju_Reaksi} style={styles.icon} />
                  <View>
-                  <Text style={styles.textButtonUKBM}> UKBM 6 </Text>
+                  <Text style={styles.textButtonUKBM}> UJI KOMPETENSI 6 </Text>
                   <Text style={styles.textButtonKET}>  Laju Reaksi dan Faktor yang Mempengaruhi </Text>
                   </View>
                 </TouchableOpacity>
@@ -125,7 +113,7 @@ export default class UnitKegiatanBelajar extends React.Component {
                 <TouchableOpacity style={styles.ButtonTengahStyle} onPress={this.ukbm7}>
                  <Image source={Hukum_Laju} style={styles.icon} />
                  <View>
-                  <Text style={styles.textButtonUKBM}> UKBM 7 </Text>
+                  <Text style={styles.textButtonUKBM}> UJI KOMPETENSI 7 </Text>
                   <Text style={styles.textButtonKET}> Hukum Laju dan Penentuan Laju Reaksi </Text>
                   </View>
                 </TouchableOpacity>

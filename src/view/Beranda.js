@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Alert, Image, TouchableOpacity, AsyncStorage } from 'react-native';
+import { StyleSheet, Text, View, Alert, Image, TouchableOpacity, AsyncStorage, ImageBackground } from 'react-native';
 import * as firebase from 'firebase';
 
 import Sound from './../components/Sound';
@@ -10,6 +10,10 @@ const Petunjuk_Aplikasi = require('./../Assets/img/Petunjuk_Aplikasi.png');
 const UKBM = require('./../Assets/img/UKBM.png');
 const Uji_Kompetensi = require('./../Assets/img/Uji_Kompetensi.png');
 const Pengembang = require('./../Assets/img/Pengembang.png');
+
+
+const selamat_datang = require('../Assets/img/selamatdatang.jpg');
+const animasi_bg2 = require('../Assets/img/ANIMASI2.png');
 
 export default class Beranda extends React.Component {
 
@@ -31,6 +35,11 @@ export default class Beranda extends React.Component {
       });
   }
 
+  logOut = () => {
+    firebase.auth().signOut();
+    this.props.navigation.navigate('Login');
+  }
+
   showUser = () => {
 
     const users = firebase.auth().currentUser;
@@ -38,11 +47,28 @@ export default class Beranda extends React.Component {
     const dbRef = firebase.database().ref('users/' + uid + '/ukbm/ukbm1');
     dbRef.on('value', snap => console.log(snap.val()));
 
+    Alert.alert(
+      'Logout Akun',
+      'Apakah anda yakin ingin mengeluarkan akun anda dari aplikasi ini?',
+      [
+        {text: 'Cancel', style: 'cancel'},
+        {text: 'YA Keluar', onPress: () => {
+          firebase.auth().signOut();
+          this.props.navigation.navigate('Login')
+        }},
+      ],
+      { cancelable: false }
+    )
+
     //this.props.navigation.navigate('Tes');
   }
 
   onUKBM = () => {
     this.props.navigation.navigate('UnitKegiatanBelajar');
+  }
+
+  toUk = () => {
+    this.props.navigation.navigate('UK');
   }
 
   render() {
@@ -59,9 +85,24 @@ export default class Beranda extends React.Component {
         <Text> { this.state.user } </Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.box2}>
 
+      <View style={styles.box2}>
+          <ImageBackground source={selamat_datang} style={styles.gambar_selamat_datang}>
+            <View style={styles.gambartransparent}>
+              <View style={{alignItems: 'center'}}>
+                <Text style={styles.text1}>Selamat datang di aplikasi </Text>
+                <Text style={styles.text2}> UKBM KIMIA </Text>
+              </View>
+
+              <Image source={animasi_bg2}/>
+
+                <Text style={styles.text3}>BERANDA</Text>
+
+            </View>
+
+          </ImageBackground>
         </View>
+
           <View style={styles.box3}>
 
 
@@ -75,7 +116,7 @@ export default class Beranda extends React.Component {
                   <Text style={styles.textButton}> Unit Kegiatan Belajar Mandiri </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.ButtonTengahStyle}>
+                <TouchableOpacity style={styles.ButtonTengahStyle} onPress={this.toUk}>
                 <Image source={Uji_Kompetensi} style={styles.icon} />
                   <Text style={styles.textButton}> Uji Kompetensi </Text>
                 </TouchableOpacity>
@@ -161,4 +202,28 @@ const styles = StyleSheet.create({
     width: 36,
     marginLeft: 10,
   },
+  gambar_selamat_datang: {
+    flex: 1,
+  },
+  gambartransparent: {
+    flex: 1,
+    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  },
+  text1: {
+    color: '#006600',
+    fontWeight: 'bold',
+    fontSize: 20,
+  },
+  text2: {
+    color: '#006600',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+   text3: {
+    color: '#000099',
+    fontWeight: 'bold',
+    fontSize: 30,
+  }
 });
