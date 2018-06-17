@@ -43,8 +43,8 @@ export default class UnitKegiatanBelajar extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
-  }
+     this.props.navigation.navigate('Beranda');
+   }
 
   beranda = () => {
     this.props.navigation.navigate('Beranda');

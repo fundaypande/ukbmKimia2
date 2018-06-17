@@ -106,7 +106,7 @@ export default class Beranda extends React.Component {
           <View style={styles.box3}>
 
 
-                 <TouchableOpacity style={styles.ButtonTengahStyle}>
+                 <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Petunjuk')}>
                  <Image source={Petunjuk_Aplikasi} style={styles.icon} />
                   <Text style={styles.textButton}> Petunjuk Aplikasi </Text>
                 </TouchableOpacity>

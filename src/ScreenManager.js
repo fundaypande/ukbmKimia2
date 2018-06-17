@@ -10,6 +10,7 @@ import SignUp from './view/auth/Signup.js';
 
 import Tes from './tes';
 import Penutup from './view/Penutup';
+import Petunjuk from './view/Petunjuk';
 
 //UKBM 1 data
 import UKBM1_KB1 from './view/UKBM1/UKBM1KB1';
@@ -92,6 +93,9 @@ const Screens = DrawerNavigator({
   },
   SignUp: {
     screen: SignUp
+  },
+  Petunjuk: {
+    screen: Petunjuk
   },
   SelamatDatang: {
     screen: SelamatDatang
