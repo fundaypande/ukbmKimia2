@@ -10,7 +10,7 @@ import TI from '../../components/TInputSoal.js';
 const BackButton = require('./../../Assets/img/backButton.png');
 const ukbm2_01 = require('./../../Assets/UKBM2/ukbm2_01.png');
 const human01 = require('./../../Assets/Human/human01.png');
-const ukbm2_02 = require('./../../Assets/UKBM2/ukbm2_02.jpg');
+const ukbm2_02 = require('./../../Assets/UKBM2/ukbm2_02a.jpg');
 
 const funStyle = require('../style');
 const totalField = 100;

@@ -9,7 +9,7 @@ import TI from '../../components/TInputSoal.js';
 
 const BackButton = require('./../../Assets/img/backButton.png');
 const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
-const ukbm2_02 = require('./../../Assets/UKBM2/ukbm2_02.png');
+const ukbm2_02 = require('./../../Assets/UKBM2/ukbm2_02b.png');
 const ukbm2_03 = require('./../../Assets/UKBM2/ukbm2_03.png');
 const human01 = require('./../../Assets/Human/human02.png');
 const hand = require('./../../Assets/Human/hand.png');

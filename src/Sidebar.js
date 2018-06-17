@@ -27,7 +27,7 @@ export default class Sidebar extends React.Component {
   }
 
   toUkbm = () => {
-    this.props.navigation.navigate('UKBM');
+    this.props.navigation.navigate('UnitKegiatanBelajar');
   }
 
   toUk = () => {
@@ -81,7 +81,7 @@ export default class Sidebar extends React.Component {
 
 
           <TouchableOpacity
-            onPress={this.logOut}
+            onPress={this.toUk}
             style={{ padding: 10, marginLeft: 10, marginTop: 5 }}
           >
             <Text>Petunjuk Aplikasi</Text>
