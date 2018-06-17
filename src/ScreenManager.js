@@ -57,6 +57,8 @@ import UK2 from './view/Kompetensi/UK2.js';
 import UK3 from './view/Kompetensi/UK3.js';
 import UK4 from './view/Kompetensi/UK4.js';
 import UK5 from './view/Kompetensi/UK5.js';
+import UK6 from './view/Kompetensi/UK6.js';
+import UK7 from './view/Kompetensi/UK7.js';
 
 
 const Screens = DrawerNavigator({
@@ -179,6 +181,12 @@ const Screens = DrawerNavigator({
   UK5: {
     screen: UK5
   },
+  UK6: {
+    screen: UK6
+  },
+  UK7: {
+    screen: UK7
+  },
   Tes: {
     screen: Tes
   },
@@ -187,7 +195,7 @@ const Screens = DrawerNavigator({
   },
 },
   {
-    initialRouteName: 'UK5',
+    initialRouteName: 'UK7',
   },
   {
     contentComponent: props => <Sidebar {...props} />
