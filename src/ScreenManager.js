@@ -61,6 +61,30 @@ import UK5 from './view/Kompetensi/UK5.js';
 import UK6 from './view/Kompetensi/UK6.js';
 import UK7 from './view/Kompetensi/UK7.js';
 
+import Identitas1 from './view/UKBMFile/Identitas1.js';
+import Identitas2 from './view/UKBMFile/Identitas2.js';
+import Identitas3 from './view/UKBMFile/Identitas3.js';
+import Identitas4 from './view/UKBMFile/Identitas4.js';
+import Identitas5 from './view/UKBMFile/Identitas5.js';
+import Identitas6 from './view/UKBMFile/Identitas6.js';
+import Identitas7 from './view/UKBMFile/Identitas7.js';
+
+import Peta1 from './view/UKBMFile/Peta1.js';
+import Peta2 from './view/UKBMFile/Peta2.js';
+import Peta3 from './view/UKBMFile/Peta3.js';
+import Peta4 from './view/UKBMFile/Peta4.js';
+import Peta5 from './view/UKBMFile/Peta5.js';
+import Peta6 from './view/UKBMFile/Peta6.js';
+import Peta7 from './view/UKBMFile/Peta7.js';
+
+import Belajar1 from './view/UKBMFile/Belajar1.js';
+import Belajar2 from './view/UKBMFile/Belajar2.js';
+import Belajar3 from './view/UKBMFile/Belajar3.js';
+import Belajar4 from './view/UKBMFile/Belajar4.js';
+import Belajar5 from './view/UKBMFile/Belajar5.js';
+import Belajar6 from './view/UKBMFile/Belajar6.js';
+import Belajar7 from './view/UKBMFile/Belajar7.js';
+
 
 const Screens = DrawerNavigator({
   Login: {
@@ -78,6 +102,73 @@ const Screens = DrawerNavigator({
   UnitKegiatanBelajar: {
     screen: UnitKegiatanBelajar
   },
+
+  Identitas1: {
+    screen: Identitas1
+  },
+  Identitas2: {
+    screen: Identitas2
+  },
+  Identitas3: {
+    screen: Identitas3
+  },
+  Identitas4: {
+    screen: Identitas4
+  },
+  Identitas5: {
+    screen: Identitas5
+  },
+  Identitas6: {
+    screen: Identitas6
+  },
+  Identitas7: {
+    screen: Identitas7
+  },
+
+  Peta1: {
+    screen: Peta1
+  },
+  Peta2: {
+    screen: Peta2
+  },
+  Peta3: {
+    screen: Peta3
+  },
+  Peta4: {
+    screen: Peta4
+  },
+  Peta5: {
+    screen: Peta5
+  },
+  Peta6: {
+    screen: Peta6
+  },
+  Peta7: {
+    screen: Peta7
+  },
+
+  Belajar1: {
+    screen: Belajar1
+  },
+  Belajar2: {
+    screen: Belajar2
+  },
+  Belajar3: {
+    screen: Belajar3
+  },
+  Belajar4: {
+    screen: Belajar4
+  },
+  Belajar5: {
+    screen: Belajar5
+  },
+  Belajar6: {
+    screen: Belajar6
+  },
+  Belajar7: {
+    screen: Belajar7
+  },
+
   UKBM1: {
     screen: UKBM1
   },

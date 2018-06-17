@@ -12,6 +12,8 @@ import Footer from '../../components/Footer';
 import T from '../../components/Text';
 import TI from '../../components/TInputSoal.js';
 
+
+
 const BackButton = require('./../../Assets/img/backButton.png');
 const human04 = require('./../../Assets/Human/human04.png');
 const connan = require('./../../Assets/Human/connan.png');
@@ -47,6 +49,10 @@ export default class UKBM1KB4 extends React.Component {
       gambar: ''
     };
     console.log(this.state.input);
+  }
+
+  beranda = () => {
+    this.props.navigation.navigate('Beranda');
   }
 
   setStateField = () => {

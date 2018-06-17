@@ -49,6 +49,10 @@ export default class UKBM1KB1 extends React.Component {
     this.props.navigation.navigate('UnitKegiatanBelajar');
   }
 
+  beranda = () => {
+    this.props.navigation.navigate('Beranda');
+  }
+
   cekJawaban = (repeat, userInput, jawaban1, jawaban2, jawaban3) => {
     //jika i tidak kurang dari 0
     const field = 'field';

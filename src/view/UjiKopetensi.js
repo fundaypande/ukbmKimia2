@@ -41,6 +41,9 @@ export default class UnitKegiatanBelajar extends React.Component {
   ukbm7 = () => {
     this.props.navigation.navigate('UK7');
   }
+  buttonBack = () => {
+    this.props.navigation.navigate('Beranda');
+  }
 
   render() {
     return (
@@ -51,7 +54,7 @@ export default class UnitKegiatanBelajar extends React.Component {
           <Sound />
           <TombolBeranda />
         </View>
-        <TouchableOpacity style={styles.buttonBack}>
+        <TouchableOpacity style={styles.buttonBack} onPress={this.buttonBack}>
           <Image source={BackButton} style={styles.iconHeaderUKBM} />
         </TouchableOpacity>
       </View>

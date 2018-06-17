@@ -49,6 +49,10 @@ export default class UKBM1KB2 extends React.Component {
     return input;
   }
 
+  beranda = () => {
+    this.props.navigation.navigate('Beranda');
+  }
+
   componentWillMount() {
     const { params } = this.props.navigation.state;
     const total = params ? params.totalNilai : null;

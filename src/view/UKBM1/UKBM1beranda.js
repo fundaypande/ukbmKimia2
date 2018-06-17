@@ -17,6 +17,10 @@ export default class UKBM1beranda extends React.Component {
     this.props.navigation.navigate('UnitKegiatanBelajar');
   }
 
+  beranda = () => {
+    this.props.navigation.navigate('Beranda');
+  }
+
   render() {
     return (
     <View style={styles.containerMain}>
@@ -43,20 +47,20 @@ export default class UKBM1beranda extends React.Component {
         </View>
           <View style={styles.box3}>
 
-             <TouchableOpacity style={styles.ButtonTengahStyle}>
+             <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Identitas1')}>
                   <Text style={styles.textButtonUKBM}> Identitas </Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.ButtonTengahStyle}>
+              <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Peta1')}>
                   <Text style={styles.textButtonUKBM}> Peta Konsep </Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Belajar1')}>
+                  <Text style={styles.textButtonUKBM}> Informasi Pembelajaran </Text>
               </TouchableOpacity>
               <TouchableOpacity onPress={() => this.props.navigation.navigate('UKBM1_KB1')} style={styles.ButtonTengahStyle}>
                   <Text style={styles.textButtonUKBM}> Kegiatan Pembelajaran </Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.ButtonTengahStyle}>
-                  <Text style={styles.textButtonUKBM}> Penutup </Text>
-              </TouchableOpacity>
 
-              <TouchableOpacity style={styles.ButtonNextUKBM}>
+              <TouchableOpacity style={styles.ButtonNextUKBM} onPress={() => this.props.navigation.navigate('UKBM2')}>
                   <Text style={styles.textButtonUKBM}> UKBM 2 </Text>
               </TouchableOpacity>
 

@@ -65,7 +65,9 @@ funSparator: {
   borderBottomColor: '#9b9b9b',
   borderBottomWidth: 1,
   marginTop: 5,
-  marginBottom: 5
+  marginBottom: 5,
+  marginLeft: 10,
+  marginRight: 10
 },
 funSpace: {
   marginTop: 5,
@@ -161,6 +163,139 @@ funField: {
   marginRight: 10,
   marginTop: 0,
   marginBottom: 10,
+},
+funSparatorBox: {
+  backgroundColor: '#9b9b9b',
+  borderBottomWidth: 1,
+  marginTop: 5,
+  marginBottom: 5
+},
+funtextSparator: {
+    flex: 1,
+    flexDirection: 'row',
+    borderRadius: 20,
+    marginTop: 8,
+    marginBottom: 10,
+    padding: 13,
+    backgroundColor: '#FFF0AB',
+    justifyContent: 'center',
+    alignItems: 'center'
+},
+funNo1: {
+    flex: 0.1,
+    alignSelf: 'flex-start',
+    marginTop: 10,
+    padding: 13,
+    backgroundColor: '#FFF0AB',
+    color: '#000000',
+    fontSize: 15,
+},
+funNotengah: {
+    flex: 0.1,
+    alignSelf: 'flex-start',
+    marginTop: 10,
+    backgroundColor: '#FFF0AB',
+    color: '#000000',
+    fontSize: 15,
+},
+funText: {
+  fontWeight: '900',
+  color: '#1E1EF0',
+  textAlign: 'justify'
+},
+funNotifketerangan: {
+  flex: 1,
+  backgroundColor: '#F2FA98',
+  borderColor: 'transparent',
+  borderBottomWidth: 1,
+  borderTopWidth: 1,
+  borderLeftWidth: 1,
+  borderRightWidth: 1,
+  padding: 25,
+  marginTop: 10,
+  borderRadius: 50
+},
+haiKawan: {
+  fontSize: 20, color: '#FFF000', fontWeight:'bold'
+},
+keteranganHayKawan: {
+  fontSize: 18, color: '#FFFFFF',
+},
+penjelasan: {
+  fontSize: 15, color: '#000000',
+},
+keteranganMariKawan: {
+  fontSize: 18, color: '#FFFFFF', fontWeight:'bold'
+},
+funNotifMarikawan: {
+  flex: 1,
+  backgroundColor: '#0F5B00',
+  borderColor: 'transparent',
+  borderBottomWidth: 1,
+  borderTopWidth: 1,
+  borderLeftWidth: 1,
+  borderRightWidth: 1,
+  padding: 25,
+  marginTop: 10,
+  borderRadius: 50,
+},
+BoldketeranganMateri: {
+    fontWeight: 'bold', paddingLeft: 15
+},
+keteranganMateri: {
+    paddingLeft: 27
+},
+pustakaketerangan: {
+  paddingLeft: 30, fontSize: 13
+},
+pustakaketeranganSpace: {
+  paddingLeft: 53, fontSize: 13
+},
+headerIdentitas: {
+  color: '#fff', fontWeight: 'bold', fontSize: 20
+},
+keteranganKegiatanBelajar: {
+  paddingLeft: 45, fontSize: 13
+},
+bold: {
+  fontWeight: 'bold'
+},
+funFloat2: {
+  flexDirection: 'column',
+  justifyContent: 'flex-start',
+  marginTop: 0,
+  marginBottom: -10,
+  paddingTop: 0,
+  paddingBottom: 0
+},
+funNotifketeranganKegiatanBelajar: {
+  flex: 1,
+  backgroundColor: '#FAF1DC',
+  borderColor: '#FF0000',
+  borderBottomWidth: 1,
+  borderTopWidth: 1,
+  borderLeftWidth: 1,
+  borderRightWidth: 1,
+  padding: 25,
+  marginTop: 10,
+  borderRadius: 50
+},
+funNotifMarikawanUKBM5: {
+  flex: 1,
+  backgroundColor: '#140282',
+  borderColor: 'transparent',
+  borderBottomWidth: 1,
+  borderTopWidth: 1,
+  borderLeftWidth: 1,
+  borderRightWidth: 1,
+  padding: 25,
+  marginTop: 10,
+  borderRadius: 50,
+},
+materifunchild:{
+  paddingLeft: 30
+},
+materiSpace:{
+  paddingLeft:37
 }
-
 });

@@ -43,20 +43,22 @@ export default class UKBM7beranda extends React.Component {
         </View>
           <View style={styles.box3}>
 
-             <TouchableOpacity style={styles.ButtonTengahStyle}>
+             <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Identitas7')}>
                   <Text style={styles.textButtonUKBM}> Identitas </Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.ButtonTengahStyle}>
+              <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Peta7')}>
                   <Text style={styles.textButtonUKBM}> Peta Konsep </Text>
               </TouchableOpacity>
+
+              <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Belajar7')}>
+                  <Text style={styles.textButtonUKBM}> Informasi Pembelajaran </Text>
+              </TouchableOpacity>
+
               <TouchableOpacity style={styles.ButtonTengahStyle}>
                   <Text style={styles.textButtonUKBM}> Kegiatan Pembelajaran </Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.ButtonTengahStyle}>
-                  <Text style={styles.textButtonUKBM}> Penutup </Text>
-              </TouchableOpacity>
 
-              <TouchableOpacity style={styles.ButtonNextUKBM}>
+              <TouchableOpacity style={styles.ButtonNextUKBM} onPress={() => this.props.navigation.navigate('Beranda')}>
                   <Text style={styles.textButtonUKBM}> BERANDA </Text>
               </TouchableOpacity>
 

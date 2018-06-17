@@ -1,9 +1,9 @@
 import React from 'react';
-import { Image, ImageBackground, TouchableOpacity, Alert } from 'react-native';
+import { Image, ImageBackground, TouchableOpacity, Alert, View } from 'react-native';
 import { Container, Content, Text, List, ListItem } from 'native-base';
 import * as firebase from 'firebase';
 
-const routes = ['Profile'];
+const funStyle = require('./view/style.js');
 
 export default class Sidebar extends React.Component {
 
@@ -20,6 +20,18 @@ export default class Sidebar extends React.Component {
   logOut = () => {
     firebase.auth().signOut();
     this.props.navigation.navigate('Login');
+  }
+
+  toBeranda = () => {
+    this.props.navigation.navigate('Beranda');
+  }
+
+  toUkbm = () => {
+    this.props.navigation.navigate('UKBM');
+  }
+
+  toUk = () => {
+    this.props.navigation.navigate('UK');
   }
 
   render() {
@@ -40,18 +52,43 @@ export default class Sidebar extends React.Component {
               source={require('./Assets/img/logo_layout_ukbm.png')}
             />
           </ImageBackground>
-          <List
-            dataArray={routes}
-            renderRow={data => {
-              return (
-                <ListItem
-                  button
-                  onPress={() => this.props.navigation.navigate(data)} >
-                  <Text>{data}</Text>
-                </ListItem>
-              );
-            }}
-          />
+
+
+
+          <TouchableOpacity
+            onPress={this.toBeranda}
+            style={{ padding: 10, marginLeft: 10, marginTop: 5 }}
+          >
+            <Text>Beranda</Text>
+          </TouchableOpacity>
+          <View style={ funStyle.funSparator } />
+
+          <TouchableOpacity
+            onPress={this.toUkbm}
+            style={{ padding: 10, marginLeft: 10, marginTop: 5 }}
+          >
+            <Text>Unit Kegiatan Belajar</Text>
+          </TouchableOpacity>
+          <View style={ funStyle.funSparator } />
+
+          <TouchableOpacity
+            onPress={this.toUk}
+            style={{ padding: 10, marginLeft: 10, marginTop: 5 }}
+          >
+            <Text>Uji Kompetensi</Text>
+          </TouchableOpacity>
+          <View style={ funStyle.funSparator } />
+
+
+          <TouchableOpacity
+            onPress={this.logOut}
+            style={{ padding: 10, marginLeft: 10, marginTop: 5 }}
+          >
+            <Text>Petunjuk Aplikasi</Text>
+          </TouchableOpacity>
+          <View style={ funStyle.funSparator } />
+
+
           <TouchableOpacity
             onPress={this.logOut}
             style={{ padding: 10, marginLeft: 10, marginTop: 5 }}
