@@ -19,7 +19,7 @@ const Petunjuk_Aplikasi = require('./../Assets/petunjuk_aplikasi/Petunjuk_Aplika
 export default class PetunjukAplikasi extends React.Component {
 
  backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('Beranda');
   }
 
 
