@@ -73,6 +73,10 @@ funSpace: {
   marginTop: 5,
   marginBottom: 5
 },
+funMiniSpace: {
+  marginTop: 2,
+  marginBottom: 2
+},
 funBigSpace: {
   marginTop: 20,
   marginBottom: 20,

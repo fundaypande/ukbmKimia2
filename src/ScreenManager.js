@@ -49,6 +49,10 @@ import UKBM6_KB2 from './view/UKBM6/UKBM6KB2';
 import UKBM6_KB3 from './view/UKBM6/UKBM6KB3';
 import UKBM6_C from './view/UKBM6/Penutup';
 
+//UKBM 7 data
+import UKBM7_KB1 from './view/UKBM7/UKBM7KB1';
+
+
 //list UKBM
 import UKBM1 from './view/UKBM1/UKBM1beranda.js';
 import UKBM2 from './view/UKBM2/UKBM2beranda.js';
@@ -280,6 +284,9 @@ const Screens = DrawerNavigator({
   UKBM7: {
     screen: UKBM7
   },
+  UKBM7_KB1: {
+    screen: UKBM7_KB1
+  },
 
   UK: {
     screen: UjiKompetensi
@@ -313,7 +320,7 @@ const Screens = DrawerNavigator({
   },
 },
   {
-    initialRouteName: 'UKBM6_KB3',
+    initialRouteName: 'UKBM7_KB1',
   },
   {
     contentComponent: props => <Sidebar {...props} />
