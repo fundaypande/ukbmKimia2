@@ -62,7 +62,7 @@ export default class UKBM1KB3 extends React.Component {
       if (userInput === jawaban1 || userInput === jawaban2 || userInput === jawaban3) {
         const nilai = Number(this.state.totalNilai) + Number(i);
         this.setState({ totalNilai: nilai });
-        Alert.alert('Hasil', 'Jawaban Benar! Nilai : ' + Number(i));
+        Alert.alert('Hasil', 'Jawaban Benar! ');
 
         //set text input editable:false dengan perulangan
         let input = [];

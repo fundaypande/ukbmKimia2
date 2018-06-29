@@ -83,7 +83,7 @@ export default class UKBM1KB4 extends React.Component {
 
   nextPart = () => {
   /* 1. Navigate to the Details route with params */
-      this.props.navigation.navigate('UKBM1_C', {
+      this.props.navigation.navigate('UKBM7_C', {
         totalNilai: this.state.totalNilai,
         });
         console.log('hasil nya akhir pencet : ' + this.state.totalNilai);
@@ -97,7 +97,7 @@ export default class UKBM1KB4 extends React.Component {
       if (userInput === jawaban1 || userInput === jawaban2 || userInput === jawaban3) {
         const nilai = Number(this.state.totalNilai) + Number(i);
         this.setState({ totalNilai: nilai });
-        Alert.alert('Hasil', 'Jawaban Benar! Nilai : ' + Number(i));
+        Alert.alert('Hasil', 'Jawaban Benar! ');
 
         //set text input editable:false dengan perulangan
         let input = [];
@@ -1877,9 +1877,9 @@ export default class UKBM1KB4 extends React.Component {
                 <ScrollView horizontal={true}>
                 <T t='Pada [B] tetap, [A] naik 2 kali, maka r naik' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field117}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                    (event) => this.cekJawaban(118, event.nativeEvent.text.toLowerCase(), '2', 'dua')
                   }
                 />
                 <T t='kali' />
@@ -1894,16 +1894,16 @@ export default class UKBM1KB4 extends React.Component {
                 <ScrollView horizontal={true}>
                 <T t='2^m   =' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field118}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                    (event) => this.cekJawaban(119, event.nativeEvent.text.toLowerCase(), '2', 'dua')
                   }
                 />
                 <T t='       =>       m =' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field119}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                    (event) => this.cekJawaban(120, event.nativeEvent.text.toLowerCase(), '1', 'satu')
                   }
                 />
                 </ScrollView>
@@ -1914,9 +1914,9 @@ export default class UKBM1KB4 extends React.Component {
                 <ScrollView horizontal={true}>
                 <T t='Jadi orde reaksi terhadap' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field120}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), 'a')
+                    (event) => this.cekJawaban(121, event.nativeEvent.text.toLowerCase(), 'a')
                   }
                 />
                 <T t='=   1' />
@@ -1930,16 +1930,16 @@ export default class UKBM1KB4 extends React.Component {
                 <ScrollView horizontal={true}>
                 <T t='percobaan ' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field121}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                    (event) => this.cekJawaban(122, event.nativeEvent.text.toLowerCase(), '1', 'satu')
                   }
                 />
                 <T t='dan' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field122}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                    (event) => this.cekJawaban(123, event.nativeEvent.text.toLowerCase(), '2', 'dua')
                   }
                 />
                 <T t='.' />
@@ -1950,9 +1950,9 @@ export default class UKBM1KB4 extends React.Component {
                 <ScrollView horizontal={true}>
                 <T t='Pada [A] tetap, [B] naik 2 kali, maka r naik ' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field123}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '4', 'empat')
+                    (event) => this.cekJawaban(124, event.nativeEvent.text.toLowerCase(), '4', 'empat')
                   }
                 />
                 <T t='kali' />
@@ -1968,16 +1968,16 @@ export default class UKBM1KB4 extends React.Component {
                 <ScrollView horizontal={true}>
                 <T t='2^n   =' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field124}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '4', 'empat')
+                    (event) => this.cekJawaban(125, event.nativeEvent.text.toLowerCase(), '4', 'empat')
                   }
                 />
                 <T t='       =>       n =' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field125}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                    (event) => this.cekJawaban(126, event.nativeEvent.text.toLowerCase(), '2', 'dua')
                   }
                 />
                 </ScrollView>
@@ -1989,16 +1989,16 @@ export default class UKBM1KB4 extends React.Component {
                 <ScrollView horizontal={true}>
                 <T t='Orde reaksi total = m + n = ' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field126}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                    (event) => this.cekJawaban(127, event.nativeEvent.text.toLowerCase(), '1', 'satu')
                   }
                 />
                 <T t='+' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field127}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                    (event) => this.cekJawaban(128, event.nativeEvent.text.toLowerCase(), '2', 'dua')
                   }
                 />
                 <T t='=   3' />
@@ -2016,23 +2016,23 @@ export default class UKBM1KB4 extends React.Component {
               <View style={funStyle.funFloat}>
                 <ScrollView horizontal={true}>
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field128}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2')
+                    (event) => this.cekJawaban(129, event.nativeEvent.text.toLowerCase(), '2')
                   }
                 />
                 <T t='M/s = k x (' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field129}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '0,1')
+                    (event) => this.cekJawaban(130, event.nativeEvent.text.toLowerCase(), '0,1')
                   }
                 />
                 <T t=') x (' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field130}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '0,1')
+                    (event) => this.cekJawaban(131, event.nativeEvent.text.toLowerCase(), '0,1')
                   }
                 />
                 <T t=')^2' />
@@ -2044,9 +2044,9 @@ export default class UKBM1KB4 extends React.Component {
                 <ScrollView horizontal={true}>
                 <T t='k = 2/0,001 = ' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field131}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2')
+                    (event) => this.cekJawaban(132, event.nativeEvent.text.toLowerCase(), '2')
                   }
                 />
                 <T t='x   103 M-2 s-1' />
@@ -2059,9 +2059,9 @@ export default class UKBM1KB4 extends React.Component {
                 <ScrollView horizontal={true}>
                 <T t='v = ' />
                 <TI
-                  editable={this.state.input.field15}
+                  editable={this.state.input.field132}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2')
+                    (event) => this.cekJawaban(133, event.nativeEvent.text.toLowerCase(), '2')
                   }
                 />
                 <T t='x 10^3 [A][B]^2' />
