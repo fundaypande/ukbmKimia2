@@ -26,6 +26,8 @@ const ukbm7_11 = require('./../../Assets/UKBM7/ukbm7_11.png');
 const ukbm7_12 = require('./../../Assets/UKBM7/ukbm7_12.png');
 const ukbm7_13 = require('./../../Assets/UKBM7/ukbm7_13.png');
 
+const ukbm7_16 = require('./../../Assets/UKBM7/ukbm7_16.png');
+
 
 const ukbm7_a = require('./../../Assets/UKBM7/ukbm7_a.png');
 const ukbm7_b = require('./../../Assets/UKBM7/ukbm7_b.png');
@@ -35,6 +37,9 @@ const ukbm7_e = require('./../../Assets/UKBM7/ukbm7_e.png');
 const ukbm7_f = require('./../../Assets/UKBM7/ukbm7_f.png');
 const ukbm7_g = require('./../../Assets/UKBM7/ukbm7_g.png');
 const ukbm7_i = require('./../../Assets/UKBM7/ukbm7_i.png');
+const ukbm7_j = require('./../../Assets/UKBM7/ukbm7_j.png');
+const ukbm7_k = require('./../../Assets/UKBM7/ukbm7_k.png');
+const ukbm7_l = require('./../../Assets/UKBM7/ukbm7_l.png');
 
 
 const funStyle = require('../style');
@@ -1433,9 +1438,417 @@ export default class UKBM1KB4 extends React.Component {
               </View>
 
 
+            </View>
 
 
 
+
+
+            <View style={funStyle.funBox} >
+              <T t='2.	Reaksi: BF3 + NH3 → BF3NH3' />
+              <Image style={{ width: 215, height: 136 }} source={ukbm7_16} />
+
+              <T style={funStyle.b} t='Jawab :' />
+              <T t='Persamaan laju reaksi: r = k [BF3]^x [NH3]^y' />
+              <T t='Untuk menentukan orde reaksi BF3 kita gunakan percobaan dengan konsentrasi NH3 sama yaitu' />
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='percobaan ' />
+                <TI
+                  editable={this.state.input.field87}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(88, event.nativeEvent.text.toLowerCase(), '4')
+                  }
+                />
+                <T t='dan' />
+                <TI
+                  editable={this.state.input.field88}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(89, event.nativeEvent.text.toLowerCase(), '5')
+                  }
+                />
+                </ScrollView>
+              </View>
+
+              <T t='untuk menentukan orde reaksi NH3 kita gunakan percobaan BF3 dengan konsentrasi sama yaitu' />
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='percobaan ' />
+                <TI
+                  editable={this.state.input.field89}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(90, event.nativeEvent.text.toLowerCase(), '1')
+                  }
+                />
+                <T t='dan' />
+                <TI
+                  editable={this.state.input.field90}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(91, event.nativeEvent.text.toLowerCase(), '2')
+                  }
+                />
+                </ScrollView>
+              </View>
+
+
+              <View style={funStyle.funBox} >
+
+                <Image style={{ width: 150, height: 171 }} source={ukbm7_j} />
+
+                <T t='Isi jawaban sesuai huruf yang ada pada gambar!' />
+                <View style={funStyle.funBoxColor}>
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='A = ' />
+                    <TI
+                      editable={this.state.input.field91}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(92, event.nativeEvent.text.toLowerCase(), '0,0596')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='B = ' />
+                    <TI
+                      editable={this.state.input.field92}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(93, event.nativeEvent.text.toLowerCase(), '0,1193')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='C = ' />
+                    <TI
+                      editable={this.state.input.field93}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(94, event.nativeEvent.text.toLowerCase(), '0,350', '0,35')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='D = ' />
+                    <TI
+                      editable={this.state.input.field94}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(95, event.nativeEvent.text.toLowerCase(), '0,100', '0,10', '0,1')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='E = ' />
+                    <TI
+                      editable={this.state.input.field95}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(96, event.nativeEvent.text.toLowerCase(), '1')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='F = ' />
+                    <TI
+                      editable={this.state.input.field96}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(97, event.nativeEvent.text.toLowerCase(), '2')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='G = ' />
+                    <TI
+                      editable={this.state.input.field97}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(98, event.nativeEvent.text.toLowerCase(), '0,1')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='H = ' />
+                    <TI
+                      editable={this.state.input.field98}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(99, event.nativeEvent.text.toLowerCase(), '0,2')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='I = ' />
+                    <TI
+                      editable={this.state.input.field99}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(100, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+
+                  </View>
+              </View>
+
+
+
+              <View style={funStyle.funBox} >
+
+                <Image style={{ width: 150, height: 174 }} source={ukbm7_k} />
+
+                <T t='Isi jawaban sesuai huruf yang ada pada gambar!' />
+                <View style={funStyle.funBoxColor}>
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='A = ' />
+                    <TI
+                      editable={this.state.input.field100}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(101, event.nativeEvent.text.toLowerCase(), '0,1065')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='B = ' />
+                    <TI
+                      editable={this.state.input.field101}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(102, event.nativeEvent.text.toLowerCase(), '0,2130', '0,213')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='C = ' />
+                    <TI
+                      editable={this.state.input.field102}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(103, event.nativeEvent.text.toLowerCase(), '0,125')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='D = ' />
+                    <TI
+                      editable={this.state.input.field103}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(104, event.nativeEvent.text.toLowerCase(), '0,250', '0,25')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='E = ' />
+                    <TI
+                      editable={this.state.input.field104}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(105, event.nativeEvent.text.toLowerCase(), '1')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='F = ' />
+                    <TI
+                      editable={this.state.input.field105}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(106, event.nativeEvent.text.toLowerCase(), '2')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='G = ' />
+                    <TI
+                      editable={this.state.input.field106}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(107, event.nativeEvent.text.toLowerCase(), '0,1')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='H = ' />
+                    <TI
+                      editable={this.state.input.field107}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(108, event.nativeEvent.text.toLowerCase(), '0,2')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='I = ' />
+                    <TI
+                      editable={this.state.input.field108}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(109, event.nativeEvent.text.toLowerCase(), '1')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+
+                  </View>
+              </View>
+
+
+              <View style={funStyle.funSpace} />
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='Orde reaksi total: ' />
+                <TI
+                  editable={this.state.input.field109}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(110, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                  }
+                />
+                <T t='+' />
+                <TI
+                  editable={this.state.input.field110}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(111, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                  }
+                />
+                <T t='=' />
+                <TI
+                  editable={this.state.input.field111}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(112, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                  }
+                />
+                </ScrollView>
+              </View>
+
+              <View style={funStyle.funSpace} />
+              <T t='Untuk menentukan harga k, pilih pada salah satu data percobaan, misalkan percobaan 1: ' />
+              <T t='r = k [BF3]^1 [NH3]^1' />
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='0,2130 = k (' />
+                <TI
+                  editable={this.state.input.field112}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(113, event.nativeEvent.text.toLowerCase(), '0,250', '0,25')
+                  }
+                />
+                <T t=')^1   x   (' />
+                <TI
+                  editable={this.state.input.field113}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(114, event.nativeEvent.text.toLowerCase(), '0,250', '0,25')
+                  }
+                />
+                <T t=')^1' />
+                </ScrollView>
+              </View>
+
+
+
+              <View style={funStyle.funBox} >
+
+                <Image style={{ width: 180, height: 57 }} source={ukbm7_l} />
+
+                <T t='Isi jawaban sesuai huruf yang ada pada gambar!' />
+                <View style={funStyle.funBoxColor}>
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='A = ' />
+                    <TI
+                      editable={this.state.input.field114}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(115, event.nativeEvent.text.toLowerCase(), '0,250', '0,25')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='B = ' />
+                    <TI
+                      editable={this.state.input.field115}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(116, event.nativeEvent.text.toLowerCase(), '0,250', '0,25')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  <View style={funStyle.funFloat}>
+                    <ScrollView horizontal={true}>
+                    <T style={{ color: '#C80B1E', fontWeight: 'bold' }} t='C = ' />
+                    <TI
+                      editable={this.state.input.field116}
+                      onSubmitEditing={
+                        (event) => this.cekJawaban(117, event.nativeEvent.text.toLowerCase(), '3,408')
+                      }
+                    />
+                    </ScrollView>
+                  </View>
+                  <View style={funStyle.funMiniSpace} />
+
+                  </View>
+              </View>
 
 
             </View>
