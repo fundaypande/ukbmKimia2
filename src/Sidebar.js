@@ -33,6 +33,9 @@ export default class Sidebar extends React.Component {
   toUk = () => {
     this.props.navigation.navigate('UK');
   }
+  toPetunjuk = () => {
+    this.props.navigation.navigate('Petunjuk');
+  }
 
   render() {
     return (
@@ -81,7 +84,7 @@ export default class Sidebar extends React.Component {
 
 
           <TouchableOpacity
-            onPress={this.toUk}
+            onPress={this.toPetunjuk}
             style={{ padding: 10, marginLeft: 10, marginTop: 5 }}
           >
             <Text>Petunjuk Aplikasi</Text>

@@ -231,6 +231,18 @@ penjelasan: {
 keteranganMariKawan: {
   fontSize: 18, color: '#FFFFFF', fontWeight:'bold'
 },
+funNotifhaikawan: {
+  flex: 1,
+  backgroundColor: '#FF0000',
+  borderColor: 'transparent',
+  borderBottomWidth: 1,
+  borderTopWidth: 1,
+  borderLeftWidth: 1,
+  borderRightWidth: 1,
+  padding: 25,
+  marginTop: 10,
+  borderRadius: 50
+},
 funNotifMarikawan: {
   flex: 1,
   backgroundColor: '#0F5B00',
@@ -248,6 +260,9 @@ BoldketeranganMateri: {
 },
 keteranganMateri: {
     paddingLeft: 27
+},
+styleJudul: {
+  color: '#000000', fontSize:16
 },
 pustakaketerangan: {
   paddingLeft: 30, fontSize: 13

@@ -130,10 +130,14 @@ export default class IdentitasUKBM3 extends React.Component {
                                 <View style={funStyle.funFloat}>
                                 <Image style={{ width: 150, height: 150 }} source={dengan} />
                                   <View style={funStyle.funNotifketerangan}>
-                                    <Text style={funStyle.penjelasan}>Dengan pembelajaran berbasis masalah (PBL) melalui diskusi, tanya jawab, penugasan, presentasi dan analisis, kalian diminta mampu menganalisis dampak pembakaran bahan bakar terhadap lingkungan dan kesehatan, serta mempresentasikan gagasan cara mengatasi dampak pembakaran senyawa karbon terhadap lingkungan dan kesehatan. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
-                                    <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
-                                     <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
+                                    <Text style={funStyle.penjelasan}>Dengan pembelajaran berbasis masalah (PBL) melalui diskusi, tanya jawab, penugasan, presentasi dan analisis,  </Text>
                                   </View>
+                                </View>
+
+                                <View style={funStyle.funNotifketerangan}>
+                                  <Text style={funStyle.penjelasan}> kalian diminta mampu menganalisis dampak pembakaran bahan bakar terhadap lingkungan dan kesehatan, serta mempresentasikan gagasan cara mengatasi dampak pembakaran senyawa karbon terhadap lingkungan dan kesehatan. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
+                                  <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
+                                   <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
                                 </View>
 
 

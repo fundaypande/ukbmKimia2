@@ -26,7 +26,7 @@ const marikawan = require('./../../Assets/Human/human04.png');
 const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
 const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
 
-export default class IdentitasUKBM4 extends React.Component {
+export default class IdentitasUKBM1 extends React.Component {
 
  backTo = () => {
     this.props.navigation.navigate('UnitKegiatanBelajar');
@@ -43,7 +43,7 @@ export default class IdentitasUKBM4 extends React.Component {
                   <Sound />
                   <TombolBeranda />
                 </View>
-                  <Text style={funStyle.headerIdentitas}> TERMOKIMIA </Text>
+                  <Text style={funStyle.headerIdentitas}> SENYAWA HIDROKARBON </Text>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
@@ -51,11 +51,11 @@ export default class IdentitasUKBM4 extends React.Component {
 
                     <View style={{ flex: 1 }}>
                       <ScrollView style={{ paddingLeft: 10, paddingRight: 10 }}>
-                         <View style={funStyle.funJudulIdentitas}>
-                          <Text style={funStyle.styleJudul}>
-                            1. Identitas
-                          </Text>
-                        </View>
+                      <View style={funStyle.funJudulIdentitas}>
+                        <Text style={funStyle.styleJudul}>
+                          1. Identitas
+                        </Text>
+                      </View>
 
                         <Text style={funStyle.funText}>
                          a.  Mata Pelajaran          : Kimia{'\n'}
@@ -71,15 +71,15 @@ export default class IdentitasUKBM4 extends React.Component {
 
                                         <View style={{ flex: 0.2, flexDirection: 'column', alignSelf: 'flex-start' }}>
                                           <Text>
-                                            3.4 {'\n'} {'\n'}
+                                            3.1 {'\n'} {'\n'}
                                             </Text>
                                             <Text>
-                                            4.4 {'\n'}
+                                            4.1 {'\n'}
                                           </Text>
                                         </View>
                                         <Text style={{flex: 3}}>
-                                            Menjelaskan konsep perubahan entalpi (âˆ†H) reaksi pada tekanan tetap dalam persamaan termokimia.{'\n'}
-                                            Menyimpulkan hasil analisis data percobaan termokima pada tekanan tetap.
+                                            Menganalisis struktur dan sifat senyawa hidrokarbon berdasarkan kekhasan atom karbon dan penggolongan senyawanya. {'\n'}
+                                            Membuat model visual berbagai struktur molekul hidrokarbon yang memiliki rumus molekul yang sama.
                                         </Text>
                                       </View>
 
@@ -90,39 +90,35 @@ export default class IdentitasUKBM4 extends React.Component {
 
                                         <View style={{ flex: 0.3, flexDirection: 'column', alignSelf: 'flex-start' }}>
                                           <Text>
-                                            3.4.1
+                                            3.1.1 {'\n'}
                                           </Text>
                                           <Text>
-                                            3.4.2{'\n'}
+                                            3.1.2
                                           </Text>
                                           <Text>
-                                            3.4.3
+                                            3.1.3 {'\n'}
                                           </Text>
                                           <Text>
-                                            3.4.4{'\n'}
+                                            3.1.4
                                           </Text>
                                           <Text>
-                                            4.4.1
+                                            3.1.5 {'\n'}
                                           </Text>
                                           <Text>
-                                            4.4.2
+                                            4.1.1 {'\n'}  {'\n'}
                                           </Text>
                                           <Text>
-                                            4.4.3{'\n'}
-                                          </Text>
-                                          <Text>
-                                            4.4.4
+                                            4.1.2 {'\n'}
                                           </Text>
                                         </View>
                                         <Text style={{flex: 3}}>
-                                             Menjelaskan reaksi eksoterm berdasarkan hasil percobaan.{'\n'}
-                                             Menjelaskan reaksi eksoterm berdasarkan diagram tingkat energi.{'\n'}
-                                             Menjelaskan reaksi endoterm berdasarkan hasil percobaan  {'\n'}
-                                             Menjelaskan reaksi endoterm berdasarkan diagram tingkat energi.{'\n'}
-                                             Merancang percobaan reaksi eksoterm dan reaksi endoterm{'\n'}
-                                             Melakukan percobaan reaksi eksoterm dan reaksi endoterm{'\n'}
-                                             Menyimpulkan percobaan reaksi eksoterm dan reaksi endoterm{'\n'}
-                                             Menyajikan hasil percobaan reaksi eksoterm dan reaksi endoterm{'\n'}
+                                             Mendeskripsikan kekhasan atom karbon dalam senyawa karbon. {'\n'}
+                                             Membedakan atom C primer, sekunder, tersier dan kuarterner {'\n'}
+                                             Mengelompokan senyawa hidrokarbon berdasarkan kejenuhan ikatan {'\n'}
+                                             Memberi nama senyawa alkana, alkena dan alkuna {'\n'}
+                                             Menentukan Isomer alkana, alkena dan alkuna Mendeskripsikan reaksi-reaksi senyawa hidrokarbon {'\n'}
+                                             Merancang model visual berbagai struktur molekul hidrokarbon yang memeiliki rumus melekul yang sama dengan molymod {'\n'}
+                                             Menampikan model visual berbagai struktur molekul hidrokarbon yang memeiliki rumus melekul yang sama dengan molymod {'\n'}
 
                                         </Text>
                                       </View>
@@ -143,7 +139,7 @@ export default class IdentitasUKBM4 extends React.Component {
                                 <Image style={{ width: 160, height: 160 }} source={haikawan} />
                                   <View style={funStyle.funNotifhaikawan}>
                                     <Text style={funStyle.haiKawan}> Hai Kawan ....</Text>
-                                    <Text style={funStyle.keteranganHayKawan}>Apa sich tujuan kita belajar â€œTermokimiaâ€ ini?</Text>
+                                    <Text style={funStyle.keteranganHayKawan}> Apa sich tujuan kita belajar â€œSenyawa Hidrokarbonâ€ ini? </Text>
                                   </View>
                                 </View>
 
@@ -151,10 +147,14 @@ export default class IdentitasUKBM4 extends React.Component {
                                 <View style={funStyle.funFloat}>
                                 <Image style={{ width: 150, height: 150 }} source={dengan} />
                                   <View style={funStyle.funNotifketerangan}>
-                                    <Text style={funStyle.penjelasan}> Dengan pembelajaran berbasis masalah (PBL) melalui diskusi, tanya jawab, penugasan, presentasi dan analisis, kalian diminta mampu mendeskripsikan kekhasan atom karbon dalam senyawa karbon, membedakan atom C primer, sekunder, tersier dan kuarterner, mengelompokan senyawa hidrokarbon berdasarkan kejenuhan ikatan, memberi nama senyawa alkana, alkena dan alkuna, menentukan Isomer alkana, alkena dan alkuna, mendeskripsikan reaksi-reaksi senyawa hidrokarbon, serta merancang dan menampilkan model visual berbagai struktur molekul hidrokarbon yang memeiliki rumus melekul yang sama dengan molymod. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
-                                    <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
-                                     <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
+                                    <Text style={funStyle.penjelasan}> Dengan pembelajaran berbasis masalah (PBL) melalui diskusi, tanya jawab, penugasan, presentasi dan analisis,  </Text>
                                   </View>
+                                </View>
+
+                                <View style={funStyle.funNotifketerangan}>
+                                  <Text style={funStyle.penjelasan}> kalian diminta mampu mendeskripsikan kekhasan atom karbon dalam senyawa karbon, membedakan atom C primer, sekunder, tersier dan kuarterner, mengelompokan senyawa hidrokarbon berdasarkan kejenuhan ikatan, memberi nama senyawa alkana, alkena dan alkuna, menentukan Isomer alkana, alkena dan alkuna, mendeskripsikan reaksi-reaksi senyawa hidrokarbon, serta merancang dan menampilkan model visual berbagai struktur molekul hidrokarbon yang memeiliki rumus melekul yang sama dengan molymod. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
+                                  <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
+                                   <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
                                 </View>
 
 
@@ -173,21 +173,17 @@ export default class IdentitasUKBM4 extends React.Component {
                                   </Text>
 
                                  <Text style={funStyle.BoldketeranganMateri}> - Faktual :</Text>
-                                 <Text style={funStyle.keteranganMateri}>Sistem dan lingkungan, sistem tertutup, sistem terbuka, sistem terisolasi, entalphi.</Text>
+                                 <Text style={funStyle.keteranganMateri}>Atom karbon merupakan atom dengan elektron valensi 4 dan dapat membentuk ikatan kovalen dengan 4 atom karbon lainnya. Senyawa hidrokarbon jika dibakar akan menghasilkan CO2 dan air.</Text>
 
                                  <Text style={funStyle.BoldketeranganMateri}> - Konseptual : </Text>
-                                  <Text style={funStyle.keteranganMateri}>- Termokimia adalah cabang ilmu kimia yang mempelajari tentang</Text><Text style={funStyle.materiSpace}>kalor reaksi, yaitu pengukuran kalor yang menyertai reaksi kimia; </Text>
-                                  <Text style={funStyle.keteranganMateri}>- sistem adalah segala sesuatu yang menjadi pusat perhatian yang</Text><Text style={funStyle.materiSpace}>kita pelajari perubahan energinya;  </Text>
-                                  <Text style={funStyle.keteranganMateri}>- lingkungan adalah segala sesuatau di luar sistem; </Text>
-                                  <Text style={funStyle.keteranganMateri}>- reaksi eksoterm adalah reaksi yang melepaskan kalor; </Text>
-                                  <Text style={funStyle.keteranganMateri}>- reaksi endoterm adalah reaksi yang menyerap kalor.</Text>
+                                 <Text style={funStyle.keteranganMateri}>Jenis atom karbon pada senyawa hidrokarbon adalah primer, skunder, tersier, dan kuarterner; senyawa hidrokarbon berdasarkan kejenuhan ikatannya dapat dibagi menjadi alkana, alkena, dan alkuna; senyawa hidrokarbon dengan rumus kimia sama dapat memiliki beberapa struktur berbeda (isomer). </Text>
+
                                  <Text style={funStyle.BoldketeranganMateri}> - Prosedural : </Text>
-                                 <Text style={funStyle.keteranganMateri}>- Praktikum membedakan reaksi eksoterm dan endoterm.</Text>
+                                 <Text style={funStyle.keteranganMateri}>Mernacang model visual berbagai struktur molekul hidrokarbon yang memeiliki rumus melekul yang sama: memberi nama sesuai IUPAC berbagai senyawa hidrokarbon. </Text>
 
                                  <Text style={funStyle.BoldketeranganMateri}> - Lihat dan baca pada Buku Teks Pelajaran (BTP): </Text>
-                                 <Text style={funStyle.pustakaketerangan}>(1)  Sudarmo, Unggul. 2014. Kimia SMA Kelas XI K.2013.</Text><Text style={funStyle.pustakaketeranganSpace}>Jakarta:Erlangga </Text>
-                                 <Text style={funStyle.pustakaketerangan}>(2) Umiyati, Nurhalimah. 2016. Buku Siswa Kimia untuk SMA/MA XI.</Text><Text style={funStyle.pustakaketeranganSpace}>Surakarta: Mediatama</Text>
-                                 <Text style={funStyle.pustakaketerangan}>(3) Watoni, Haris, dkk. 2017. Kimia untuk SMA/MA Kelas XI. Bandung:</Text><Text style={funStyle.pustakaketeranganSpace}>Yrama Widya</Text>
+                                 <Text style={funStyle.pustakaketerangan}> - A. Haris Watoni, dkk. 2017. Kimia untuk SMA/MA Kelas XI. Bandung: Yrama Widya </Text>
+                                 <Text style={funStyle.pustakaketerangan}> - Sudarmo, Unggul. 2014. Kimia SMA Kelas XI K.2013. Jakarta: Erlangga </Text>
                       </ScrollView>
                   </View>
 

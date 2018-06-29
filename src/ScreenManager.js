@@ -323,9 +323,9 @@ const Screens = DrawerNavigator({
     screen: Penutup
   },
 },
-  {
-    initialRouteName: 'UKBM7_KB1',
-  },
+  // {
+  //   initialRouteName: 'UKBM7_KB1',
+  // },
   {
     contentComponent: props => <Sidebar {...props} />
   }

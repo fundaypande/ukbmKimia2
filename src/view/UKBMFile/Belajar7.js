@@ -29,7 +29,9 @@ const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
 export default class KegiatanBelajarUKBM1 extends React.Component {
 
 
-
+  backTo = () => {
+     this.props.navigation.navigate('UnitKegiatanBelajar');
+   }
 
  render() {
     return (

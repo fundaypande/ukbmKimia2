@@ -26,7 +26,7 @@ const marikawan = require('./../../Assets/Human/human04.png');
 const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
 const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
 
-export default class IdentitasUKBM3 extends React.Component {
+export default class IdentitasUKBM5 extends React.Component {
 
  backTo = () => {
     this.props.navigation.navigate('UnitKegiatanBelajar');
@@ -43,7 +43,7 @@ export default class IdentitasUKBM3 extends React.Component {
                   <Sound />
                   <TombolBeranda />
                 </View>
-                  <Text style={funStyle.headerIdentitas}> PEMBAKARAN HIDROKARBON </Text>
+                  <Text style={funStyle.headerIdentitas}> PERUBAHAN ENTALPI </Text>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
@@ -58,8 +58,8 @@ export default class IdentitasUKBM3 extends React.Component {
                         </View>
 
                         <Text style={funStyle.funText}>
-                         a.  Mata Pelajaran          : Kimia XI (Peminatan){'\n'}
-                         b.  Semester                    : 3 (tiga){'\n'}
+                         a.  Mata Pelajaran          : Kimia{'\n'}
+                         b.  Semester                    : 3 (tiga) {'\n'}
                          </Text>
 
                         <View style={funStyle.funSparator} />
@@ -71,15 +71,15 @@ export default class IdentitasUKBM3 extends React.Component {
 
                                         <View style={{ flex: 0.2, flexDirection: 'column', alignSelf: 'flex-start' }}>
                                           <Text>
-                                            3.3 {'\n'} {'\n'}
+                                            3.5 {'\n'}
                                             </Text>
                                             <Text>
-                                            4.3 {'\n'}
+                                            4.5 {'\n'}
                                           </Text>
                                         </View>
                                         <Text style={{flex: 3}}>
-                                            Mengidentifikasi reaksi pembakaran hidrokarbon yang sempurna dan tidak sempurna serta sifat zat hasil pembakaran (CO2), CO, partikulat karbon).{'\n'}
-                                            Menyusun gagasan cara mengatasi dampak pembakaran senyawa karbon terhadap lingkungan dan kesehatan.
+                                            Menjelaskan jenis entalpi reaksi, hukum Hess dan konsep energi ikatan.{'\n'}
+                                            Membandingkan perubahan entalpi beberapa reaksi berdasarkan data hasil percobaan.
                                         </Text>
                                       </View>
 
@@ -90,19 +90,27 @@ export default class IdentitasUKBM3 extends React.Component {
 
                                         <View style={{ flex: 0.3, flexDirection: 'column', alignSelf: 'flex-start' }}>
                                           <Text>
-                                            3.3.1 {'\n'}
+                                            3.5.1 {'\n'}
                                           </Text>
                                           <Text>
-                                            3.3.2 {'\n'}
+                                            3.5.2
                                           </Text>
                                           <Text>
-                                            4.3.1
+                                            3.5.3 {'\n'}
+                                          </Text>
+                                          <Text>
+                                            3.5.4
+                                          </Text>
+                                          <Text>
+                                            4.5.1 {'\n'}
                                           </Text>
                                         </View>
                                         <Text style={{flex: 3}}>
-                                             Menganalisis dampak pembakaran bahan bakar terhadap lingkungan.{'\n'}
-                                             Menganalisis dampak pembakaran bahan bakar terhadap kesehatan.{'\n'}
-                                             Mempresentasikan gagasan cara mengatasi dampak pembakaran senyawa karbon terhadap lingkungan dan kesehatan.{'\n'}
+                                             Menghitung ï„H reaksi berdasarkan data percobaan kalorimeter.{'\n'}
+                                             Menghitung ï„H reaksi berdasarkan hukum Hess.{'\n'}
+                                             Menghitung ï„H reaksi berdasarkan data perubahan entalpi pembentukan standar.{'\n'}
+                                             Menghitung ï„H reaksi berdasarkan data energi ikatan.{'\n'}
+                                             Mendiskusikan perbedaan data percobaan ï„H suatu reaksi eksoterm dan endoterm.{'\n'}
                                         </Text>
                                       </View>
 
@@ -122,7 +130,7 @@ export default class IdentitasUKBM3 extends React.Component {
                                 <Image style={{ width: 160, height: 160 }} source={haikawan} />
                                   <View style={funStyle.funNotifhaikawan}>
                                     <Text style={funStyle.haiKawan}> Hai Kawan ....</Text>
-                                    <Text style={funStyle.keteranganHayKawan}>Apa sich tujuan kita belajar â€œPembakaran Hidrokarbonâ€ ini?</Text>
+                                    <Text style={funStyle.keteranganHayKawan}>Apa sich tujuan kita belajar  â€œPerubahan Entalpiâ€ ini?</Text>
                                   </View>
                                 </View>
 
@@ -130,10 +138,14 @@ export default class IdentitasUKBM3 extends React.Component {
                                 <View style={funStyle.funFloat}>
                                 <Image style={{ width: 150, height: 150 }} source={dengan} />
                                   <View style={funStyle.funNotifketerangan}>
-                                    <Text style={funStyle.penjelasan}>Dengan pembelajaran berbasis masalah (PBL) melalui diskusi, tanya jawab, penugasan, presentasi dan analisis, kalian diminta mampu menganalisis dampak pembakaran bahan bakar terhadap lingkungan dan kesehatan, serta mempresentasikan gagasan cara mengatasi dampak pembakaran senyawa karbon terhadap lingkungan dan kesehatan. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
-                                    <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
-                                     <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
+                                    <Text style={funStyle.penjelasan}>Dengan pembelajaran discoveri melalui diskusi, tanya jawab, penugasan, presentasi, praktikum dan analisis,  </Text>
                                   </View>
+                                </View>
+
+                                <View style={funStyle.funNotifketerangan}>
+                                  <Text style={funStyle.penjelasan}> kalian diharapkan mampu menghitung ï„H reaksi berdasarkan data percobaan kalori meter, hukum Hess, data perubahan entalpi pembentukan standar, dan data energi ikatat; serta mendiskusikan perbedaan data percobaan ï„H suatu reaksi eksoterm dan endoterm. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan</Text>
+                                  <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
+                                   <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
                                 </View>
 
 
@@ -152,19 +164,22 @@ export default class IdentitasUKBM3 extends React.Component {
                                   </Text>
 
                                  <Text style={funStyle.BoldketeranganMateri}> - Faktual :</Text>
-                                 <Text style={funStyle.keteranganMateri}>- Pencemaran udara</Text>
-                                 <Text style={funStyle.keteranganMateri}>- Efek rumah kaca</Text>
-                                 <Text style={funStyle.keteranganMateri}>- Hujan asam</Text>
-
+                                 <Text style={funStyle.keteranganMateri}>- Reaksi pembakaran akan menghasilkan panas.</Text>
+                                 <Text style={funStyle.keteranganMateri}>- Kalorimeter merupakan contoh system terisolasi.</Text>
                                  <Text style={funStyle.BoldketeranganMateri}> - Konseptual : </Text>
-                                 <Text style={funStyle.keteranganMateri}>- Pencemaran udara adalah masuknya zat-zat asing ke udara atau</Text><Text style={funStyle.materiSpace}>meningkatnya konsentrasi salah satu komponen udara dalam jumlah dan waktu yang secara karakteristik mengubah susunan udara normal sehingga mampu menimbulkan gangguan-gangguan bagi kehidupan maupun benda-benda lain.</Text>
-                                 <Text style={funStyle.keteranganMateri}>- Adanya karbon dioksida (CO2) yang berlebihan diatmosfer dapat</Text><Text style={funStyle.materiSpace}>menimbulkan fenomena efek rumah kaca.</Text>
-                                 <Text style={funStyle.keteranganMateri}>- Pembakaran bahan bakar yang tidak sempurna pada kendaraan</Text><Text style={funStyle.materiSpace}>bermotor dan industri dapat menghasilkan partikulat karbon dan gas karbon monoksida.</Text>
-
+                                 <Text style={funStyle.keteranganMateri}>- Menurut Hukum Hess hanya keadaan awal dan akhir dari suatu</Text><Text style={funStyle.materiSpace}>reaksi yang berpengaruh terhadap perubahan entalpi.</Text>
+                                 <Text style={funStyle.keteranganMateri}>- Energi ikat merupakan energi yang dibutuhkan untuk</Text><Text style={funStyle.materiSpace}>melepas 1 mol ikatan dari suatu molekul dalam bentuk gas.</Text>
+                                 <Text style={funStyle.keteranganMateri}>- Entalpi pembentukan standar adalah perubahan entalpi yang</Text><Text style={funStyle.materiSpace}>terjadi pada pembentukan 1 mol senyawa dari unsur-unsurnya pada keadaan standar.</Text>
+                                 <Text style={funStyle.keteranganMateri}>- Entalpi penguraian standar adalah perubahan entalpi yang terjadi</Text><Text style={funStyle.materiSpace}>pada penguraian 1 mol senyawa menjadi unsur-unsurnya pada keadaan standar.</Text>
+                                 <Text style={funStyle.keteranganMateri}>- Entalpi pembakaran standar adalah perubahan entalpi yang terjadi</Text><Text style={funStyle.materiSpace}>pada pembakaran 1 mol senyawa oleh oksigen pada keadaan standar.</Text>
+                                 <Text style={funStyle.keteranganMateri}>- Entalpi netralisasi standar adalah perubahan entalpi yang terjadi</Text><Text style={funStyle.materiSpace}>pada penetralan 1 mol asam oleh basa atau 1 mol basa oleh asam pada keadaan standar.</Text>
+                                 <Text style={funStyle.BoldketeranganMateri}> - Prosedural : </Text>
+                                 <Text style={funStyle.keteranganMateri}>Mernacang model visual berbagai struktur molekul hidrokarbon yang memeiliki rumus melekul yang sama: memberi nama sesuai IUPAC berbagai senyawa hidrokarbon. </Text>
 
                                  <Text style={funStyle.BoldketeranganMateri}> - Lihat dan baca pada Buku Teks Pelajaran (BTP): </Text>
-                                 <Text style={funStyle.pustakaketerangan}> - A. Haris Watoni, dkk. 2017. Kimia untuk SMA/MA Kelas XI. Bandung:Yrama Widya </Text>
-                                 <Text style={funStyle.pustakaketerangan}> - Sudarmo, Unggul. 2014. Kimia SMA Kelas XI K.2013. Jakarta: Erlangga </Text>
+                                 <Text style={funStyle.pustakaketerangan}>(1)  Sudarmo, Unggul. 2014. Kimia SMA Kelas XI K.2013.</Text><Text style={funStyle.pustakaketeranganSpace}>Jakarta:Erlangga </Text>
+                                 <Text style={funStyle.pustakaketerangan}>(2) Umiyati, Nurhalimah. 2016. Buku Siswa Kimia untuk SMA/MA XI.</Text><Text style={funStyle.pustakaketeranganSpace}>Surakarta: Mediatama</Text>
+                                 <Text style={funStyle.pustakaketerangan}>(3) Watoni, Haris, dkk. 2017. Kimia untuk SMA/MA Kelas XI. Bandung:</Text><Text style={funStyle.pustakaketeranganSpace}>Yrama Widya</Text>
                       </ScrollView>
                   </View>
 
@@ -183,7 +198,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
    containerMain: {
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#FFFFFF',
     flex: 1,
     flexDirection: 'column'
   },
