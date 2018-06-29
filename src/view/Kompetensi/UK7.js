@@ -63,10 +63,21 @@ export default class UKBM1KB4 extends React.Component {
 
   nextPart = () => {
   /* 1. Navigate to the Details route with params */
-      this.props.navigation.navigate('UKBM1_C', {
-        totalNilai: this.state.totalNilai,
+      let hasil = 0;
+      for (let j = 1; j < arrayNilai.length; j++) {
+        hasil += arrayNilai[j];
+      }
+
+      const hasilAkhir = (hasil / 2) * 10;
+
+      this.setState({ nilai: hasilAkhir });
+
+
+      this.props.navigation.navigate('Hasil', {
+          totalNilai: hasilAkhir,
+          uk: 'uk7',
         });
-        console.log('hasil nya akhir pencet : ' + this.state.totalNilai);
+        console.log('hasil nya akhir pencet : ' + hasil);
   }
 
   onSelect(index, value, jawaban, data) {
@@ -830,7 +841,7 @@ export default class UKBM1KB4 extends React.Component {
 
           <View style={funStyle.funBigSpace} />
           <TouchableOpacity
-          onPress={this.showResult}
+          onPress={this.nextPart}
           >
             <Text style={funStyle.funJudulKB}>
               Penutup >>

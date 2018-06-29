@@ -12,6 +12,9 @@ import Tes from './tes';
 import Penutup from './view/Penutup';
 import Petunjuk from './view/Petunjuk';
 
+import Hasil from './view/Kompetensi/Hasil';
+import Route from './view/Kompetensi/Route';
+
 //UKBM 1 data
 import UKBM1_KB1 from './view/UKBM1/UKBM1KB1';
 import UKBM1_KB2 from './view/UKBM1/UKBM1KB2';
@@ -103,6 +106,12 @@ const Screens = DrawerNavigator({
   },
   SignUp: {
     screen: SignUp
+  },
+  Hasil: {
+    screen: Hasil
+  },
+  Route: {
+    screen: Route
   },
   Petunjuk: {
     screen: Petunjuk
@@ -324,7 +333,7 @@ const Screens = DrawerNavigator({
   },
 },
   // {
-  //   initialRouteName: 'UKBM7_KB1',
+  //   initialRouteName: 'Route',
   // },
   {
     contentComponent: props => <Sidebar {...props} />
