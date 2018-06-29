@@ -41,6 +41,10 @@ const ukbm7_j = require('./../../Assets/UKBM7/ukbm7_j.png');
 const ukbm7_k = require('./../../Assets/UKBM7/ukbm7_k.png');
 const ukbm7_l = require('./../../Assets/UKBM7/ukbm7_l.png');
 
+const ukbm7_m = require('./../../Assets/UKBM7/ukbm7_m.png');
+const ukbm7_n = require('./../../Assets/UKBM7/ukbm7_n.png');
+const ukbm7_o = require('./../../Assets/UKBM7/ukbm7_o.png');
+
 
 const funStyle = require('../style');
 const totalField = 4;
@@ -1849,6 +1853,221 @@ export default class UKBM1KB4 extends React.Component {
 
                   </View>
               </View>
+
+
+            </View>
+
+
+
+            <View style={funStyle.funBox} >
+              <T t='3.	Dalam suatu percobaan untuk mengamati reaksi A(g) + B(g) -> C(g), diperoleh data sebagai berikut.' />
+              <Image style={{ width: 250, height: 83 }} source={ukbm7_m} />
+              <T t='Tentukan:' />
+              <T t='a.  Orde reaksi terhadap A' />
+              <T t='b.	Orde reaksi terhadap B' />
+              <T t='c.  Orde reaksi total' />
+              <T t='d.	Harga k (tetapan laju reaksi)' />
+              <T t='e.  Persamaan laju reaksi' />
+              <T style={funStyle.b} t='Jawab :' />
+              <View style={funStyle.funSpace} />
+
+              <T t='a.	Orde reaksi terhadap A ditentukan berdasarkan konsentrasi B yang tetap, yaitu pada percobaan 2 dan 3.' />
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='Pada [B] tetap, [A] naik 2 kali, maka r naik' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                  }
+                />
+                <T t='kali' />
+                </ScrollView>
+              </View>
+
+              <Image style={{ width: 150, height: 91 }} source={ukbm7_n} />
+
+              <T t='atau' />
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='2^m   =' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                  }
+                />
+                <T t='       =>       m =' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                  }
+                />
+                </ScrollView>
+              </View>
+
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='Jadi orde reaksi terhadap' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), 'a')
+                  }
+                />
+                <T t='=   1' />
+                </ScrollView>
+              </View>
+
+              <View style={funStyle.funSpace} />
+              <T t='b.	Orde reaksi terhadap B ditentukan berdasarkan konsentrasi A yang tetap, yaitu pada' />
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='percobaan ' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                  }
+                />
+                <T t='dan' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                  }
+                />
+                <T t='.' />
+                </ScrollView>
+              </View>
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='Pada [A] tetap, [B] naik 2 kali, maka r naik ' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '4', 'empat')
+                  }
+                />
+                <T t='kali' />
+                </ScrollView>
+              </View>
+
+
+              <Image style={{ width: 160, height: 147 }} source={ukbm7_o} />
+
+              <T t='atau' />
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='2^n   =' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '4', 'empat')
+                  }
+                />
+                <T t='       =>       n =' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                  }
+                />
+                </ScrollView>
+              </View>
+
+              <T t='Jadi orde reaksi terhadap B = 2' />
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='Orde reaksi total = m + n = ' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '1', 'satu')
+                  }
+                />
+                <T t='+' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2', 'dua')
+                  }
+                />
+                <T t='=   3' />
+                </ScrollView>
+              </View>
+              <View style={funStyle.funSpace} />
+
+
+              <T t='Persamaan laju reaksi:      r = k[A]^m [B]^n = k[A][B]^2' />
+
+              <View style={funStyle.funSpace} />
+              <T t='Harga tetapan jenis reaksi dapat ditentukan dengan memasukkan salah satu data percobaan dari tabel ke dalam persamaan laju reaksi. Misalnya data percobaan 1 yang dipilih, maka harga k dihitung sebagai berikut.' />
+              <View style={funStyle.funSpace} />
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2')
+                  }
+                />
+                <T t='M/s = k x (' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '0,1')
+                  }
+                />
+                <T t=') x (' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '0,1')
+                  }
+                />
+                <T t=')^2' />
+                </ScrollView>
+              </View>
+
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='k = 2/0,001 = ' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2')
+                  }
+                />
+                <T t='x   103 M-2 s-1' />
+                </ScrollView>
+              </View>
+
+              <T t='Jadi persamaan laju secara lengkap dapat dituliskan sebagai berikut.' />
+
+              <View style={funStyle.funFloat}>
+                <ScrollView horizontal={true}>
+                <T t='v = ' />
+                <TI
+                  editable={this.state.input.field15}
+                  onSubmitEditing={
+                    (event) => this.cekJawaban(16, event.nativeEvent.text.toLowerCase(), '2')
+                  }
+                />
+                <T t='x 10^3 [A][B]^2' />
+                </ScrollView>
+              </View>
+
 
 
             </View>
