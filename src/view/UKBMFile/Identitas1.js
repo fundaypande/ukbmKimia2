@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
    containerMain: {
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#FFFFFF',
     flex: 1,
     flexDirection: 'column'
   },

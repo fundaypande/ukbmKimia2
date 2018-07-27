@@ -26,7 +26,7 @@ const marikawan = require('./../../Assets/Human/human04.png');
 const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
 const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
 
-export default class IdentitasUKBM3 extends React.Component {
+export default class IdentitasUKBM7 extends React.Component {
 
  backTo = () => {
     this.props.navigation.navigate('UnitKegiatanBelajar');
@@ -43,7 +43,7 @@ export default class IdentitasUKBM3 extends React.Component {
                   <Sound />
                   <TombolBeranda />
                 </View>
-                  <Text style={funStyle.headerIdentitas}> PEMBAKARAN HIDROKARBON </Text>
+                  <Text style={funStyle.headerIdentitas}> LAJU REAKSI </Text>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
@@ -58,7 +58,7 @@ export default class IdentitasUKBM3 extends React.Component {
                         </View>
 
                         <Text style={funStyle.funText}>
-                         a.  Mata Pelajaran          : Kimia XI (Peminatan){'\n'}
+                         a.  Mata Pelajaran          : Kimia {'\n'}
                          b.  Semester                    : 3 (tiga){'\n'}
                          </Text>
 
@@ -71,15 +71,15 @@ export default class IdentitasUKBM3 extends React.Component {
 
                                         <View style={{ flex: 0.2, flexDirection: 'column', alignSelf: 'flex-start' }}>
                                           <Text>
-                                            3.3 {'\n'} {'\n'}
+                                            3.6 {'\n'} {'\n'}
                                             </Text>
                                             <Text>
-                                            4.3 {'\n'}
+                                            4.6 {'\n'}
                                           </Text>
                                         </View>
                                         <Text style={{flex: 3}}>
-                                            Mengidentifikasi reaksi pembakaran hidrokarbon yang sempurna dan tidak sempurna serta sifat zat hasil pembakaran (CO2), CO, partikulat karbon).{'\n'}
-                                            Menyusun gagasan cara mengatasi dampak pembakaran senyawa karbon terhadap lingkungan dan kesehatan.
+                                            Menjelaskan faktor-faktor yang memengaruhi laju reaksi menggunakan teori tumbukan.{'\n'}
+                                            Menyajikan hasil penelusuran informasi cara-cara pengaturan dan penyimpanan bahan untuk mencegah perubahan fisika dan kimia yang tak terkendali.
                                         </Text>
                                       </View>
 
@@ -90,24 +90,33 @@ export default class IdentitasUKBM3 extends React.Component {
 
                                         <View style={{ flex: 0.3, flexDirection: 'column', alignSelf: 'flex-start' }}>
                                           <Text>
-                                            3.3.1 {'\n'}
+                                            3.6.1 {'\n'}
                                           </Text>
                                           <Text>
-                                            3.3.2 {'\n'}
+                                            3.6.2 {'\n'}{'\n'}
                                           </Text>
                                           <Text>
-                                            4.3.1
+                                            3.6.3 {'\n'}
+                                          </Text>
+                                          <Text>
+                                            4.6.1 {'\n'}
+                                          </Text>
+                                          <Text>
+                                            4.6.2
                                           </Text>
                                         </View>
                                         <Text style={{flex: 3}}>
-                                             Menganalisis dampak pembakaran bahan bakar terhadap lingkungan.{'\n'}
-                                             Menganalisis dampak pembakaran bahan bakar terhadap kesehatan.{'\n'}
-                                             Mempresentasikan gagasan cara mengatasi dampak pembakaran senyawa karbon terhadap lingkungan dan kesehatan.{'\n'}
+                                             Menjelaskan keterkaitan teori tumbukan dengan faktor-faktor yang mempengaruhi laju reaksi.{'\n'}
+                                             Menganalisis hubungan teori tumbukan dengan energi aktivasi berdasarkan grafik energi aktivasi dan pembentukan kompleks teraktivasi pada reaksi eksoterm dan endoterm.{'\n'}
+                                             Menjelaskan pengaruh konsentrasi, suhu, luas permukaan, dan katalis terhadap laju reaksi melalui data percobaan.{'\n'}
+                                             Merancang cara peniyimpanan bahan untuk mencegah perubahan fisika dan kimia agar dapat terkendali {'\n'}
+                                             Mempersentasikan cara peniyimpanan bahan untuk mencegah perubahan fisika dan kimia agar dapat terkendali. {'\n'}
+
                                         </Text>
                                       </View>
 
                                 <Text style={funStyle.funText}>
-                                  e.  Materi Pokok                : Senyawa Hidrokarbon
+                                  e.  Materi Pokok                : Laju Reaksi dan Faktor yang Mempengaruhi
                                 </Text>
                                 <Text style={funStyle.funText}>
                                  f.   Alokasi Waktu              : 6 JP
@@ -122,7 +131,7 @@ export default class IdentitasUKBM3 extends React.Component {
                                 <Image style={{ width: 160, height: 160 }} source={haikawan} />
                                   <View style={funStyle.funNotifhaikawan}>
                                     <Text style={funStyle.haiKawan}> Hai Kawan ....</Text>
-                                    <Text style={funStyle.keteranganHayKawan}>Apa sich tujuan kita belajar â€œPembakaran Hidrokarbonâ€ ini?</Text>
+                                    <Text style={funStyle.keteranganHayKawan}>Apa sich tujuan kita belajar â€œLaju Reaksi dan Faktor Yang Mempengaruhiâ€ ini?</Text>
                                   </View>
                                 </View>
 
@@ -130,12 +139,12 @@ export default class IdentitasUKBM3 extends React.Component {
                                 <View style={funStyle.funFloat}>
                                 <Image style={{ width: 150, height: 150 }} source={dengan} />
                                   <View style={funStyle.funNotifketerangan}>
-                                    <Text style={funStyle.penjelasan}>Dengan pembelajaran berbasis masalah (PBL) melalui diskusi, tanya jawab, penugasan, presentasi dan analisis,  </Text>
+                                    <Text style={funStyle.penjelasan}>Dengan pembelajaran discoveri melalui diskusi, tanya jawab, penugasan, presentasi, praktikum dan analisis, </Text>
                                   </View>
                                 </View>
 
                                 <View style={funStyle.funNotifketerangan}>
-                                  <Text style={funStyle.penjelasan}> kalian diminta mampu menganalisis dampak pembakaran bahan bakar terhadap lingkungan dan kesehatan, serta mempresentasikan gagasan cara mengatasi dampak pembakaran senyawa karbon terhadap lingkungan dan kesehatan. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
+                                  <Text style={funStyle.penjelasan}>kalian diminta mampu menjelaskan keterkaitan teori tumbukan dengan faktor-faktor yang mempengaruhi laju reaksi; menganalisis hubungan teori tumbukan dengan energi aktivasi berdasarkan grafik energi aktivasi dan pembentukan kompleks teraktivasi pada reaksi eksoterm dan endoterm; menjelaskan pengaruh konsentrasi, suhu, luas permukaan, dan  katalis terhadap laju reaksi melalui percobaan; serta merancang dan mempresentasikan cara peniyimpanan bahan untuk mencegah perubahan fisika dan kimia agar dapat terkendali. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan</Text>
                                   <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
                                    <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
                                 </View>
@@ -156,19 +165,18 @@ export default class IdentitasUKBM3 extends React.Component {
                                   </Text>
 
                                  <Text style={funStyle.BoldketeranganMateri}> - Faktual :</Text>
-                                 <Text style={funStyle.keteranganMateri}>- Pencemaran udara</Text>
-                                 <Text style={funStyle.keteranganMateri}>- Efek rumah kaca</Text>
-                                 <Text style={funStyle.keteranganMateri}>- Hujan asam</Text>
+                                 <Text style={funStyle.keteranganMateri}>- Reaksi kimia ada yang berlangsung cepat dan ada yang berlangsung lambat</Text>
 
                                  <Text style={funStyle.BoldketeranganMateri}> - Konseptual : </Text>
-                                 <Text style={funStyle.keteranganMateri}>- Pencemaran udara adalah masuknya zat-zat asing ke udara atau</Text><Text style={funStyle.materiSpace}>meningkatnya konsentrasi salah satu komponen udara dalam jumlah dan waktu yang secara karakteristik mengubah susunan udara normal sehingga mampu menimbulkan gangguan-gangguan bagi kehidupan maupun benda-benda lain.</Text>
-                                 <Text style={funStyle.keteranganMateri}>- Adanya karbon dioksida (CO2) yang berlebihan diatmosfer dapat</Text><Text style={funStyle.materiSpace}>menimbulkan fenomena efek rumah kaca.</Text>
-                                 <Text style={funStyle.keteranganMateri}>- Pembakaran bahan bakar yang tidak sempurna pada kendaraan</Text><Text style={funStyle.materiSpace}>bermotor dan industri dapat menghasilkan partikulat karbon dan gas karbon monoksida.</Text>
+                                 <Text style={funStyle.keteranganMateri}>- Laju reaksi adalah besarnya perubahan konsentrasi zat pereaksi </Text><Text style={funStyle.materiSpace}>atau produk reaksi per satuan waktu.</Text>
+                                 <Text style={funStyle.keteranganMateri}>- Tumbukan efektif adalah tumbukan yang menghasilkan reaksi. </Text>
+                                 <Text style={funStyle.keteranganMateri}>- Energi aktivasi (Ea) adalah energi minimum yang diperlukan untuk</Text><Text style={funStyle.materiSpace}>mencapai kompleks teraktivasi</Text>
 
 
                                  <Text style={funStyle.BoldketeranganMateri}> - Lihat dan baca pada Buku Teks Pelajaran (BTP): </Text>
-                                 <Text style={funStyle.pustakaketerangan}> - A. Haris Watoni, dkk. 2017. Kimia untuk SMA/MA Kelas XI. Bandung:Yrama Widya </Text>
-                                 <Text style={funStyle.pustakaketerangan}> - Sudarmo, Unggul. 2014. Kimia SMA Kelas XI K.2013. Jakarta: Erlangga </Text>
+                                 <Text style={funStyle.pustakaketerangan}> - Sudarmo, Unggul. 2014. Kimia SMA Kelas XI K.2013. Jakarta: Erlangga  </Text>
+                                 <Text style={funStyle.pustakaketerangan}> - Umiyati, Nurhalimah. 2016. Buku Siswa Kimia untuk SMA/MA XI. Surakarta: Mediatama</Text>
+                                 <Text style={funStyle.pustakaketerangan}> - Watoni, Haris, dkk. 2017. Kimia untuk SMA/MA Kelas XI. Bandung: Yrama Widya</Text>
                       </ScrollView>
                   </View>
 
@@ -187,7 +195,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
    containerMain: {
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#FFFFFF',
     flex: 1,
     flexDirection: 'column'
   },

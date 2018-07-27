@@ -116,7 +116,7 @@ export default class UKBM1KB4 extends React.Component {
 
           <View style={funStyle.funFloat}>
             <T t='1.  ' />
-            <View style={{ marginRight: 20 }}>
+            <View style={{ marginRight: 50 }}>
               <T t='Pak Budi adalah salah satu karyawan pabrik industri di Jakarta. Setelah 1-2 tahun bekerja pak Budi  sering merasakan sakit dada dan susah bernapas. Menurut pak Budi, dia sering tidak memakai masker saat bekerja dan  mengirup gas buang hasil pembakaran solar dalam mesin yang keluar melalui knalpot yang berwarna cokelat kehitaman. Berdasarkan fenomena yang dialami oleh pak Budi, maka gas buang yang dimaksud adalah ....' />
                 <RadioGroup
                     onSelect = {(index, value) => this.onSelect(index, value, 'd', 1)}

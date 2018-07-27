@@ -11,6 +11,7 @@ import SignUp from './view/auth/Signup.js';
 import Tes from './tes';
 import Penutup from './view/Penutup';
 import Petunjuk from './view/Petunjuk';
+import Profile from './view/Profile';
 
 import Hasil from './view/Kompetensi/Hasil';
 import Route from './view/Kompetensi/Route';
@@ -106,6 +107,9 @@ const Screens = DrawerNavigator({
   },
   SignUp: {
     screen: SignUp
+  },
+  Profile: {
+    screen: Profile
   },
   Hasil: {
     screen: Hasil

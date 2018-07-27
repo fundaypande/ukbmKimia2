@@ -124,7 +124,7 @@ export default class UKBM1KB4 extends React.Component {
 
           <View style={funStyle.funFloat}>
             <T t='1.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Pembakaran senyawa karbon akan menghasilkan gas karbondioksida dan uap air.  Di bawah ini tercantum beberapa pereaksi (reagen):' />
               <T t='1)  air kapur' />
               <T t='2)  asam karbonat' />
@@ -162,7 +162,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='2.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Kekhasan Atom C dibandingkan dengan atom Si adalah ….' />
 
                 <RadioGroup
@@ -193,7 +193,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='3.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Diketahui senyawa hidrokarbon dengan rumus bangun sebagai berikut.   ' />
               <Image style={{ width: 211, height: 25 }} source={uk1_01} />
               <T t='Pernyataan yang benar tentang hidrokarbon di atas adalah ….'/>
@@ -230,7 +230,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='4.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Perhatikan rumus struktur senyawa berikut. ' />
               <Image style={{ width: 208, height: 66 }} source={uk1_02} />
               <T t='Nama senyawa di atas berdasarkan sistem IUPAC (International Union of Pure Aplied and Chemistry) adalah ....'/>
@@ -266,7 +266,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='5.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Perhatikan rumus struktur senyawa berikut.  ' />
               <Image style={{ width: 200, height: 43 }} source={uk1_03} />
               <T t='Nama senyawa di atas berdasarkan sistem IUPAC adalah ....' />
@@ -301,7 +301,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='6.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Perhatikan rumus struktur senyawa berikut.' />
               <Image style={{ width: 150, height: 110 }} source={uk1_04} />
               <T t='Nama senyawa di atas berdasarkan sistem IUPAC adalah ….' />
@@ -337,7 +337,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='7.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Perhatikan gambar struktur berikut!' />
               <Image style={{ width: 142, height: 117 }} source={uk1_05} />
               <T t='Jumlah atom C tersier pada stuktur tersebut adalah …' />
@@ -373,7 +373,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='8.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Pada saat pembelajaran kimia hidrokarbon, Adelia diminta oleh guru menyusun bangun senyawa hidrokarbon dengan alat bantu molimood. Adapun bangun senyawa hidrokarbon tersebut ditunjukkan seperti pada gambar berikut.' />
               <Image style={{ width: 249, height: 116 }} source={uk1_06} />
               <T t='Berdasarkan bangun senyawa yang dibuat Adelia, maka atom C primer, sekunder, tertier, dan kuartener berturut-turut adalah nomor ….' />
@@ -408,9 +408,10 @@ export default class UKBM1KB4 extends React.Component {
 
           <View style={funStyle.funSpace} />
           <View style={funStyle.funSpace} />
+          <View style={funStyle.funBigSpace} />
           <View style={funStyle.funFloat}>
             <T t='9.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Berdasarkan bangun senyawa hidrokarbon yang dibuat oleh Juniari seperti gambar berikut.' />
               <Image style={{ width: 323, height: 123 }} source={uk1_07} />
               <T t='Guru menyuruh Juniari untuk menentukan jumlah atom C masing-masing pada atom C primer, sekunder, tertier, dan kuartener. Maka jawaban yang benar dari Juniari adalah ….' />
@@ -444,10 +445,11 @@ export default class UKBM1KB4 extends React.Component {
 
 
           <View style={funStyle.funSpace} />
+          <View style={funStyle.funBigSpace} />
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='10.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Jumlah atom C primer, sekunder, tertier dan kuartener pada senyawa 2,4,4-trimetil heksana berturut-turut adalah....' />
 
                 <View style={{ marginRight: 30 }}>
@@ -483,7 +485,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='11.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Perhatikan senyawa-senyawa dengan rumus molekul berikut.' />
               <T t='1)	C3H6  ' />
               <T t='2)	C4H10  ' />
@@ -522,7 +524,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='12.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Senyawa dengan rumus molekul di bawah ini' />
               <T t='1)	C5H12' />
               <T t='2)	C4H8' />
@@ -562,7 +564,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='13.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Senyawa dengan rumus struktur' />
               <Image style={{ width: 177, height: 55 }} source={uk1_08} />
               <T t='Bila direaksikan dengan HCl akan menghasilkan senyawa dengan nama … .' />
@@ -600,7 +602,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='14.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Isomer posisi dari 2-pentena adalah ... ' />
 
                 <View style={{ marginRight: 30 }}>
@@ -636,7 +638,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='15.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Senyawa dengan rumus struktur H3C-CH=CH-CH2-CH3 dapat berisomer posisi dan berisomer rantai. Isomer yang dimaksud berturut-turut adalah ....' />
 
                 <View style={{ marginRight: 30 }}>
@@ -672,7 +674,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='16.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Perhatikan tabel berikut! ' />
               <Image style={{ width: 320, height: 98 }} source={uk1_09} />
               <T t='Kesimpulan yang tepat berdasarkan data pada tabel di atas adalah ….' />
@@ -710,7 +712,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='17.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Pembentukan klorometana dari metana termasuk reaksi ....' />
 
                 <View style={{ marginRight: 30 }}>
@@ -746,7 +748,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='18.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Adisi alkena dengan  air membutuhkan katalisator asam. Hasil reaksi mengikuti aturan Markonikov. Hasil reaksi: 1-propena  +  H2O adalah ....' />
 
                 <View style={{ marginRight: 30 }}>
@@ -782,7 +784,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='19.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Alkana yang tidak dapat dihasilkan dari adisi alkena adalah....' />
 
                 <View style={{ marginRight: 30 }}>
@@ -817,7 +819,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='20.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Reaksi oksidasi sempurna gas LPG (campuran gas metana, etana, dan propana) akan menghasilkan ….' />
 
                 <View style={{ marginRight: 30 }}>

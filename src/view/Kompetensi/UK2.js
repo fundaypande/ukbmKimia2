@@ -116,7 +116,7 @@ export default class UKBM1KB4 extends React.Component {
 
           <View style={funStyle.funFloat}>
             <T t='1.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Peristiwa berikut yang terjadi pada saat pembentukan minyak bumi dan gas alam adalah ....' />
                 <RadioGroup
                     onSelect = {(index, value) => this.onSelect(index, value, 'c', 1)}
@@ -147,7 +147,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='2.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Minyak bumi tergolong sumber energi tidak terbarukan sebab ….' />
               <View style={{ marginRight: 30 }}>
               <ScrollView horizontal={true}>
@@ -180,7 +180,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='3.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Untuk menentukan secara akurat keberadaan minyak mentah di dalam bumi dipakai teknik ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
@@ -214,7 +214,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='4.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Minyak bumi tergolong sumber energi tidak terbarukan sebab ….' />
 
                 <View style={{ marginRight: 30 }}>
@@ -248,7 +248,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='5.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Proses pembentukan minyak bumi memerlukan kondisi yang ideal yaitu ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
@@ -281,7 +281,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='6.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Komponen utama penyusun minyak bumi adalah ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
@@ -315,7 +315,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='7.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Prinsip dasar pemisahan komponen-komponen minyak bumi didasarkan pada ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
@@ -349,7 +349,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='8.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Minyak bumi yang baru dihasilkan dari pengeboran masih berupa minyak mentah. Proses pemisahan minyak mentah menjadi bahan bakar yang diinginkan dapat dilakukan dengan cara ….' />
 
                 <View style={{ marginRight: 30 }}>
@@ -384,7 +384,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='9.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Fraksi minyak bumi terbanyak adalah ….' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
@@ -419,7 +419,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='10.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Senyawa berikut yang tidak tergolong fraksi minyak bumi adalah ….' />
 
                 <View style={{ marginRight: 30 }}>
@@ -455,7 +455,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='11.  ' />
-            <View>
+          <View style={{ marginRight: 50 }}>
               <T t='Fraksi minyak mentah yang tersisa dalam kolom fraksionasi dapat digunakan sebagai ….' />
 
                 <View style={{ marginRight: 30 }}>
@@ -490,7 +490,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='12.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Ketika suhu dalam kolom fraksionasi mencapai 110° C, fraksi minyak bumi yang menguap adalah yang mengandung jumlah atom karbon (C) ....' />
 
                 <View style={{ marginRight: 30 }}>
@@ -526,7 +526,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='13.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Data berikut ini diperoleh dari distilasi bertingkat minyak mentah.' />
               <T t='1)	Pemanasan suhu 140-180oC menghasilkan nafta' />
               <T t='2)	Pemanasan suhu 180-250oC menghasilkan kerosin' />
@@ -566,7 +566,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='14.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Dari hasil penyulingan minyak bumi:' />
               <Image style={{ width: 255, height: 119 }} source={uk2_01} />
               <T t='Fraksi nomor urut 3 digunakan untuk ….' />
@@ -603,7 +603,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='15.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Salah satu cara untuk menghasilkan bensin adalah melalui reaksi berikut yang berlangsung pada suhu 425 °C dan  tekanan 25 atm:' />
               <T t='C12H26  -> C6H14 + C6H12' />
               <T t='Cara di atas dikenal dengan  istilah ....' />
@@ -640,7 +640,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='16.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Dari penyataan berikut.' />
               <T t='-	Alkana bercabang dan sikloalkana terbakar lebih merata daripada alkana rantai lurus.' />
               <T t='-	Alkana rantai pendek (C4) terbakar lebih merata daripada alkana rantai panjang ( C7).' />
@@ -681,7 +681,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='17.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Yang merupakan penentu kualitas bensin adalah ... .' />
 
                 <View style={{ marginRight: 30 }}>
@@ -717,7 +717,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='18.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Perbandingan isooktana dan n-heptana pada bensin yang paling tinggi kualitasnya terdapat pada campuran ….' />
 
                 <View style={{ marginRight: 30 }}>
@@ -753,7 +753,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='19.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Komposisi pertamax terdiri dari campuran 96% isooktana dan 4% n-heptana, memiliki bilangan oktan sebanyak ….' />
 
                 <View style={{ marginRight: 30 }}>
@@ -788,7 +788,7 @@ export default class UKBM1KB4 extends React.Component {
           <View style={funStyle.funSpace} />
           <View style={funStyle.funFloat}>
             <T t='20.  ' />
-            <View>
+            <View style={{ marginRight: 50 }}>
               <T t='Zat aditif pada bensin yang penggunaanya dilarang adalah ….' />
 
                 <View style={{ marginRight: 30 }}>

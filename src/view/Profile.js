@@ -1,29 +1,25 @@
 import React from 'react';
 import {  StyleSheet, Text, View, Image, TouchableOpacity, ScrollView, Alert } from 'react-native';
-import Sound from './../../components/Sound';
-import TombolBeranda from './../../components/TombolBeranda';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import T from '../../components/Text';
+import Sound from './../components/Sound';
+import TombolBeranda from './../components/TombolBeranda';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import T from '../components/Text';
 
-const BackButton = require('./../../Assets/img/backButton.png');
-const funStyle = require('../style');
+const BackButton = require('./../Assets/img/backButton.png');
+const funStyle = require('./style');
 
-const Laju_Reaksi = require('./../../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
-const bg_ukbm1 = require('./../../Assets/img/gambar_beranda_ukbm/ukbm1.jpg');
-const ukbm1_01 = require('./../../Assets/UKBM1/ukbm1_01_atomc.jpg');
+const Laju_Reaksi = require('./../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
+const bg_ukbm1 = require('./../Assets/img/gambar_beranda_ukbm/ukbm1.jpg');
+const ukbm1_01 = require('./../Assets/UKBM1/ukbm1_01_atomc.jpg');
 
-
-
-
-const PK_UKBM7 = require('./../../Assets/peta_konsep/PK_UKBM7.png');
+const profile = require('./../Assets/img/profile.png');
 
 
-
-export default class PetaKonsepUKBM7 extends React.Component {
+export default class PetunjukAplikasi extends React.Component {
 
  backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('Beranda');
   }
 
 
@@ -37,7 +33,7 @@ export default class PetaKonsepUKBM7 extends React.Component {
                   <Sound />
                   <TombolBeranda />
                 </View>
-                  <Text style={funStyle.headerIdentitas}> ORDE LAJU REAKSI </Text>
+                  <Text style={funStyle.headerIdentitas}> PROFIL PENGEMBANG </Text>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
@@ -45,17 +41,11 @@ export default class PetaKonsepUKBM7 extends React.Component {
 
                     <View style={{ flex: 1 }}>
                       <ScrollView style={{ paddingLeft: 10, paddingRight: 10 }}>
-                      <View style={funStyle.funJudulPetaKonsep}>
-                        <Text style={funStyle.styleJudul}>
-                          2. Peta Konsep
-                        </Text>
-                      </View>
-                        <Text> {'\n'}</Text>
-                          <View>
+
                           <ScrollView horizontal={true}>
-                            <Image source={PK_UKBM7} />
+                            <Image source={profile} />
                           </ScrollView>
-                          </View>
+
                       </ScrollView>
                   </View>
 
@@ -74,7 +64,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
    containerMain: {
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#ffffff',
     flex: 1,
     flexDirection: 'column'
   },

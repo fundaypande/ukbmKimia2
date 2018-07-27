@@ -26,12 +26,12 @@ const marikawan = require('./../../Assets/Human/human04.png');
 const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
 const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
 
-export default class KegiatanBelajarUKBM1 extends React.Component {
+export default class KegiatanBelajarUKBM6 extends React.Component {
+
 
   backTo = () => {
      this.props.navigation.navigate('UnitKegiatanBelajar');
    }
-
 
  render() {
     return (
@@ -43,7 +43,7 @@ export default class KegiatanBelajarUKBM1 extends React.Component {
                   <Sound />
                   <TombolBeranda />
                 </View>
-                  <Text style={funStyle.headerIdentitas}> SENYAWA HIDROKARBON </Text>
+                  <Text style={funStyle.headerIdentitas}> LAJU REAKSI </Text>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
@@ -61,8 +61,9 @@ export default class KegiatanBelajarUKBM1 extends React.Component {
                          {'\n'}a. Petunjuk Umum UKBM
                          </Text>
                           <Text style={funStyle.keteranganMateri}> 1). <Text style={funStyle.bold}> Baca dan pahami </Text> materi pada Buku Teks : </Text>
-                                 <Text style={funStyle.keteranganKegiatanBelajar}> - A. Haris Watoni, dkk. 2017. Kimia untuk SMA/MA Kelas XI. Bandung: Yrama Widya </Text>
-                                 <Text style={funStyle.keteranganKegiatanBelajar}> - Sudarmo, Unggul. 2014. Kimia SMA Kelas XI K.2013. Jakarta: Erlangga </Text>
+                                 <Text style={funStyle.keteranganKegiatanBelajar}> - Sudarmo, Unggul. 2014. Kimia SMA Kelas XI K.2013. Jakarta: Erlangga  </Text>
+                                 <Text style={funStyle.keteranganKegiatanBelajar}> - Umiyati, Nurhalimah. 2016. Buku Siswa Kimia untuk SMA/MA XI. Surakarta: Mediatama </Text>
+                                 <Text style={funStyle.keteranganKegiatanBelajar}> - Watoni, Haris, dkk. 2017. Kimia untuk SMA/MA Kelas XI. Bandung: Yrama Widya</Text>
                           <Text style={funStyle.keteranganMateri}>2). Setelah memahami isi materi dalam bacaan di atas,<Text style={funStyle.bold}> berlatihlah</Text></Text>
                           <Text style={funStyle.keteranganKegiatanBelajar}><Text style={funStyle.bold}>untuk berfikir tingkat tinggi</Text> melalui tugas-tugas yang terdapat pada aplikasi UKBM ini baik bekerja sendiri maupun bersama teman sebangku atau teman lainnya.</Text>
                           <Text style={funStyle.keteranganMateri}>3). Kerjakan<Text style={funStyle.bold}> aplikasi UKBM</Text> ini secara langsung pada smartphone</Text>
@@ -76,20 +77,20 @@ export default class KegiatanBelajarUKBM1 extends React.Component {
                             {'\n'}{'\n'}{'\n'}{'\n'}b. Pendahuluan
                          </Text>
 
+
                          <View style={funStyle.funBigSpace} />
                                 <View style={funStyle.funFloat}>
                                 <Image style={{ width: 100, height: 200 }} source={haikawan} />
                                   <View style={funStyle.funNotifMarikawan}>
-                                    <Text style={funStyle.keteranganHayKawan}>Sebelum belajar pada materi ini silahkan kalian membaca dan memahami cerita di bawah ini.</Text>
+                                    <Text style={funStyle.keteranganHayKawan}>Sebelum belajar pada materi ini silahkan kalian membaca dan memahami info di bawah ini.</Text>
                                   </View>
                                 </View>
 
                             <View style={funStyle.funBigSpace} />
                                 <View style={funStyle.funFloat}>
                                   <View style={funStyle.funNotifketeranganKegiatanBelajar}>
-                                    <Text> Hidrokarbon merupakan senyawa organik sederhana yang tersusun dari atom karbon dan atom hidrogen. Bidang kimia yang terbesar dan tersistematik adalah kimia organik yaitu kimia tentang karbon. Dari 11 sampai 12 juta senyawa yang telah diketahui, kira-kira 90% adalah senyawa organik (senyawa hidrokarbon). Kita memebakar senyawa organik dalam bentuk bahan bakar. Kita memakan senyawa organik. Kita mengenakan senyawa organik. Kita sendiri terdirir dari senyawa organik. Seluruh dunia kita sebagian besar tersusun oleh senyawa organik.
-                                    Sumber: Chemistry for Dummies. John Moore (2003) {'\n'} {'\n'}
-                                    <Text style={funStyle.bold}>Mengapa senyawa organik (hidrokarbon) dapat menjadi senyawa yang sangat kompleks dan dapat terbentuk sangat banyak di alam? Jelaskan jawaban anda!</Text>
+                                    <Text> Pada materi pembelajaran termokimia kita telah mempelajari bahwa reaksi kimia dapat melepaskan energi dalam jumlah tertentu (reaksi eksoterm). Bagaimana jika suatu reaksi eksoterm mampu melepaskan energi dalam jumlah besar dalam waktu singkat? Ledakan yang dapat mengkibatkan kehancuran akan terjadi. Ledakan merupakan salah satu contoh efek yang ditimbulkan karena suatu reaksi berlangsung sangat cepat. Suhu panas dan energi yang dihasilkan dalam jumlah banyak dan waktu yang singkat dapat mengakibatkan pergerakan tekanan udara yang sangat kuat. Serpihan fragmen benda-benda disekiatar ledakan juga dapat bergerak dengan cepat karena efek ledakan, sehingga dapat menyebabkan kerusakan di sekitar jangkauan efek ledakan. Hal ini disebabkan karena laju reaksi yang sangat cepat. Laju reaksi merupakan ukuran perubahan konsentrasi dalam satuan waktu.  {'\n'} {'\n'}
+                                    <Text style={funStyle.funNotifketeranganKegiatanBelajar}>Faktor apa saja yang dapat mempengaruhi laju reaksi? Jelaskan jawaban anda!</Text>
                                     </Text>
                                   </View>
                                 </View>
@@ -134,7 +135,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
    containerMain: {
-    backgroundColor: '#F0F0F0',
+    backgroundColor: '#FFFFFF',
     flex: 1,
     flexDirection: 'column'
   },

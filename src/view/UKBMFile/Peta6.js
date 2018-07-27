@@ -16,11 +16,11 @@ const ukbm1_01 = require('./../../Assets/UKBM1/ukbm1_01_atomc.jpg');
 
 
 
-const PK_UKBM5 = require('./../../Assets/peta_konsep/PK_UKBM5.png');
+const PK_UKBM6 = require('./../../Assets/peta_konsep/PK_UKBM6.png');
 
 
 
-export default class PetaKonsepUKBM5 extends React.Component {
+export default class PetaKonsepUKBM6 extends React.Component {
 
  backTo = () => {
     this.props.navigation.navigate('UnitKegiatanBelajar');
@@ -37,7 +37,7 @@ export default class PetaKonsepUKBM5 extends React.Component {
                   <Sound />
                   <TombolBeranda />
                 </View>
-                  <Text style={funStyle.headerIdentitas}> PERUBAHAN ENTALPI </Text>
+                  <Text style={funStyle.headerIdentitas}> LAJU REAKSI </Text>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
@@ -53,7 +53,7 @@ export default class PetaKonsepUKBM5 extends React.Component {
                         <Text> {'\n'}</Text>
                           <View>
                           <ScrollView horizontal={true}>
-                            <Image source={PK_UKBM5} />
+                            <Image source={PK_UKBM6} />
                           </ScrollView>
                           </View>
                       </ScrollView>

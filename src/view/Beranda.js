@@ -71,6 +71,10 @@ export default class Beranda extends React.Component {
     this.props.navigation.navigate('UK');
   }
 
+  toProfile = () => {
+    this.props.navigation.navigate('Profile');
+  }
+
   render() {
     return (
     <View style={styles.containerMain}>
@@ -121,7 +125,7 @@ export default class Beranda extends React.Component {
                   <Text style={styles.textButton}> Uji Kompetensi </Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.ButtonTengahStyle}>
+                <TouchableOpacity style={styles.ButtonTengahStyle} onPress={this.toProfile}>
                 <Image source={Pengembang} style={styles.icon} />
                   <Text style={styles.textButton}> Profil Pengembang </Text>
                 </TouchableOpacity>
