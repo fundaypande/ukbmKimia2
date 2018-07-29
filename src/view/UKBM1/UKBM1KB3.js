@@ -8,6 +8,8 @@ import T from '../../components/Text';
 import TI from '../../components/TInputSoal.js';
 
 const BackButton = require('./../../Assets/img/backButton.png');
+const next_button = require('./../../Assets/img/next_button.png');
+
 const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
 const ukbm1_24 = require('./../../Assets/UKBM1/ukbm1_24.png');
 
@@ -43,7 +45,11 @@ export default class UKBM1KB3 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('UKBM1_KB2');
+  }
+
+  backTo2 = () => {
+    this.props.navigation.navigate('UKBM1_KB4');
   }
 
   nextPart = () => {
@@ -105,9 +111,14 @@ export default class UKBM1KB3 extends React.Component {
             <TombolBeranda />
           </View>
           <Text style={{ color: '#fff' }}> UKBM 1 Senyawa Hidro Karbon </Text>
-          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
-            <Image source={BackButton} style={styles.iconBack} />
-          </TouchableOpacity>
+          <View style={styles.SoundHome}>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+                       <Image source={BackButton} style={styles.iconBack} />
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
         </View>
 
 

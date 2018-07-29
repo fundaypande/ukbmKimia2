@@ -7,20 +7,37 @@ import Footer from '../components/Footer';
 import T from '../components/Text';
 
 const BackButton = require('./../Assets/img/backButton.png');
+const next_button = require('./../Assets/img/next_button.png');
+
+
 const funStyle = require('./style');
 
 const Laju_Reaksi = require('./../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
 const bg_ukbm1 = require('./../Assets/img/gambar_beranda_ukbm/ukbm1.jpg');
 const ukbm1_01 = require('./../Assets/UKBM1/ukbm1_01_atomc.jpg');
 
-const Petunjuk_Aplikasi = require('./../Assets/petunjuk_aplikasi/Petunjuk_Aplikasi.jpg');
+const ukbm1_02a = require('./../Assets/UKBM1/ukbm1_02a.png');
+const ukbm1_02b = require('./../Assets/UKBM1/ukbm1_02b.png');
+const ukbm1_02c = require('./../Assets/UKBM1/ukbm1_02c.png');
+const ukbm1_02d = require('./../Assets/UKBM1/ukbm1_02d.png');
 
+const haikawan = require('./../Assets/Human/bingung.png');
+const ttd = require('./../Assets/img/ttd.png');
+const marikawan = require('./../Assets/Human/human04.png');
+
+
+const ukbm1_03 = require('./../Assets/UKBM1/ukbm1_03sasuke.png');
+const ukbm1_04 = require('./../Assets/UKBM1/ukbm1_04.png');
 
 export default class PetunjukAplikasi extends React.Component {
 
  backTo = () => {
     this.props.navigation.navigate('Beranda');
   }
+
+  backTo2 = () => {
+     this.props.navigation.navigate('UnitKegiatanBelajar');
+   }
 
 
   render() {
@@ -34,17 +51,71 @@ export default class PetunjukAplikasi extends React.Component {
                   <TombolBeranda />
                 </View>
                   <Text style={funStyle.headerIdentitas}> PETUNJUK APLIKASI </Text>
+                  <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
               </View>
 
                     <View style={{ flex: 1 }}>
                       <ScrollView style={{ paddingLeft: 10, paddingRight: 10 }}>
+                        <View style={{ alignItems:'center', justifyContent: 'center', paddingTop: 20}}>
+                              <Text style={{ fontWeight:'bold', fontSize:20 }}> PETUNJUK APLIKASI </Text>
+                         </View>
+                                <View style={{ alignItems: 'center', justifyContent:'center'}}>
+                                </View>
+                                   <Text style={{fontSize: 15, color: '#000000', paddingTop: 15}}>
+                                   Aplikasi ini merupakan aplikasi bersifat free (gratis), yang mana aplikasi ini dibangun untuk mempermudah siswa belajar secara aktif dan mandiri serta memberikan kesempatan pada siswa untuk mempelajari dan memperdalam materi yang kurang dikuasai di manapun dan kapanpun.
+                                    {'\n'}
+                                    Nama aplikasi ini adalah Aplikasi Unit Kegiatan Belajar Mandiri (UKBM) Kimia, disingkat menjadi Aplikasi UKBM Kimia. Aplikasi ini dibuat dari beberapa referensi baik isi materi UKBM, soal uji kompetensi, dan pengkodean aplikasi. Pengembang berharap aplikasi ini memberi manfaat bagi peserta didik dan guru khususnya dan dunia pendidikan pada umumnya.
+                                    {'\n'}
+                                    Aplikasi UKBM Kimia terdiri dari menu petunjuk, unit kegiatan belajar mandiri (UKBM), uji kompetensi, dan pengembang. Menu petunjuk berisi petunjuk penggunaan media pembelajaran berbasis android. Menu kompetensi berisi kompetensi dasar dan indikator pencapaian kompetensi di semester 3. Menu unit kegiatan belajar mandiri (UKBM) Kimia berisi unit kegiatan pembelajaran secara interaktif, aktif, dan mandiri dalam satu semester. Uji kompetensi berisi soal-soal pilihan ganda untuk mengukur pemahaman konsep peserta didik terhadap materi sesuai topik UKBM Kimia. Yang terakhir menu pengembang, berisi identitas pembuat program.
+                                    {'\n'}
+                                    Bagian utama dari program ini adalah unit kegiatan belajar mandiri (UKBM) Kimia dan Uji Kompetensi. Pada menu UKBM Kimia, Anda diharapkan mempelajari animasi atau ilustrasi sebelum menjawab pertanyaan. Semua pertanyaan sebaiknya dijawab dengan benar agar dapat melanjutkan pembelajaran pada topik selanjutnya dari UKBM Kimia ini. Pertanyaan-pertanyaan dalam UKBM Kimia ini berupa soal isian singkat (missing text). Setiap jawaban yang diberikan akan direspon langsung oleh program dan total nilai akan diakumulasi di akhir UKBM Kimia setiap topiknya (unit). Aturan menjawab dan penskoran yang berlaku dalam kegiatan pembelajaran ini adalah sebagai berikut.
+                                    {'\n'}
+                                    1.  sebelum menjawab pertanyaan, jalankan animasi terlebih  {'\n'}     dahulu (jika ada).
+                                    {'\n'}
+                                    2.  Sebelum menjawab pertanyaan, baca ilustrasi materi terlebih {'\n'}     dahulu.
+                                    {'\n'}
+                                    3.  Jawaban yang diberikan harus diketik dengan huruf kecil  {'\n'}     (kecuali pada rumus senyawa).
+                                    {'\n'}
+                                    4.  Jawaban yang mengandung angka sperti indeks maupun {'\n'}     koefisien  reaksi dibuat menyatu (terpisah atau spasi  {'\n'}     dianggap salah).
+                                    {'\n'}
+                                    5.  Tanda koma adalah (,) bukan (.)
+                                    {'\n'}
+                                    6.  Aturan penskoran :
+                                         {'\n'}     a. Soal isian singkat: menjawab benar I = 3; II = 2; III = 1; IV = 0.
+                                         {'\n'}     b. Untuk penskoran uji kompetensi pilihan ganda (PG):
+                                         {'\n'}         menjawab benar I = 1; II = 0. Nilai akan terakumulasi diakhir
+                                          {'\n'}         tes di masing-masing topik UKBM.
+                                     {'\n'}
+                                     7. Jika anda menjawab pertanyaan salah lebih dari tiga kali pada
+                                     {'\n'}    kegiatan UKBM, anda akan disediakan jawaban oleh program
+                                     {'\n'}    dan anda tinggal mengklik tombol next.
+                                     {'\n'}
+                                     8. Aturan menjawab soal tes pada uji kompetensi: Anda hanya
+                                     {'\n'}    mempunyai sekali kesempatan menjawab soal.
+                                     {'\n'}
+                                     {'\n'}
+                                   </Text>
 
-                          <ScrollView horizontal={true}>
-                            <Image source={Petunjuk_Aplikasi} />
-                          </ScrollView>
+                                   <View style={{ flexDirection: 'row'}}>
+                                    <View style={{ flex: 1}}>
+                                    </View>
+                                     <View style={{ flex: 1}}>
+                                    </View>
+                                      <View style={{ flex: 1.5}}>
+                                        <Image source={ttd} style={{height: 100, width: 200 }}/>
+                                        </View>
+                                    </View>
+                                    <Text>
+                                      {'\n'} {'\n'}
+                                    </Text>
+
 
                       </ScrollView>
                   </View>

@@ -7,6 +7,8 @@ import Footer from '../../components/Footer';
 import T from '../../components/Text';
 
 const BackButton = require('./../../Assets/img/backButton.png');
+const next_button = require('./../../Assets/img/next_button.png');
+
 const funStyle = require('../style');
 
 const Laju_Reaksi = require('./../../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
@@ -30,8 +32,8 @@ export default class KegiatanBelajarUKBM1 extends React.Component {
 
 
   backTo = () => {
-     this.props.navigation.navigate('UnitKegiatanBelajar');
-   }
+    this.props.navigation.navigate('UKBM1');
+  }
 
  render() {
     return (
@@ -44,9 +46,14 @@ export default class KegiatanBelajarUKBM1 extends React.Component {
                   <TombolBeranda />
                 </View>
                   <Text style={funStyle.headerIdentitas}> SENYAWA HIDROKARBON </Text>
+                  <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
               </View>
 
                     <View style={{ flex: 1 }}>
@@ -110,7 +117,7 @@ export default class KegiatanBelajarUKBM1 extends React.Component {
                             <View style={funStyle.funBigSpace} />
                                 <View style={funStyle.funFloat}>
                                   <View style={funStyle.funNotifMarikawan}>
-                                  <Text style={funStyle.haiKawan}>Ayo kawan-kawan â€¦â€¦ </Text>
+                                  <Text style={funStyle.haiKawan}>Ayo kawan-kawan </Text>
                                     <Text style={funStyle.keteranganHayKawan}>Kita ikuti kegiatan belajar berikut dengan penuh kesabaran dan konsentrasi!!!</Text>
                                   </View>
                                   <Image style={{ width: 100, height: 200 }} source={dengan} />

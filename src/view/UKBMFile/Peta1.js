@@ -7,6 +7,8 @@ import Footer from '../../components/Footer';
 import T from '../../components/Text';
 
 const BackButton = require('./../../Assets/img/backButton.png');
+const next_button = require('./../../Assets/img/next_button.png');
+
 const funStyle = require('../style');
 
 const Laju_Reaksi = require('./../../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
@@ -23,7 +25,11 @@ const PK_UKBM1 = require('./../../Assets/peta_konsep/PK_UKBM1_1.png');
 export default class PetaKonsepUKBM1 extends React.Component {
 
  backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('UKBM1');
+  }
+
+  backTo2 = () => {
+    this.props.navigation.navigate('bELA');
   }
 
 
@@ -38,9 +44,14 @@ export default class PetaKonsepUKBM1 extends React.Component {
                   <TombolBeranda />
                 </View>
                   <Text style={funStyle.headerIdentitas}> SENYAWA HIDROKARBON </Text>
+                  <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
               </View>
 
                     <View style={{ flex: 1 }}>

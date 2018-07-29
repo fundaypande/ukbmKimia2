@@ -7,6 +7,9 @@ import Footer from '../../components/Footer';
 import T from '../../components/Text';
 
 const BackButton = require('./../../Assets/img/backButton.png');
+const next_button = require('./../../Assets/img/next_button.png');
+
+
 const funStyle = require('../style');
 
 const Laju_Reaksi = require('./../../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
@@ -44,9 +47,14 @@ export default class IdentitasUKBM1 extends React.Component {
                   <TombolBeranda />
                 </View>
                   <Text style={funStyle.headerIdentitas}> SENYAWA HIDROKARBON </Text>
+                  <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
               </View>
 
                     <View style={{ flex: 1 }}>
@@ -139,7 +147,7 @@ export default class IdentitasUKBM1 extends React.Component {
                                 <Image style={{ width: 160, height: 160 }} source={haikawan} />
                                   <View style={funStyle.funNotifhaikawan}>
                                     <Text style={funStyle.haiKawan}> Hai Kawan ....</Text>
-                                    <Text style={funStyle.keteranganHayKawan}> Apa sich tujuan kita belajar â€œSenyawa Hidrokarbonâ€ ini? </Text>
+                                    <Text style={funStyle.keteranganHayKawan}> Apa sich tujuan kita belajar 'Senyawa Hidrokarbon' ini? </Text>
                                   </View>
                                 </View>
 
@@ -147,14 +155,10 @@ export default class IdentitasUKBM1 extends React.Component {
                                 <View style={funStyle.funFloat}>
                                 <Image style={{ width: 150, height: 150 }} source={dengan} />
                                   <View style={funStyle.funNotifketerangan}>
-                                    <Text style={funStyle.penjelasan}> Dengan pembelajaran berbasis masalah (PBL) melalui diskusi, tanya jawab, penugasan, presentasi dan analisis,  </Text>
+                                    <Text style={funStyle.penjelasan}> Dengan pembelajaran berbasis masalah (PBL) melalui diskusi, tanya jawab, penugasan, presentasi dan analisis, kalian diminta mampu mendeskripsikan kekhasan atom karbon dalam senyawa karbon, membedakan atom C primer, sekunder, tersier dan kuarterner, mengelompokan senyawa hidrokarbon berdasarkan kejenuhan ikatan, memberi nama senyawa alkana, alkena dan alkuna, menentukan Isomer alkana, alkena dan alkuna, mendeskripsikan reaksi-reaksi senyawa hidrokarbon, serta merancang dan menampilkan model visual berbagai struktur molekul hidrokarbon yang memeiliki rumus melekul yang sama dengan molymod. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
+                                    <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
+                                     <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
                                   </View>
-                                </View>
-
-                                <View style={funStyle.funNotifketerangan}>
-                                  <Text style={funStyle.penjelasan}> kalian diminta mampu mendeskripsikan kekhasan atom karbon dalam senyawa karbon, membedakan atom C primer, sekunder, tersier dan kuarterner, mengelompokan senyawa hidrokarbon berdasarkan kejenuhan ikatan, memberi nama senyawa alkana, alkena dan alkuna, menentukan Isomer alkana, alkena dan alkuna, mendeskripsikan reaksi-reaksi senyawa hidrokarbon, serta merancang dan menampilkan model visual berbagai struktur molekul hidrokarbon yang memeiliki rumus melekul yang sama dengan molymod. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
-                                  <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
-                                   <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
                                 </View>
 
 
@@ -202,7 +206,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
    containerMain: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#F0F0F0',
     flex: 1,
     flexDirection: 'column'
   },

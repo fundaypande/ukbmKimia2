@@ -94,8 +94,8 @@ export default class Beranda extends React.Component {
           <ImageBackground source={selamat_datang} style={styles.gambar_selamat_datang}>
             <View style={styles.gambartransparent}>
               <View style={{alignItems: 'center'}}>
-                <Text style={styles.text1}>Selamat datang di aplikasi </Text>
-                <Text style={styles.text2}> UKBM KIMIA </Text>
+                <Text style={styles.text2}> KIMIA KELAS XI </Text>
+                <Text style={styles.text1}>Semester 3 </Text>
               </View>
 
               <Image source={animasi_bg2}/>
