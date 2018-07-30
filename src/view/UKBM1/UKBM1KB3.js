@@ -108,7 +108,9 @@ export default class UKBM1KB3 extends React.Component {
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
             <Sound />
-            <TombolBeranda />
+            <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                <TombolBeranda />
+            </TouchableOpacity>
           </View>
           <Text style={{ color: '#fff' }}> UKBM 1 Senyawa Hidro Karbon </Text>
           <View style={styles.SoundHome}>

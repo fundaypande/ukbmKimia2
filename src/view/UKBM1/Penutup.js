@@ -12,6 +12,7 @@ import Footer from '../../components/Footer';
 import T from '../../components/Text';
 import TI from '../../components/TInputSoal.js';
 
+const next_button = require('./../../Assets/img/next_button.png');
 
 
 const BackButton = require('./../../Assets/img/backButton.png');
@@ -71,8 +72,11 @@ export default class UKBM1KB4 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('UKBM1');
   }
+  backTo2 = () => {
+     this.props.navigation.navigate('UKBM2');
+   }
 
   result = () => {
     //menecek Tabel
@@ -206,11 +210,16 @@ export default class UKBM1KB4 extends React.Component {
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
             <Sound />
-            <TombolBeranda />
+            <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                <TombolBeranda />
+            </TouchableOpacity>
           </View>
           <Text style={{ color: '#fff' }}> UKBM 1 Senyawa Hidro Karbon </Text>
           <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
             <Image source={BackButton} style={styles.iconBack} />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+             <Image source={next_button} style={styles.iconBack} />
           </TouchableOpacity>
         </View>
 

@@ -17,6 +17,8 @@ const funStyle = require('../style');
 const totalField = 23;
 let i = 3;
 
+const next_button = require('./../../Assets/img/next_button.png');
+
 export default class UKBM1KB4 extends React.Component {
 
   constructor() {
@@ -45,12 +47,12 @@ export default class UKBM1KB4 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('UKBM3_KB1');
   }
 
   nextPart = () => {
   /* 1. Navigate to the Details route with params */
-      this.props.navigation.navigate('UKBM1_C', {
+      this.props.navigation.navigate('UKBM3_KB3', {
         totalNilai: this.state.totalNilai,
         });
         console.log('hasil nya akhir pencet : ' + this.state.totalNilai);
@@ -104,11 +106,16 @@ export default class UKBM1KB4 extends React.Component {
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
             <Sound />
-            <TombolBeranda />
+            <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                <TombolBeranda />
+            </TouchableOpacity>
           </View>
           <Text style={{ color: '#fff' }}> UKBM 3 Pembakaran Hidrokarbon </Text>
           <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
             <Image source={BackButton} style={styles.iconBack} />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.nextPart}>
+             <Image source={next_button} style={styles.iconBack} />
           </TouchableOpacity>
         </View>
 

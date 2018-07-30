@@ -25,11 +25,11 @@ const PK_UKBM1 = require('./../../Assets/peta_konsep/PK_UKBM1_1.png');
 export default class PetaKonsepUKBM1 extends React.Component {
 
  backTo = () => {
-    this.props.navigation.navigate('UKBM1');
+    this.props.navigation.navigate('Identitas1');
   }
 
   backTo2 = () => {
-    this.props.navigation.navigate('bELA');
+    this.props.navigation.navigate('Belajar1');
   }
 
 
@@ -41,7 +41,9 @@ export default class PetaKonsepUKBM1 extends React.Component {
               <View style={styles.box1}>
                 <View style={styles.SoundHome}>
                   <Sound />
-                  <TombolBeranda />
+                  <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                      <TombolBeranda />
+                  </TouchableOpacity>
                 </View>
                   <Text style={funStyle.headerIdentitas}> SENYAWA HIDROKARBON </Text>
                   <View style={styles.SoundHome}>

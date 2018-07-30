@@ -3,12 +3,13 @@ import {
   Text,
   View,
   Image,
-  TouchableOpacity
+  TouchableOpacity,
+  Parent
 } from 'react-native';
 
 const Home_icon = require('./../Assets/img/Home-icon.png');
 
-const TombolBeranda = (props) => {
+const TombolBeranda = () => {
   return (
         <Image source={Home_icon} style={styles.icon} />
   );

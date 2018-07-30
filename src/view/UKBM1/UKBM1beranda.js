@@ -28,11 +28,15 @@ export default class UKBM1beranda extends React.Component {
       <View style={styles.box1}>
         <View style={styles.SoundHome}>
           <Sound/>
-          <TombolBeranda/>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('Beranda')}>
+              <TombolBeranda />
+          </TouchableOpacity>
+
         </View>
         <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
           <Image source={BackButton} style={styles.iconBack} />
         </TouchableOpacity>
+        
       </View>
       <View style={styles.box2}>
         <Image source={Laju_Reaksi} style={styles.iconHeaderUKBM} />

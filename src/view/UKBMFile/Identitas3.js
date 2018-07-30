@@ -7,6 +7,8 @@ import Footer from '../../components/Footer';
 import T from '../../components/Text';
 
 const BackButton = require('./../../Assets/img/backButton.png');
+const next_button = require('./../../Assets/img/next_button.png');
+
 const funStyle = require('../style');
 
 const Laju_Reaksi = require('./../../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
@@ -28,9 +30,13 @@ const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
 
 export default class IdentitasUKBM3 extends React.Component {
 
- backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
-  }
+  backTo = () => {
+     this.props.navigation.navigate('UKBM3');
+   }
+
+   backTo2 = () => {
+      this.props.navigation.navigate('Peta3');
+    }
 
 
   render() {
@@ -41,12 +47,19 @@ export default class IdentitasUKBM3 extends React.Component {
               <View style={styles.box1}>
                 <View style={styles.SoundHome}>
                   <Sound />
-                  <TombolBeranda />
+                  <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                      <TombolBeranda />
+                  </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> Pembakaran Hidrokarbon </Text>
+                  <Text style={funStyle.headerIdentitas}> PEMBAKARAN HIDROKARBON </Text>
+                    <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
               </View>
 
                     <View style={{ flex: 1 }}>
@@ -122,7 +135,7 @@ export default class IdentitasUKBM3 extends React.Component {
                                 <Image style={{ width: 160, height: 160 }} source={haikawan} />
                                   <View style={funStyle.funNotifhaikawan}>
                                     <Text style={funStyle.haiKawan}> Hai Kawan ....</Text>
-                                    <Text style={funStyle.keteranganHayKawan}>Apa sich tujuan kita belajar â€œPembakaran Hidrokarbonâ€ ini?</Text>
+                                    <Text style={funStyle.keteranganHayKawan}>Apa sich tujuan kita belajar 'Pembakaran Hidrokarbon' ini?</Text>
                                   </View>
                                 </View>
 
@@ -130,14 +143,10 @@ export default class IdentitasUKBM3 extends React.Component {
                                 <View style={funStyle.funFloat}>
                                 <Image style={{ width: 150, height: 150 }} source={dengan} />
                                   <View style={funStyle.funNotifketerangan}>
-                                    <Text style={funStyle.penjelasan}>Dengan pembelajaran berbasis masalah (PBL) melalui diskusi, tanya jawab, penugasan, presentasi dan analisis, kalian diminta mampu menganalisis dampak pembakaran bahan bakar terhadap lingkungan dan kesehatan, </Text>
+                                    <Text style={funStyle.penjelasan}>Dengan pembelajaran berbasis masalah (PBL) melalui diskusi, tanya jawab, penugasan, presentasi dan analisis, kalian diminta mampu menganalisis dampak pembakaran bahan bakar terhadap lingkungan dan kesehatan, serta mempresentasikan gagasan cara mengatasi dampak pembakaran senyawa karbon terhadap lingkungan dan kesehatan. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
+                                    <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
+                                     <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
                                   </View>
-                                </View>
-
-                                <View style={funStyle.funNotifketerangan}>
-                                  <Text style={funStyle.penjelasan}>serta mempresentasikan gagasan cara mengatasi dampak pembakaran senyawa karbon terhadap lingkungan dan kesehatan. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti  jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
-                                  <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
-                                   <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
                                 </View>
 
 
@@ -187,7 +196,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
    containerMain: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#F0F0F0',
     flex: 1,
     flexDirection: 'column'
   },

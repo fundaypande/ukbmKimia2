@@ -30,6 +30,8 @@ let i = 3;
 const fieldAll = 41 * 3;  //213
 let status = true;
 
+const next_button = require('./../../Assets/img/next_button.png');
+
 export default class UKBM1KB4 extends React.Component {
 
   constructor() {
@@ -65,8 +67,12 @@ export default class UKBM1KB4 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('UKBM3');
   }
+
+  backTo2 = () => {
+     this.props.navigation.navigate('UKBM4');
+   }
 
   result = () => {
     //menecek Tabel
@@ -205,6 +211,9 @@ export default class UKBM1KB4 extends React.Component {
           <Text style={{ color: '#fff' }}> UKBM 3 Pembakaran Hidrokarbon </Text>
           <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
             <Image source={BackButton} style={styles.iconBack} />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+             <Image source={next_button} style={styles.iconBack} />
           </TouchableOpacity>
         </View>
 

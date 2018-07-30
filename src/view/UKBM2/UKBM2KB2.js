@@ -8,6 +8,8 @@ import T from '../../components/Text';
 import TI from '../../components/TInputSoal.js';
 
 const BackButton = require('./../../Assets/img/backButton.png');
+const next_button = require('./../../Assets/img/next_button.png');
+
 const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
 const ukbm2_02 = require('./../../Assets/UKBM2/ukbm2_02b.png');
 const ukbm2_03 = require('./../../Assets/UKBM2/ukbm2_03.png');
@@ -46,8 +48,12 @@ export default class UKBM1KB4 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
-  }
+     this.props.navigation.navigate('UKBM2_KB1');
+   }
+
+   backTo2 = () => {
+      this.props.navigation.navigate('');
+    }
 
   nextPart = () => {
   /* 1. Navigate to the Details route with params */
@@ -105,12 +111,19 @@ export default class UKBM1KB4 extends React.Component {
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
             <Sound />
-            <TombolBeranda />
+            <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                <TombolBeranda />
+            </TouchableOpacity>
           </View>
           <Text style={{ color: '#fff' }}> UKBM 2 Minyak Bumi </Text>
-          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
-            <Image source={BackButton} style={styles.iconBack} />
-          </TouchableOpacity>
+          <View style={styles.SoundHome}>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+                       <Image source={BackButton} style={styles.iconBack} />
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
         </View>
 
 
@@ -129,7 +142,7 @@ export default class UKBM1KB4 extends React.Component {
             <View style={funStyle.funFloat}>
               <Image style={{ width: 100, height: 200 }} source={human01} />
               <View style={funStyle.funWarning}>
-                <T style={{ }} t='Anak-anak …… Tahukah kalian apa yang dimaksud dengan bilangan oktan? dan apa hubungannya dengan kualitas bahan bakar? Bacalah uraian di bawah ini dan lakukan kegiatan belajar yang diberikan untuk memahami tentang bilangan oktan!' />
+                <T style={{ }} t='Anak-anak â€¦â€¦ Tahukah kalian apa yang dimaksud dengan bilangan oktan? dan apa hubungannya dengan kualitas bahan bakar? Bacalah uraian di bawah ini dan lakukan kegiatan belajar yang diberikan untuk memahami tentang bilangan oktan!' />
               </View>
             </View>
 
@@ -212,7 +225,7 @@ export default class UKBM1KB4 extends React.Component {
                 />
                 <T t='),' />
               </View>
-              <T t='melainkan “mutunya” atau jumlah ketukan yang ditimbulkannya setara dengan campuran 92% isooktana dan 8% n-heptana.' />
+              <T t='melainkan â€œmutunyaâ€ atau jumlah ketukan yang ditimbulkannya setara dengan campuran 92% isooktana dan 8% n-heptana.' />
               <View style={funStyle.funSpace} />
               <T t='Premium memiliki bilangan oktan 88, sedangkan pertamax plus mempunyai nilai oktan 94.' />
             </View>

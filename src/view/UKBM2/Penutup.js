@@ -24,6 +24,8 @@ let gambar = '';
 const ukbm1_25 = require('./../../Assets/UKBM1/ukbm1_25orang.png');
 const ukbm1_26 = require('./../../Assets/UKBM1/ukbm1_26.png');
 
+const next_button = require('./../../Assets/img/next_button.png');
+
 const funStyle = require('../style');
 const totalField = 4;
 let i = 3;
@@ -65,8 +67,12 @@ export default class UKBM1KB4 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('UKBM2');
   }
+
+  backTo2 = () => {
+     this.props.navigation.navigate('UKBM3');
+   }
 
   result = () => {
     //menecek Tabel
@@ -206,6 +212,10 @@ export default class UKBM1KB4 extends React.Component {
           <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
             <Image source={BackButton} style={styles.iconBack} />
           </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+             <Image source={next_button} style={styles.iconBack} />
+          </TouchableOpacity>
+
         </View>
 
 

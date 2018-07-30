@@ -8,6 +8,8 @@ import T from '../../components/Text';
 import TI from '../../components/TInputSoal.js';
 
 const BackButton = require('./../../Assets/img/backButton.png');
+const next_button = require('./../../Assets/img/next_button.png');
+
 const ukbm2_01 = require('./../../Assets/UKBM2/ukbm2_01.png');
 const human01 = require('./../../Assets/Human/human01.png');
 const ukbm2_02 = require('./../../Assets/UKBM2/ukbm2_02a.jpg');
@@ -44,8 +46,12 @@ export default class UKBM1KB4 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
-  }
+     this.props.navigation.navigate('Belajar2');
+   }
+
+   backTo2 = () => {
+      this.props.navigation.navigate('UKBM2_KB2');
+    }
 
   nextPart = () => {
   /* 1. Navigate to the Details route with params */
@@ -103,12 +109,19 @@ export default class UKBM1KB4 extends React.Component {
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
             <Sound />
-            <TombolBeranda />
+            <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                <TombolBeranda />
+            </TouchableOpacity>
           </View>
           <Text style={{ color: '#fff' }}> UKBM 2 Minyak Bumi </Text>
-          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
-            <Image source={BackButton} style={styles.iconBack} />
-          </TouchableOpacity>
+          <View style={styles.SoundHome}>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+                       <Image source={BackButton} style={styles.iconBack} />
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
         </View>
 
 
@@ -335,7 +348,7 @@ export default class UKBM1KB4 extends React.Component {
                 <TI
                   editable={this.state.input.field11}
                   onSubmitEditing={
-                    (event) => this.cekJawaban(12, event.nativeEvent.text.toLowerCase(), 'c1–c4', 'c1 sampai c4')
+                    (event) => this.cekJawaban(12, event.nativeEvent.text.toLowerCase(), 'c1â€“c4', 'c1 sampai c4')
                   }
                 />
                 <T t='yang dihasilkan dari proses ' />
@@ -399,7 +412,7 @@ export default class UKBM1KB4 extends React.Component {
               <TI
                 editable={this.state.input.field17}
                 onSubmitEditing={
-                  (event) => this.cekJawaban(18, event.nativeEvent.text.toLowerCase(), 'c5–c10', 'c5 sampai c10', 'c5 – c10')
+                  (event) => this.cekJawaban(18, event.nativeEvent.text.toLowerCase(), 'c5â€“c10', 'c5 sampai c10', 'c5 â€“ c10')
                 }
               />
               <T t='yang dihasilkan dari proses ' />
@@ -454,7 +467,7 @@ export default class UKBM1KB4 extends React.Component {
             <TI
               editable={this.state.input.field22}
               onSubmitEditing={
-                (event) => this.cekJawaban(23, event.nativeEvent.text.toLowerCase(), 'c6–c10', 'c6 sampai c10', 'c6 - c10')
+                (event) => this.cekJawaban(23, event.nativeEvent.text.toLowerCase(), 'c6â€“c10', 'c6 sampai c10', 'c6 - c10')
               }
             />
             <T t='yang dihasilkan dari proses ' />
@@ -502,7 +515,7 @@ export default class UKBM1KB4 extends React.Component {
           <TI
             editable={this.state.input.field26}
             onSubmitEditing={
-              (event) => this.cekJawaban(27, event.nativeEvent.text.toLowerCase(), 'c11–c14', 'c11 sampai c14', 'c11 - c14')
+              (event) => this.cekJawaban(27, event.nativeEvent.text.toLowerCase(), 'c11â€“c14', 'c11 sampai c14', 'c11 - c14')
             }
           />
           <T t='yang dihasilkan dari proses ' />
@@ -556,7 +569,7 @@ export default class UKBM1KB4 extends React.Component {
         <TI
           editable={this.state.input.field31}
           onSubmitEditing={
-            (event) => this.cekJawaban(32, event.nativeEvent.text.toLowerCase(), 'c15–c17', 'c51 sampai c17', 'c15 - c17')
+            (event) => this.cekJawaban(32, event.nativeEvent.text.toLowerCase(), 'c15â€“c17', 'c51 sampai c17', 'c15 - c17')
           }
         />
         <T t='yang dihasilkan dari proses ' />
@@ -602,7 +615,7 @@ export default class UKBM1KB4 extends React.Component {
       <TI
         editable={this.state.input.field35}
         onSubmitEditing={
-          (event) => this.cekJawaban(36, event.nativeEvent.text.toLowerCase(), 'c18–c20', 'c18 sampai c20', 'c18 - c20')
+          (event) => this.cekJawaban(36, event.nativeEvent.text.toLowerCase(), 'c18â€“c20', 'c18 sampai c20', 'c18 - c20')
         }
       />
       <T t='yang dihasilkan dari proses ' />

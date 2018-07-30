@@ -48,7 +48,12 @@ export default class PetunjukAplikasi extends React.Component {
               <View style={styles.box1}>
                 <View style={styles.SoundHome}>
                   <Sound />
-                  <TombolBeranda />
+
+                  <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                      <TombolBeranda />
+                  </TouchableOpacity>
+
+
                 </View>
                   <Text style={funStyle.headerIdentitas}> PETUNJUK APLIKASI </Text>
                   <View style={styles.SoundHome}>

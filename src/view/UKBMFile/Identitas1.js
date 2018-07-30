@@ -9,7 +9,6 @@ import T from '../../components/Text';
 const BackButton = require('./../../Assets/img/backButton.png');
 const next_button = require('./../../Assets/img/next_button.png');
 
-
 const funStyle = require('../style');
 
 const Laju_Reaksi = require('./../../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
@@ -32,8 +31,12 @@ const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
 export default class IdentitasUKBM1 extends React.Component {
 
  backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('UKBM1');
   }
+
+  backTo2 = () => {
+     this.props.navigation.navigate('Peta1');
+   }
 
 
   render() {
@@ -44,14 +47,16 @@ export default class IdentitasUKBM1 extends React.Component {
               <View style={styles.box1}>
                 <View style={styles.SoundHome}>
                   <Sound />
-                  <TombolBeranda />
+                  <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                      <TombolBeranda />
+                  </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> SENYAWA HIDROKARBON </Text>
+                  <Text style={funStyle.headerIdentitas}> Senyawa Hidrokarbon </Text>
                   <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
                        <Image source={next_button} style={styles.iconBack} />
                     </TouchableOpacity>
                  </View>

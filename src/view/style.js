@@ -271,7 +271,7 @@ pustakaketeranganSpace: {
   paddingLeft: 53, fontSize: 13
 },
 headerIdentitas: {
-  color: '#fff', fontWeight: 'bold', fontSize: 20
+  color: '#fff', fontWeight: 'bold', fontSize: 14
 },
 keteranganKegiatanBelajar: {
   paddingLeft: 45, fontSize: 13
