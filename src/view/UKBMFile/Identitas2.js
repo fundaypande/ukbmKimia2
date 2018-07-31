@@ -49,9 +49,9 @@ export default class IdentitasUKBM2 extends React.Component {
                   <Sound />
                   <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
                       <TombolBeranda />
-                  </TouchableOpacity> 
+                  </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> MINYAK BUMI </Text>
+                  <Text style={funStyle.headerIdentitas}> Minyak Bumi </Text>
                     <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
@@ -158,7 +158,7 @@ export default class IdentitasUKBM2 extends React.Component {
 
                                 <View style={funStyle.funBigSpace} />
                                 <View style={funStyle.funFloat}>
-                                <Image style={{ width: 200, height: 200 }} source={marikawan} />
+                                <Image style={{ width: 200, height: 250 }} source={marikawan} />
                                   <View style={funStyle.funNotifMarikawan}>
                                     <Text style={funStyle.haiKawan}> Mari Kawan ....</Text>
                                     <Text style={funStyle.keteranganMariKawan}> Perkuat literasi kita dengan rajin membaca! </Text>

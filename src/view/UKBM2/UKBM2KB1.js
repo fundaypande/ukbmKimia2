@@ -983,7 +983,7 @@ export default class UKBM1KB4 extends React.Component {
                          (event) => this.cekJawaban(63, event.nativeEvent.text.toLowerCase(), 'menara distilasi')
                        }
                      />
-                     <T t='. Sedangkan fraksi senyawa-senyawa dengan' />
+                     <T t='. Sedangkan fraksi senyawa dengan' />
                    </View>
                    <View style={funStyle.funFloat}>
                      <TI

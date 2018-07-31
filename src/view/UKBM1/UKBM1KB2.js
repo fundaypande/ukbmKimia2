@@ -426,10 +426,11 @@ export default class UKBM1KB2 extends React.Component {
                      </Text>
                      <View style={funStyle.funSpace} />
                      <View style={funStyle.funFloat}>
-                       <Image style={{ width: 100, height: 200 }} source={ukbm1_12} />
+                       <Image style={{ width: 150, height: 200 }} source={ukbm1_12} />
                        <View style={funStyle.funNotif}>
                          <T style={{ color: '#FFFE00', fontSize: 15 }} t='Penamaan Senyawa Hidrokarbon.' />
                          <T style={{ color: '#fff' }} t='Berilah nama beberapa senyawa hidrokarbon berikut sesuai IUPAC' />
+                         <T style={{ color: '#FFFE00', fontSize: 15 }} t='Catatan: penulisan nama senyawa tanpa spasi' />
                        </View>
                      </View>
                      <View style={funStyle.funSpace} />

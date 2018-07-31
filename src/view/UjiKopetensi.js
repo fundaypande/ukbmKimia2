@@ -17,7 +17,7 @@ const Perubahan_Entalpi = require('./../Assets/img/logo_Setiap_Ukbm/Perubahan_En
 const Laju_Reaksi = require('./../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
 const Hukum_Laju = require('./../Assets/img/logo_Setiap_Ukbm/Hukum_Laju.png');
 
-
+const next_button = require('./../Assets/img/next_button.png');
 export default class UnitKegiatanBelajar extends React.Component {
 
   ukbm1 = () => {
@@ -45,6 +45,14 @@ export default class UnitKegiatanBelajar extends React.Component {
     this.props.navigation.navigate('Beranda');
   }
 
+  backTo2 = () => {
+     this.props.navigation.navigate('Profile');
+   }
+
+   backTo = () => {
+      this.props.navigation.navigate('Beranda');
+    }
+
   render() {
     return (
     <View style={styles.containerMain}>
@@ -52,11 +60,18 @@ export default class UnitKegiatanBelajar extends React.Component {
       <View style={styles.box1}>
         <View style={styles.SoundHome}>
           <Sound />
-          <TombolBeranda />
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('Beranda')}>
+              <TombolBeranda />
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity style={styles.buttonBack} onPress={this.buttonBack}>
-          <Image source={BackButton} style={styles.iconHeaderUKBM} />
-        </TouchableOpacity>
+        <View style={styles.SoundHome}>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+            <Image source={BackButton} style={styles.iconHeaderUKBM} />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+            <Image source={next_button} style={styles.iconHeaderUKBM} />
+          </TouchableOpacity>
+        </View>
       </View>
       <View style={styles.box2}>
         <Image source={logo_layout_ukbm} style={styles.iconHeaderUKBM} />

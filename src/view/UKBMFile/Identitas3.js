@@ -51,7 +51,7 @@ export default class IdentitasUKBM3 extends React.Component {
                       <TombolBeranda />
                   </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> PEMBAKARAN HIDROKARBON </Text>
+                  <Text style={funStyle.headerIdentitas}> Pembakaran Hidrokarbon </Text>
                     <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
@@ -152,7 +152,7 @@ export default class IdentitasUKBM3 extends React.Component {
 
                                 <View style={funStyle.funBigSpace} />
                                 <View style={funStyle.funFloat}>
-                                <Image style={{ width: 200, height: 200 }} source={marikawan} />
+                                <Image style={{ width: 200, height: 250 }} source={marikawan} />
                                   <View style={funStyle.funNotifMarikawan}>
                                     <Text style={funStyle.haiKawan}> Mari Kawan ....</Text>
                                     <Text style={funStyle.keteranganMariKawan}> Perkuat literasi kita dengan rajin membaca. </Text>

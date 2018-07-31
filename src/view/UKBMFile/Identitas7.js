@@ -168,7 +168,7 @@ export default class IdentitasUKBM7 extends React.Component {
 
                                 <View style={funStyle.funBigSpace} />
                                 <View style={funStyle.funFloat}>
-                                <Image style={{ width: 200, height: 200 }} source={marikawan} />
+                                <Image style={{ width: 200, height: 250 }} source={marikawan} />
                                   <View style={funStyle.funNotifMarikawan}>
                                     <Text style={funStyle.haiKawan}> Mari Kawan ....</Text>
                                     <Text style={funStyle.keteranganMariKawan}> Perkuat literasi kita dengan rajin membaca. </Text>

@@ -52,7 +52,7 @@ export default class KegiatanBelajarUKBM3 extends React.Component {
                       <TombolBeranda />
                   </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> PEMBAKARAN HIDROKARBON </Text>
+                  <Text style={funStyle.headerIdentitas}> Pembakaran Hidrokarbon </Text>
                     <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
@@ -125,7 +125,7 @@ export default class KegiatanBelajarUKBM3 extends React.Component {
                             <View style={funStyle.funBigSpace} />
                                 <View style={funStyle.funFloat}>
                                   <View style={funStyle.funNotifMarikawan}>
-                                  <Text style={funStyle.haiKawan}>Ayo kawan-kawan â€¦â€¦ </Text>
+                                  <Text style={funStyle.haiKawan}>Ayo kawan-kawan </Text>
                                     <Text style={funStyle.keteranganHayKawan}>Kita ikuti kegiatan belajar berikut dengan penuh kesabaran dan konsentrasi!!!</Text>
                                   </View>
                                   <Image style={{ width: 100, height: 200 }} source={dengan} />

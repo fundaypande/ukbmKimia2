@@ -51,7 +51,7 @@ export default class KegiatanBelajarUKBM1 extends React.Component {
                       <TombolBeranda />
                   </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> SENYAWA HIDROKARBON </Text>
+                  <Text style={funStyle.headerIdentitas}> Senyawa Hidrokarbon </Text>
                   <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />

@@ -9,12 +9,16 @@ const BackButton = require('./../../Assets/img/backButton.png');
 const Laju_Reaksi = require('./../../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
 
 const bg_ukbm1 = require('./../../Assets/img/gambar_beranda_ukbm/ukbm1.jpg');
-
+const next_button = require('./../../Assets/img/next_button.png');
 
 export default class UKBM1beranda extends React.Component {
 
   backTo = () => {
     this.props.navigation.navigate('UnitKegiatanBelajar');
+  }
+
+  backTo2 = () => {
+    this.props.navigation.navigate('UKBM2');
   }
 
   beranda = () => {
@@ -33,10 +37,15 @@ export default class UKBM1beranda extends React.Component {
           </TouchableOpacity>
 
         </View>
-        <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
-          <Image source={BackButton} style={styles.iconBack} />
-        </TouchableOpacity>
-        
+        <View style={styles.SoundHome}>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+            <Image source={BackButton} style={styles.iconHeaderUKBM} />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+            <Image source={next_button} style={styles.iconHeaderUKBM} />
+          </TouchableOpacity>
+        </View>
+
       </View>
       <View style={styles.box2}>
         <Image source={Laju_Reaksi} style={styles.iconHeaderUKBM} />
@@ -129,9 +138,8 @@ const styles = StyleSheet.create({
   },
   buttonBack: {
     paddingLeft: 17,
-    paddingRight: 17,
-    paddingTop: 7,
     paddingBottom: 7,
+    paddingTop: 8,
     alignItems: 'center',
     justifyContent: 'center',
   },

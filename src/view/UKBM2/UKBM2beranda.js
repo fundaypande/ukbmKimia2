@@ -9,13 +9,17 @@ const BackButton = require('./../../Assets/img/backButton.png');
 const Minyak_Bumi = require('./../../Assets/img/logo_Setiap_Ukbm/Minyak_Bumi.png');
 
 const bg_ukbm2 = require('./../../Assets/img/gambar_beranda_ukbm/ukbm2.jpg');
-
+const next_button = require('./../../Assets/img/next_button.png');
 
 export default class UKBM2beranda extends React.Component {
 
   backTo = () => {
     this.props.navigation.navigate('UnitKegiatanBelajar');
   }
+
+  backTo2 = () => {
+     this.props.navigation.navigate('UKBM3');
+   }
 
   render() {
     return (
@@ -24,16 +28,23 @@ export default class UKBM2beranda extends React.Component {
       <View style={styles.box1}>
         <View style={styles.SoundHome}>
           <Sound/>
-          <TombolBeranda/>
+          <TouchableOpacity onPress={() => this.props.navigation.navigate('Beranda')}>
+              <TombolBeranda />
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
-          <Image source={BackButton} style={styles.iconBack} />
-        </TouchableOpacity>
+        <View style={styles.SoundHome}>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+            <Image source={BackButton} style={styles.iconHeaderUKBM} />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+            <Image source={next_button} style={styles.iconHeaderUKBM} />
+          </TouchableOpacity>
+        </View>
       </View>
       <View style={styles.box2}>
         <Image source={Minyak_Bumi} style={styles.iconHeaderUKBM} />
         <View style={styles.textUkbm}>
-          <Text style={styles.textBox2}>  UKBM 2</Text>
+          <Text style={styles.textBox2}>  UKBM 2 </Text>
           <Text style={styles.textBox2}>  Minyak Bumi</Text>
         </View>
         </View>
@@ -123,9 +134,8 @@ const styles = StyleSheet.create({
   },
   buttonBack: {
     paddingLeft: 17,
-    paddingRight: 17,
-    paddingTop: 7,
     paddingBottom: 7,
+    paddingTop: 8,
     alignItems: 'center',
     justifyContent: 'center',
   },

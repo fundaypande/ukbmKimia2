@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 const logo_layout_ukbm = require('./../Assets/img/logo_layout_ukbm.png');
 
 const BackButton = require('./../Assets/img/backButton.png');
+const next_button = require('./../Assets/img/next_button.png');
 
 const Senyawa_Hidrokarbon = require('./../Assets/img/logo_Setiap_Ukbm/Senyawa_Hidrokarbon.png');
 const Minyak_Bumi = require('./../Assets/img/logo_Setiap_Ukbm/Minyak_Bumi.png');
@@ -50,6 +51,10 @@ export default class UnitKegiatanBelajar extends React.Component {
     this.props.navigation.navigate('Beranda');
   }
 
+  backTo2 = () => {
+     this.props.navigation.navigate('UK');
+   }
+
   render() {
     return (
     <View style={styles.containerMain}>
@@ -63,9 +68,14 @@ export default class UnitKegiatanBelajar extends React.Component {
             <TombolBeranda />
           </TouchableOpacity>
         </View>
-        <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
-          <Image source={BackButton} style={styles.iconHeaderUKBM} />
-        </TouchableOpacity>
+        <View style={styles.SoundHome}>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+            <Image source={BackButton} style={styles.iconHeaderUKBM} />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+            <Image source={next_button} style={styles.iconHeaderUKBM} />
+          </TouchableOpacity>
+        </View>
       </View>
       <View style={styles.box2}>
         <Image source={logo_layout_ukbm} style={styles.iconHeaderUKBM} />
@@ -203,8 +213,6 @@ const styles = StyleSheet.create({
   },
   buttonBack: {
     paddingLeft: 17,
-    paddingRight: 17,
-    paddingTop: 8,
     paddingBottom: 7,
     marginTop: 8,
     alignItems: 'center',

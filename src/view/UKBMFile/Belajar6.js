@@ -125,7 +125,7 @@ export default class KegiatanBelajarUKBM6 extends React.Component {
                             <View style={funStyle.funBigSpace} />
                                 <View style={funStyle.funFloat}>
                                   <View style={funStyle.funNotifMarikawan}>
-                                  <Text style={funStyle.haiKawan}>Ayo kawan-kawan â€¦â€¦ </Text>
+                                  <Text style={funStyle.haiKawan}>Ayo kawan-kawan </Text>
                                     <Text style={funStyle.keteranganHayKawan}>Kita ikuti kegiatan belajar berikut dengan penuh kesabaran dan konsentrasi!!!</Text>
                                   </View>
                                   <Image style={{ width: 100, height: 200 }} source={dengan} />

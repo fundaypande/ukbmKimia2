@@ -208,7 +208,7 @@ export default class UKBM1KB4 extends React.Component {
             <Sound />
             <TombolBeranda />
           </View>
-          <Text style={{ color: '#fff' }}> UKBM 3 Pembakaran Hidrokarbon </Text>
+          <Text style={{ color: '#fff' }}>Pembakaran Hidrokarbon </Text>
           <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
             <Image source={BackButton} style={styles.iconBack} />
           </TouchableOpacity>

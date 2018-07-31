@@ -496,7 +496,7 @@ export default class UKBM1KB1 extends React.Component {
 
                        <View style={funStyle.funBigSpace} />
                        <View style={funStyle.funFloat}>
-                         <Image style={{ width: 100, height: 200 }} source={ukbm1_03} />
+                         <Image style={{ width: 200, height: 200 }} source={ukbm1_03} />
                          <View style={funStyle.funNotif}>
                            <T style={{ color: '#fff' }} t='Setelah kalian memahami uraian singkat materi dan contoh di atas, kerjakan soal berikut dengan berpikir kritis!' />
                          </View>

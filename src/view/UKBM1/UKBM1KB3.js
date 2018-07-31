@@ -135,7 +135,7 @@ export default class UKBM1KB3 extends React.Component {
                      <T style={funStyle.funTitle} t='A. Isomer' />
                      <View style={funStyle.funSpace} />
                      <View style={funStyle.funFloat}>
-                       <Image style={{ width: 100, height: 200 }} source={ukbm1_03} />
+                       <Image style={{ width: 200, height: 200 }} source={ukbm1_03} />
                        <View style={funStyle.funNotif}>
                          <T style={{ color: '#fff' }} t='Bacalah uraian singkat di bawah ini dengan cermat!' />
                        </View>

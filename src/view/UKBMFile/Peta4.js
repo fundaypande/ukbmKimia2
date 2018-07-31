@@ -45,7 +45,7 @@ export default class PetaKonsepUKBM4 extends React.Component {
                       <TombolBeranda />
                   </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> TERMOKIMIA </Text>
+                  <Text style={funStyle.headerIdentitas}> Termokimia </Text>
                     <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />

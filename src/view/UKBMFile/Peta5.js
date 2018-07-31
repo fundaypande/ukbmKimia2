@@ -45,7 +45,7 @@ export default class PetaKonsepUKBM5 extends React.Component {
                       <TombolBeranda />
                   </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> PERUBAHAN ENTALPI </Text>
+                  <Text style={funStyle.headerIdentitas}> Perubahan Entalpi </Text>
                     <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />

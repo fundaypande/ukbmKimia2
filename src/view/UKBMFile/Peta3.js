@@ -45,7 +45,7 @@ export default class PetaKonsepUKBM3 extends React.Component {
                       <TombolBeranda />
                   </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> PEMBAKARAN HIDROKARBON </Text>
+                  <Text style={funStyle.headerIdentitas}> Pembakaran Hidrokarbon </Text>
                     <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />

@@ -51,7 +51,7 @@ export default class KegiatanBelajarUKBM7 extends React.Component {
                   <Sound />
                   <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
                       <TombolBeranda />
-                  </TouchableOpacity> 
+                  </TouchableOpacity>
                 </View>
                   <Text style={funStyle.headerIdentitas}> Orde Laju Reaksi </Text>
                     <View style={styles.SoundHome}>
@@ -127,7 +127,7 @@ export default class KegiatanBelajarUKBM7 extends React.Component {
                             <View style={funStyle.funBigSpace} />
                                 <View style={funStyle.funFloat}>
                                   <View style={funStyle.funNotifMarikawan}>
-                                  <Text style={funStyle.haiKawan}>Ayo kawan-kawan â€¦â€¦ </Text>
+                                  <Text style={funStyle.haiKawan}>Ayo kawan-kawan </Text>
                                     <Text style={funStyle.keteranganHayKawan}>Kita ikuti kegiatan belajar berikut dengan penuh kesabaran dan konsentrasi!!!</Text>
                                   </View>
                                   <Image style={{ width: 100, height: 200 }} source={dengan} />
