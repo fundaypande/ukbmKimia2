@@ -7,6 +7,8 @@ import Footer from '../../components/Footer';
 import T from '../../components/Text';
 
 const BackButton = require('./../../Assets/img/backButton.png');
+const next_button = require('./../../Assets/img/next_button.png');
+
 const funStyle = require('../style');
 
 const Laju_Reaksi = require('./../../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
@@ -22,9 +24,13 @@ const PK_UKBM5 = require('./../../Assets/peta_konsep/PK_UKBM5.png');
 
 export default class PetaKonsepUKBM5 extends React.Component {
 
- backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
-  }
+  backTo = () => {
+     this.props.navigation.navigate('Identitas5');
+   }
+
+   backTo2 = () => {
+      this.props.navigation.navigate('Belajar5');
+    }
 
 
   render() {
@@ -35,12 +41,19 @@ export default class PetaKonsepUKBM5 extends React.Component {
               <View style={styles.box1}>
                 <View style={styles.SoundHome}>
                   <Sound />
-                  <TombolBeranda />
+                  <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                      <TombolBeranda />
+                  </TouchableOpacity>
                 </View>
                   <Text style={funStyle.headerIdentitas}> PERUBAHAN ENTALPI </Text>
+                    <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
               </View>
 
                     <View style={{ flex: 1 }}>

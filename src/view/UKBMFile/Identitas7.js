@@ -7,6 +7,8 @@ import Footer from '../../components/Footer';
 import T from '../../components/Text';
 
 const BackButton = require('./../../Assets/img/backButton.png');
+const next_button = require('./../../Assets/img/next_button.png');
+
 const funStyle = require('../style');
 
 const Laju_Reaksi = require('./../../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
@@ -26,11 +28,15 @@ const marikawan = require('./../../Assets/Human/human04.png');
 const ukbm1_03 = require('./../../Assets/UKBM1/ukbm1_03sasuke.png');
 const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
 
-export default class IdentitasUKBM3 extends React.Component {
+export default class IdentitasUKBM7 extends React.Component {
 
- backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
-  }
+  backTo = () => {
+     this.props.navigation.navigate('UKBM7');
+   }
+
+   backTo2 = () => {
+      this.props.navigation.navigate('Peta7');
+    }
 
 
   render() {
@@ -41,12 +47,19 @@ export default class IdentitasUKBM3 extends React.Component {
               <View style={styles.box1}>
                 <View style={styles.SoundHome}>
                   <Sound />
-                  <TombolBeranda />
+                  <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                      <TombolBeranda />
+                  </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> ORDE LAJU REAKSI</Text>
+                  <Text style={funStyle.headerIdentitas}> Orde Laju Reaksi </Text>
+                    <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
               </View>
 
                     <View style={{ flex: 1 }}>
@@ -138,7 +151,7 @@ export default class IdentitasUKBM3 extends React.Component {
                                 <Image style={{ width: 160, height: 160 }} source={haikawan} />
                                   <View style={funStyle.funNotifhaikawan}>
                                     <Text style={funStyle.haiKawan}> Hai Kawan ....</Text>
-                                    <Text style={funStyle.keteranganHayKawan}>Apa sich tujuan kita belajar â€œHukum Laju Reaksi dan Penentuan Laju Reaksiâ€ ini?</Text>
+                                    <Text style={funStyle.keteranganHayKawan}>Apa sich tujuan kita belajar 'Hukum Laju Reaksi dan Penentuan Laju Reaksi' ini?</Text>
                                   </View>
                                 </View>
 
@@ -146,14 +159,10 @@ export default class IdentitasUKBM3 extends React.Component {
                                 <View style={funStyle.funFloat}>
                                 <Image style={{ width: 150, height: 150 }} source={dengan} />
                                   <View style={funStyle.funNotifketerangan}>
-                                    <Text style={funStyle.penjelasan}>Dengan pembelajaran discovery  melalui diskusi, tanya jawab, penugasan, presentasi, praktikum dan analisis, </Text>
+                                    <Text style={funStyle.penjelasan}>Dengan pembelajaran discovery  melalui diskusi, tanya jawab, penugasan, presentasi, praktikum dan analisis, kalian diminta mampu menentukan orde reaksi berdasarkan analisis data yang diperoleh melalui percobaan; menentukan tetapan laju reaksi berdasarkan analisis data yang diperoleh melalui percobaan; menentukan persamaan laju  reaksi berdasarkan analisis data yang diperoleh melalui percobaan; serta merancang, melakukan, menyimpulkan, dan menyajikan hasil percobaan faktor-faktor yang mempengaruhi laju reaksi dan orde reaksi. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
+                                    <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
+                                     <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
                                   </View>
-                                </View>
-
-                                <View style={funStyle.funNotifketerangan}>
-                                  <Text style={funStyle.penjelasan}> kalian diminta mampu menentukan orde reaksi berdasarkan analisis data yang diperoleh melalui percobaan; menentukan tetapan laju reaksi berdasarkan analisis data yang diperoleh melalui percobaan; menentukan persamaan laju  reaksi berdasarkan analisis data yang diperoleh melalui percobaan; serta merancang, melakukan, menyimpulkan, dan menyajikan hasil percobaan faktor-faktor yang mempengaruhi laju reaksi dan orde reaksi. Kalian juga diminta dapat menghayati dan mengamalkan ajaran agama yang dianutnya; mengembangkan sikap sosial seperti jujur, peduli, dan bertanggung jawab; mengembangkan kecakapan hidup abad 21 seperti kemampuan </Text>
-                                  <Text style={{ fontWeight:'bold' }}>berpikir kritis, berkomunikasi, berkolaborasi, dan berkreasi (4C),</Text>
-                                   <Text style={funStyle.penjelasan}> serta mampu mengakses, memahami dan menggunakan informasi secara cerdas sebagai bentuk konkret dari literasi. </Text>
                                 </View>
 
 
@@ -202,7 +211,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
    containerMain: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#F0F0F0',
     flex: 1,
     flexDirection: 'column'
   },

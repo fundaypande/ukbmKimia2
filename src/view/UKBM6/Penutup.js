@@ -21,6 +21,7 @@ const emot01 = require('./../../Assets/Human/emot01.png');
 const emot02 = require('./../../Assets/Human/emot02.png');
 const emot03 = require('./../../Assets/Human/emot03.png');
 const sukses = require('./../../Assets/Human/sukses.png');
+const next_button = require('./../../Assets/img/next_button.png');
 let gambar = '';
 
 const ukbm1_25 = require('./../../Assets/UKBM1/ukbm1_25orang.png');
@@ -71,7 +72,11 @@ export default class UKBM1KB4 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('UKBM6');
+  }
+
+  backTo2 = () => {
+    this.props.navigation.navigate('UKBM7');
   }
 
   result = () => {
@@ -206,11 +211,16 @@ export default class UKBM1KB4 extends React.Component {
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
             <Sound />
-            <TombolBeranda />
+            <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                <TombolBeranda />
+            </TouchableOpacity>
           </View>
-          <Text style={{ color: '#fff' }}> UKBM 6 Laju Reaksi </Text>
+          <Text style={{ color: '#fff' }}>Laju Reaksi </Text>
           <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
             <Image source={BackButton} style={styles.iconBack} />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+             <Image source={next_button} style={styles.iconBack} />
           </TouchableOpacity>
         </View>
 

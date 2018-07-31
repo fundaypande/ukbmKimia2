@@ -112,7 +112,7 @@ export default class UKBM1KB3 extends React.Component {
                 <TombolBeranda />
             </TouchableOpacity>
           </View>
-          <Text style={{ color: '#fff' }}> UKBM 1 Senyawa Hidro Karbon </Text>
+          <Text style={{ color: '#fff' }}>Senyawa Hidrokarbon </Text>
           <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
@@ -121,157 +121,157 @@ export default class UKBM1KB3 extends React.Component {
                        <Image source={next_button} style={styles.iconBack} />
                     </TouchableOpacity>
                  </View>
-        </View>
+                 </View>
 
 
 
-        <View style={{ flex: 1 }}>
-          <ScrollView style={{ paddingLeft: 10, paddingRight: 10 }}>
-            <Text style={funStyle.funJudulKB}>
-              Kegiatan Belajar 3
-            </Text>
-            <View style={funStyle.funSpace} />
+                 <View style={{ flex: 1 }}>
+                   <ScrollView style={{ paddingLeft: 10, paddingRight: 10 }}>
+                     <Text style={funStyle.funJudulKB}>
+                       Kegiatan Belajar 3
+                     </Text>
+                     <View style={funStyle.funSpace} />
 
-            <T style={funStyle.funTitle} t='A. Isomer' />
-            <View style={funStyle.funSpace} />
-            <View style={funStyle.funFloat}>
-              <Image style={{ width: 100, height: 200 }} source={ukbm1_03} />
-              <View style={funStyle.funNotif}>
-                <T style={{ color: '#fff' }} t='Bacalah uraian singkat di bawah ini dengan cermat!' />
-              </View>
-            </View>
-            <View style={funStyle.funSpace} />
-            <View style={funStyle.funBox} >
-              <T t='Sadarkah kalian bahwa pada soal ayo berlatih pada kegiatan belajar 2 terdapat senyawa dengan rumus kimia sama? Soal 3, 4, dan 7 memiliki rumus yang sama yaitu C8H16. Hal ini lah yang disebut dengan isomer.' />
-                <View style={funStyle.funSpace} />
-              <T t='Beberapa senyawa hidrokarbon yang memiliki rumus sama dapat memiliki struktur senyawa yang berbeda. Sifat kimia yang dimiliki senyawa dengan struktur berbeda juga akan berbeda.' />
-            </View>
-            <View style={funStyle.funSpace} />
-            <T t='Dari ulasan di atas, buatlah dan jelaskan pengelompokkan isomer-isomer senyawa hidrokarbon pada buku tugasmu!' />
-            <View style={funStyle.funSpace} />
-
-
-
-            <Text style={funStyle.funJudulKB}>
-              Ayo Berlatih!
-            </Text>
-            <View style={funStyle.funSpace} />
-            <T t='1. Berilah nama masing-masing isomer yang memiliki rumus molkul C5H12 sesuai IUPAC!' />
-            <View style={funStyle.funSpace} />
-            <View style={{ alignItems: 'center' }}>
-              <Image style={{ height: 290, width: 330 }} source={ukbm1_24} />
-            </View>
-            <View style={funStyle.funSpace} />
-            <View style={funStyle.funBox} >
-            <View style={{ flexDirection: 'column', flex: 1 }}>
-              <View style={funStyle.funFloat}>
-                <T t='A = ' />
-                <TI
-                  editable={this.state.input.field0}
-                  onSubmitEditing={
-                    (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'n-pentana')
-                  }
-                />
-              </View>
-              <View style={funStyle.funSpace} />
-              <View style={funStyle.funFloat}>
-                <T t='B = ' />
-                <TI
-                  editable={this.state.input.field1}
-                  onSubmitEditing={
-                    (event) => this.cekJawaban(2, event.nativeEvent.text.toLowerCase(), '2-metilbutana')
-                  }
-                />
-              </View>
-              <View style={funStyle.funSpace} />
-              <View style={funStyle.funFloat}>
-                <T t='C = ' />
-                <TI
-                  editable={this.state.input.field2}
-                  onSubmitEditing={
-                    (event) => this.cekJawaban(3, event.nativeEvent.text.toLowerCase(), '2,2-dimetilpropana')
-                  }
-                />
-              </View>
-              <View style={funStyle.funSpace} />
-              </View>
-              </View>
+                     <T style={funStyle.funTitle} t='A. Isomer' />
+                     <View style={funStyle.funSpace} />
+                     <View style={funStyle.funFloat}>
+                       <Image style={{ width: 100, height: 200 }} source={ukbm1_03} />
+                       <View style={funStyle.funNotif}>
+                         <T style={{ color: '#fff' }} t='Bacalah uraian singkat di bawah ini dengan cermat!' />
+                       </View>
+                     </View>
+                     <View style={funStyle.funSpace} />
+                     <View style={funStyle.funBox} >
+                       <T t='Sadarkah kalian bahwa pada soal ayo berlatih pada kegiatan belajar 2 terdapat senyawa dengan rumus kimia sama? Soal 3, 4, dan 7 memiliki rumus yang sama yaitu C8H16. Hal ini lah yang disebut dengan isomer.' />
+                         <View style={funStyle.funSpace} />
+                       <T t='Beberapa senyawa hidrokarbon yang memiliki rumus sama dapat memiliki struktur senyawa yang berbeda. Sifat kimia yang dimiliki senyawa dengan struktur berbeda juga akan berbeda.' />
+                     </View>
+                     <View style={funStyle.funSpace} />
+                     <T t='Dari ulasan di atas, buatlah dan jelaskan pengelompokkan isomer-isomer senyawa hidrokarbon pada buku tugasmu!' />
+                     <View style={funStyle.funSpace} />
 
 
 
+                     <Text style={funStyle.funJudulKB}>
+                       Ayo Berlatih!
+                     </Text>
+                     <View style={funStyle.funSpace} />
+                     <T t='1. Berilah nama masing-masing isomer yang memiliki rumus molkul C5H12 sesuai IUPAC!' />
+                     <View style={funStyle.funSpace} />
+                     <View style={{ alignItems: 'center' }}>
+                       <Image style={{ height: 290, width: 330 }} source={ukbm1_24} />
+                     </View>
+                     <View style={funStyle.funSpace} />
+                     <View style={funStyle.funBox} >
+                     <View style={{ flexDirection: 'column', flex: 1 }}>
+                       <View style={funStyle.funFloat}>
+                         <T t='A = ' />
+                         <TI
+                           editable={this.state.input.field0}
+                           onSubmitEditing={
+                             (event) => this.cekJawaban(1, event.nativeEvent.text.toLowerCase(), 'n-pentana')
+                           }
+                         />
+                       </View>
+                       <View style={funStyle.funSpace} />
+                       <View style={funStyle.funFloat}>
+                         <T t='B = ' />
+                         <TI
+                           editable={this.state.input.field1}
+                           onSubmitEditing={
+                             (event) => this.cekJawaban(2, event.nativeEvent.text.toLowerCase(), '2-metilbutana')
+                           }
+                         />
+                       </View>
+                       <View style={funStyle.funSpace} />
+                       <View style={funStyle.funFloat}>
+                         <T t='C = ' />
+                         <TI
+                           editable={this.state.input.field2}
+                           onSubmitEditing={
+                             (event) => this.cekJawaban(3, event.nativeEvent.text.toLowerCase(), '2,2-dimetilpropana')
+                           }
+                         />
+                       </View>
+                       <View style={funStyle.funSpace} />
+                       </View>
+                       </View>
 
 
-            <View style={funStyle.funBigSpace} />
-            <TouchableOpacity
-            onPress={this.nextPart}
-            >
-              <Text style={funStyle.funJudulKB}>
-                Kegitana Belajar 4 >>
-              </Text>
-            </TouchableOpacity>
 
 
 
-            <View style={funStyle.funBigSpace} />
-        </ScrollView>
-        </View>
-        <Footer />
-      </View>
-    );
-  }
-}
+                     <View style={funStyle.funBigSpace} />
+                     <TouchableOpacity
+                     onPress={this.nextPart}
+                     >
+                       <Text style={funStyle.funJudulKB}>
+                         Kegitana Belajar 4 >>
+                       </Text>
+                     </TouchableOpacity>
 
-const styles = StyleSheet.create({
-  containerMain: {
-    backgroundColor: '#F0F0F0',
-    flex: 1,
-    flexDirection: 'column'
-  },
-  box1: {
-    height: 40,
-    backgroundColor: '#0066FF',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  icon: {
-    height: 50,
-    width: 50,
-    marginLeft: 10,
-  },
-  iconHeaderUKBM: {
-    height: 33,
-    width: 33,
-    marginLeft: 10,
-  },
-  SoundHome: {
-    flexDirection: 'row',
-  },
-  textUkbm: {
-    flexDirection: 'column',
-  },
-  ImageUKBM: {
-    flex: 4,
-    backgroundColor: 'white',
-  },
-  ButtonNextUKBM: {
-    flex: 1,
-    backgroundColor: '#FFFF99',
-    marginLeft: 10,
-    marginRight: 10,
-    marginTop: 2,
-    marginBottom: 2,
-    alignItems: 'center',
-    borderRadius: 10,
-    justifyContent: 'center',
-  },
-  iconBack: {
-    height: 30,
-    width: 30,
-    padding: 8,
-    paddingTop: 8,
-    marginLeft: 10,
-    position: 'relative',
-    flexDirection: 'row'
-  }
-});
+
+
+                     <View style={funStyle.funBigSpace} />
+                 </ScrollView>
+                 </View>
+                 <Footer />
+               </View>
+             );
+           }
+         }
+
+         const styles = StyleSheet.create({
+           containerMain: {
+             backgroundColor: '#F0F0F0',
+             flex: 1,
+             flexDirection: 'column'
+           },
+           box1: {
+             height: 40,
+             backgroundColor: '#0066FF',
+             flexDirection: 'row',
+             justifyContent: 'space-between',
+             alignItems: 'center',
+           },
+           icon: {
+             height: 50,
+             width: 50,
+             marginLeft: 10,
+           },
+           iconHeaderUKBM: {
+             height: 33,
+             width: 33,
+             marginLeft: 10,
+           },
+           SoundHome: {
+             flexDirection: 'row',
+           },
+           textUkbm: {
+             flexDirection: 'column',
+           },
+           ImageUKBM: {
+             flex: 4,
+             backgroundColor: 'white',
+           },
+           ButtonNextUKBM: {
+             flex: 1,
+             backgroundColor: '#FFFF99',
+             marginLeft: 10,
+             marginRight: 10,
+             marginTop: 2,
+             marginBottom: 2,
+             alignItems: 'center',
+             borderRadius: 10,
+             justifyContent: 'center',
+           },
+           iconBack: {
+             height: 30,
+             width: 30,
+             padding: 8,
+             paddingTop: 8,
+             marginLeft: 10,
+             position: 'relative',
+             flexDirection: 'row'
+           }
+         });

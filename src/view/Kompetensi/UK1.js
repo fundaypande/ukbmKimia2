@@ -531,6 +531,7 @@ export default class UKBM1KB4 extends React.Component {
               <T t='3)	C4H6' />
               <T t='4)  C6H12' />
               <T t='5)  C6H14' />
+              <T t='Manakah senyawa di atas yang tergolong senyawa jenuh?' />
                 <View style={{ marginRight: 30 }}>
                 <ScrollView horizontal={true}>
                 <RadioGroup

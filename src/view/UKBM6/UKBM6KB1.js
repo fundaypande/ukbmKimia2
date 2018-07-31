@@ -14,7 +14,7 @@ const ukbm6_03 = require('./../../Assets/UKBM6/ukbm6_03.png');
 const ukbm6_04 = require('./../../Assets/UKBM6/ukbm6_04.png');
 const ukbm6_05 = require('./../../Assets/UKBM6/ukbm6_05.png');
 
-
+const next_button = require('./../../Assets/img/next_button.png');
 const funStyle = require('../style');
 const totalField = 4;
 let i = 3;
@@ -47,7 +47,7 @@ export default class UKBM6KB1 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('Belajar6');
   }
 
   nextPart = () => {
@@ -106,12 +106,19 @@ export default class UKBM6KB1 extends React.Component {
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
             <Sound />
-            <TombolBeranda />
+            <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                <TombolBeranda />
+            </TouchableOpacity>
           </View>
-          <Text style={{ color: '#fff' }}> UKBM 6 Laju Reaksi </Text>
-          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
-            <Image source={BackButton} style={styles.iconBack} />
-          </TouchableOpacity>
+          <Text style={{ color: '#fff' }}>Laju Reaksi </Text>
+          <View style={styles.SoundHome}>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+                       <Image source={BackButton} style={styles.iconBack} />
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.nextPart}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+              </View>
         </View>
 
 

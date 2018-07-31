@@ -32,6 +32,8 @@ let i = 3;
 const fieldAll = 133 * 3;  //213
 let status = true;
 
+const next_button = require('./../../Assets/img/next_button.png');
+
 export default class UKBM1KB4 extends React.Component {
 
   constructor() {
@@ -71,8 +73,11 @@ export default class UKBM1KB4 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('UKBM7');
   }
+  backTo2 = () => {
+     this.props.navigation.navigate('UnitKegiatanBelajar');
+   }
 
   result = () => {
     //menecek Tabel
@@ -206,11 +211,16 @@ export default class UKBM1KB4 extends React.Component {
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
             <Sound />
-            <TombolBeranda />
+            <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                <TombolBeranda />
+            </TouchableOpacity>
           </View>
-          <Text style={{ color: '#fff' }}> UKBM 7 Orde Laju Reaksi </Text>
+          <Text style={{ color: '#fff' }}>Orde Laju Reaksi </Text>
           <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
             <Image source={BackButton} style={styles.iconBack} />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+             <Image source={next_button} style={styles.iconBack} />
           </TouchableOpacity>
         </View>
 

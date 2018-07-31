@@ -7,6 +7,8 @@ import Footer from '../../components/Footer';
 import T from '../../components/Text';
 
 const BackButton = require('./../../Assets/img/backButton.png');
+const next_button = require('./../../Assets/img/next_button.png');
+
 const funStyle = require('../style');
 
 const Laju_Reaksi = require('./../../Assets/img/logo_Setiap_Ukbm/Laju_Reaksi.png');
@@ -29,9 +31,14 @@ const ukbm1_04 = require('./../../Assets/UKBM1/ukbm1_04.png');
 export default class KegiatanBelajarUKBM6 extends React.Component {
 
 
+
   backTo = () => {
-     this.props.navigation.navigate('UnitKegiatanBelajar');
+     this.props.navigation.navigate('Peta6');
    }
+
+   backTo2 = () => {
+      this.props.navigation.navigate('UKBM6_KB1');
+    }
 
  render() {
     return (
@@ -41,12 +48,19 @@ export default class KegiatanBelajarUKBM6 extends React.Component {
               <View style={styles.box1}>
                 <View style={styles.SoundHome}>
                   <Sound />
-                  <TombolBeranda />
+                  <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                      <TombolBeranda />
+                  </TouchableOpacity>
                 </View>
-                  <Text style={funStyle.headerIdentitas}> LAJU REAKSI </Text>
+                  <Text style={funStyle.headerIdentitas}> Laju Reaksi </Text>
+                    <View style={styles.SoundHome}>
                     <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
                        <Image source={BackButton} style={styles.iconBack} />
                     </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo2}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+                 </View>
               </View>
 
                     <View style={{ flex: 1 }}>
@@ -135,7 +149,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
    containerMain: {
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#F0F0F0',
     flex: 1,
     flexDirection: 'column'
   },

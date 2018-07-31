@@ -6,6 +6,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import T from '../../components/Text';
 import TI from '../../components/TInputSoal.js';
+const next_button = require('./../../Assets/img/next_button.png');
 
 const connan = require('./../../Assets/Human/connan.png');
 
@@ -78,7 +79,7 @@ export default class UKBM1KB4 extends React.Component {
   }
 
   backTo = () => {
-    this.props.navigation.navigate('UnitKegiatanBelajar');
+    this.props.navigation.navigate('Belajar7');
   }
 
   nextPart = () => {
@@ -137,12 +138,19 @@ export default class UKBM1KB4 extends React.Component {
         <View style={styles.box1}>
           <View style={styles.SoundHome}>
             <Sound />
-            <TombolBeranda />
+            <TouchableOpacity style={styles.ButtonTengahStyle} onPress={() => this.props.navigation.navigate('Beranda')}>
+                <TombolBeranda />
+            </TouchableOpacity>
           </View>
-          <Text style={{ color: '#fff' }}> UKBM 7 Orde Laju Reaksi </Text>
-          <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
-            <Image source={BackButton} style={styles.iconBack} />
-          </TouchableOpacity>
+          <Text style={{ color: '#fff' }}>Orde Laju Reaksi </Text>
+         <View style={styles.SoundHome}>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.backTo}>
+                       <Image source={BackButton} style={styles.iconBack} />
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.buttonBack} onPress={this.nextPart}>
+                       <Image source={next_button} style={styles.iconBack} />
+                    </TouchableOpacity>
+              </View>
         </View>
 
 
