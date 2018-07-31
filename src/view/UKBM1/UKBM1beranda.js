@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button, Image, TouchableOpacity} from 'react-native';
+import { StyleSheet, ScrollView, Text, View, TextInput, Button, Image, TouchableOpacity} from 'react-native';
 import Sound from './../../components/Sound';
 import TombolBeranda from './../../components/TombolBeranda';
 import Header from '../../components/Header';
@@ -55,7 +55,9 @@ export default class UKBM1beranda extends React.Component {
         </View>
         </View>
 
-        <View  style={styles.ImageUKBM}>
+        <ScrollView>
+
+        <View style={styles.ImageUKBM}>
             <Image source={bg_ukbm1} />
         </View>
           <View style={styles.box3}>
@@ -78,6 +80,7 @@ export default class UKBM1beranda extends React.Component {
               </TouchableOpacity>
 
         </View>
+        </ScrollView>
       <Footer />
 </View>
     );
@@ -90,14 +93,14 @@ const styles = StyleSheet.create({
     flexDirection: 'column'
   },
   box1: {
-    flex: 0.7,
+    height: 40,
     backgroundColor: '#0066FF',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
    box2: {
-    flex: 1,
+    height: 50,
     backgroundColor: '#000099',
     alignItems: 'center',
     flexDirection: 'row',
@@ -108,7 +111,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
    box3: {
-    flex: 5.5,
+    height: 250,
     backgroundColor: '#2196F3',
     marginBottom: 7,
     marginTop: 7,
@@ -160,7 +163,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   ImageUKBM:{
-    flex: 4,
+    height: 220,
     backgroundColor: 'white',
   },
   ButtonNextUKBM: {

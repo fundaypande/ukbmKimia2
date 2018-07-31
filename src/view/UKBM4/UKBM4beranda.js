@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button, Image, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View, ScrollView, TextInput, Button, Image, TouchableOpacity} from 'react-native';
 import Sound from './../../components/Sound';
 import TombolBeranda from './../../components/TombolBeranda';
 import Header from '../../components/Header';
@@ -48,7 +48,7 @@ export default class UKBM4beranda extends React.Component {
           <Text style={styles.textBox2}>  Termokimia</Text>
         </View>
         </View>
-
+        <ScrollView>
         <View  style={styles.boxImage}>
             <Image source={bg_ukbm4} style={styles.imageUKBM}/>
         </View>
@@ -74,6 +74,7 @@ export default class UKBM4beranda extends React.Component {
               </TouchableOpacity>
 
         </View>
+        </ScrollView>
       <Footer />
 </View>
     );
@@ -86,14 +87,14 @@ const styles = StyleSheet.create({
     flexDirection: 'column'
   },
   box1: {
-    flex: 0.7,
+    height: 40,
     backgroundColor: '#0066FF',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
    box2: {
-    flex: 1,
+    height: 50,
     backgroundColor: '#000099',
     alignItems: 'center',
     flexDirection: 'row',
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
    box3: {
-    flex: 5.5,
+    height: 250,
     backgroundColor: '#2196F3',
     marginBottom: 7,
     marginTop: 7,
@@ -155,8 +156,11 @@ const styles = StyleSheet.create({
   textUkbm:{
     flexDirection: 'column',
   },
+  ImageUKBM:{
+    backgroundColor: 'white',
+  },
   boxImage:{
-    flex: 4,
+    height: 220,
     backgroundColor: 'white',
   },
   ButtonNextUKBM: {
@@ -178,11 +182,6 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     position: 'relative',
     flexDirection: 'row'
-  },
-  imageUKBM: {
-    flex: 1,
-    alignSelf: 'stretch',
-    height: 80
   }
 
 });

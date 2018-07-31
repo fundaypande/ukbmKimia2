@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Alert, Image, TouchableOpacity, AsyncStorage, ImageBackground } from 'react-native';
+import { StyleSheet, ScrollView, Text, View, Alert, Image, TouchableOpacity, AsyncStorage, ImageBackground } from 'react-native';
 import * as firebase from 'firebase';
 
 import Sound from './../components/Sound';
@@ -79,6 +79,7 @@ export default class Beranda extends React.Component {
     return (
     <View style={styles.containerMain}>
       <Header />
+      <ScrollView>
       <View style={styles.box1}>
         <Sound />
 
@@ -132,6 +133,7 @@ export default class Beranda extends React.Component {
 
 
         </View>
+        </ScrollView>
       <Footer />
 </View>
     );
@@ -144,18 +146,18 @@ const styles = StyleSheet.create({
     flexDirection: 'column'
   },
   box1: {
-    flex: 0.5,
+    height: 50,
     backgroundColor: '#0066FF',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
    box2: {
-    flex: 3,
+    height: 225,
     backgroundColor: '#E8EAF6',
   },
    box3: {
-    flex: 3.1,
+    height: 250,
     backgroundColor: '#2196F3',
     marginBottom: 7,
     marginTop: 7,
@@ -191,6 +193,8 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   buttonKeluar: {
+    width: 200,
+    height: 40,
     backgroundColor: '#FFFF99',
     paddingLeft: 17,
     paddingRight: 17,

@@ -59,6 +59,7 @@ export default class UnitKegiatanBelajar extends React.Component {
     return (
     <View style={styles.containerMain}>
       <Header />
+
       <View style={styles.box1}>
         <View style={styles.SoundHome}>
           <TouchableOpacity onPress={this.backTo}>
@@ -81,6 +82,7 @@ export default class UnitKegiatanBelajar extends React.Component {
         <Image source={logo_layout_ukbm} style={styles.iconHeaderUKBM} />
           <Text style={styles.textBox2}>  UNIT KEGIATAN BELAJAR</Text>
         </View>
+        <ScrollView>
           <View style={styles.box3}>
 
 
@@ -141,6 +143,7 @@ export default class UnitKegiatanBelajar extends React.Component {
                 </TouchableOpacity>
 
         </View>
+        </ScrollView>
         <Footer />
 </View>
     );
@@ -153,14 +156,14 @@ const styles = StyleSheet.create({
     flexDirection: 'column'
   },
   box1: {
-    flex: 0.5,
+    height: 40,
     backgroundColor: '#0066FF',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
    box2: {
-    flex: 0.55,
+    height: 40,
     backgroundColor: '#000099',
     alignItems: 'center',
     flexDirection: 'row',
@@ -171,7 +174,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
    box3: {
-    flex: 6,
+    height: 500,
     backgroundColor: '#2196F3',
     marginBottom: 7,
     marginTop: 7,
